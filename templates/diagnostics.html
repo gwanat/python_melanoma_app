@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Diagnostics</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{{url_for('index')}}">MelanomaWebApp</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="{{url_for('index')}}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="{{url_for('diagnostics')}}">Diagnostics</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="button" data-bs-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Change language (PL/EN)
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light text-center" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-secondary" style="text-decoration: none;" href="#">
+                                Polski 
+                                <img src="{{ url_for('static', filename='images/polish_flag.png') }}" alt="Polski" style="width: 20px; height: 15px; margin-left: 5px;">
+                            </a>
+                            <a class="dropdown-item text-secondary" style="text-decoration: none;" href="#">
+                                English 
+                                <img src="{{ url_for('static', filename='images/british_flag.png') }}" alt="English" style="width: 20px; height: 15px; margin-left: 5px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <h1 class="form-header">Melanoma Diagnostics</h1>
+            <p>Potential diagnosis of melanocytic skin lesions is supported by Classic ABCD rule
+                (based on TDS parameter) and optimized ABCD rule (based on New TDS parameter)</p>
+                <hr>
+            <form method="POST" action="/diagnostics">
+                <div class="mb-3 section">
+                    <label for="asymmetry" class="form-label"><strong>Asymmetry (A):</strong></label><br>
+                    <p class="text-muted">Look for a symmetry across one or two axes of the lesion.</p>
+                    <select id="asymmetry" name="asymmetry" class="form-select" required>
+                        <option value="0">0 (Symmetrical)</option>
+                        <option value="1">1 (One-Axial Asymmetry)</option>
+                        <option value="2">2 (Two-Axial Asymmetry)</option>
+                    </select>
+                    <hr>
+                </div>
+                
+                <div class="mb-3 section">
+                    <label for="border" class="form-label"><strong>Border (B):</strong></label><br>
+                    <p class="text-muted">Define the sharpness of each of the 8 segments of the lesion's border into the skin (0 for diffuse, 8 for all sharp).</p>
+                    <input type="number" id="border" name="border" class="form-control" min="0" max="8" required>
+                    <hr>
+                </div>
+                
+                <div class="mb-3 section">
+                    <label for="colors" class="form-label"><strong>Colors (C):</strong></label><br>
+                    <p class="text-muted">Choose each color appearing on the skin lesion (or none).</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="colors" value="C_LightBrown" id="lightBrown">
+                        <label class="form-check-label" for="lightBrown">Light Brown</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="colors" value="C_DarkBrown" id="darkBrown">
+                        <label class="form-check-label" for="darkBrown">Dark Brown</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="colors" value="C_Red" id="red">
+                        <label class="form-check-label" for="red">Red</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="colors" value="C_White" id="white">
+                        <label class="form-check-label" for="white">White</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="colors" value="C_Blue" id="blue">
+                        <label class="form-check-label" for="blue">Blue/Grey</label>
+                    </div>
+                    <hr>
+                </div>
+                
+                <div class="mb-3 section">
+                    <label for="structures" class="form-label"><strong>Diversity of Structures (D):</strong></label><br>
+                    <p class="text-muted">Choose each structure appearing on the skin lesion (or none).</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="structures" value="Pigment_Networks" id="network">
+                        <label class="form-check-label" for="network">Pigment Networks</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="structures" value="Pigment_Dots" id="dots">
+                        <label class="form-check-label" for="dots">Pigment Dots</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="structures" value="Pigment_Globules" id="globules">
+                        <label class="form-check-label" for="globules">Pigment Globules</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="structures" value="Branched_Streaks" id="streaks">
+                        <label class="form-check-label" for="streaks">Branched Streaks</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="structures" value="Structureless_Areas" id="structureless">
+                        <label class="form-check-label" for="structureless">Structureless Areas</label>
+                    </div>
+                    <hr>
+                </div>                                
+                <button type="submit" class="btn btn-secondary w-100">Submit</button>
+            </form>
+    
+            {% if tds and new_tds %}
+            <div class="result-box mt-4">
+                <div class="tds-result mb-3 p-3 border rounded">
+                    <h4>Total Dermatoscopy Score: {{ tds }}</h4>
+                    <p>{{ tds_message }}</p>
+                </div>
+                <div class="new-tds-result p-3 border rounded">
+                    <h4>New Total Dermatoscopy Score: {{ new_tds }}</h4>
+                    <p>{{ new_tds_message }}</p>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+        <br>
+    </main>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <div class="row d-flex text-center mt-1">
+                <div class="col p-2">
+                    <p>
+                        Department of Artificial Intelligence <br />
+                        University of Information Technology and Management <br />
+                        Sucharskiego St. 2 <br />
+                        35-225 Rzeszow, PL
+                    </p>
+                </div>
+                <div class="col ms-auto p-2">
+                    <p>
+                        Regional Dermatology Center <br />
+                        Warzywna St. 3<br />
+                        35-959 Rzeszow, PL
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3 ms-lg-3">
+            &copy; 2024 - MelanomaWebApp
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
