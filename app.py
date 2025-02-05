@@ -45,17 +45,15 @@ def diagnostics():
             "Structureless_Areas": 0.6
         }
         
-        new_tds = (0.8 * asymmetry) + (0.11 * border)
+        new_tds = (0.8 * asymmetry) + (0.1 * border)
         for color in colors:
             new_tds += color_weights.get(color, 0)
         for structure in structures:
             new_tds += structure_weights.get(structure, 0)
 
 
-        if new_tds <= 4.85 and "C_Blue" not in colors:
+        if new_tds <= 4.85:
             new_tds_message = "Based on the improved TDS, the lesion is likely benign."
-        elif new_tds <= 4.85 and "C_Blue" in colors:
-            new_tds_message = "Based on the improved TDS, the lesion may be a blue nevus."
         elif 4.85 < new_tds < 5.45:
             new_tds_message = "Based on the improved TDS, the lesion is suspicious."
         else:
