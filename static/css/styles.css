@@ -22,7 +22,8 @@ main {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding: 20px;
 }
 
 .form-container {
@@ -47,7 +48,7 @@ main {
 
 .section {
     flex: 1;
-    min-width: 300px;
+    min-width: 200px;
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 5px;
