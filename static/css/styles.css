@@ -1,5 +1,7 @@
-.footer {
-    font-size: 12px;
+:root {
+    --primary-blue: #2d3e50;
+    --background: #f8fafc;
+    --hover-black: #232222;
 }
 
 html, body {
@@ -10,12 +12,41 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #f8f9fa;
+    background-color: var(--background);
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+    padding: 1rem 0;
+    border-bottom: none;
+    background-color: var(--background) !important;
+}
+
+.navbar .container-fluid {
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+.nav-link {
+    color: var(--primary-blue) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--hover-black) !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--primary-blue) !important;
 }
 
 main {
     flex-grow: 1;
-    padding: 20px;
+    padding-bottom: 20px;
+    font-family: 'Inter', sans-serif;
 }
 
 .main-diagnostics {
@@ -26,17 +57,45 @@ main {
     padding: 20px;
 }
 
-.form-container {
-    width: 80%;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 2rem;
+.hero-section {
+    width: 100vw;
+    height: 70vh;
+    margin-left: calc(-50vw + 50%);
+    position: relative;
+    overflow: hidden;
+    background: url('../images/plecy.png') center/cover;
 }
 
-.form-header {
-    text-align: center;
-    margin-bottom: 1rem;
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+}
+
+.hero-title {
+    font-size: 3.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+.hero-buttons .btn {
+    padding: 0.8rem 2rem;
+    margin-left: 2rem;
+    border-radius: 16px;
+    font-weight: 500;
+}
+
+.form-container {
+    width: 80%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
 }
 
 .form-sections {
@@ -49,32 +108,98 @@ main {
 .section {
     flex: 1;
     min-width: 200px;
-    border: 1px solid #ccc;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.1);
     padding: 15px;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.form-control:focus, 
+.form-select:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 0.25rem rgba(45, 62, 80, 0.15);
 }
 
 .result-box {
     margin-top: 1.5rem;
     padding: 1rem;
-    border: 1px solid #ddd;
+    background: rgba(45, 62, 80, 0.05);
+    border: 1px solid rgba(45, 62, 80, 0.1);
     border-radius: 8px;
-    background-color: #f1f1f1;
-}
-
-footer {
-    background-color: #f8f9fa;
-    padding: 10px 0;
 }
 
 .btn-container {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     padding-top: 10px;
     margin-top: 13px;
 }
 
 .btn-secondary {
     width: 200px;
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: white;
 }
+
+.btn-secondary:hover {
+    background-color: var(--hover-black);
+    border-color: var(--hover-black);
+}
+
+footer {
+    background-color: #e6ebf0;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.lang-switcher {
+    padding: 0.25rem;
+    transition: opacity 0.2s ease;
+}
+
+.lang-flag {
+    width: 24px;
+    height: 18px;
+    vertical-align: middle;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 2px;
+    transition: transform 0.2s ease;
+}
+
+.lang-switcher:hover {
+    opacity: 0.8;
+}
+
+.lang-switcher:hover .lang-flag {
+    transform: scale(1.1);
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #16222A 0%, #334851 51%, #16222A 100%);}
+.btn-grad {
+   margin: 10px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.8s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px 7px rgba(143, 145, 153, 0.2);
+   border-radius: 10px;
+   display: inline-block;
+   width: 210px;
+ }
+
+ .btn-grad:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ } 

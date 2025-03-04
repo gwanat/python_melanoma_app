@@ -1,16 +1,28 @@
 {% extends "base.html" %}
 
-{% block title %}Home - Melanoma Analysis{% endblock %}
-
 {% block content %}
-<div class="container text-center mt-5 mb-5 fs-3 fw-bold">
-    <h1>Computer-Assisted Diagnosing of Melanocytic Lesions on the Skin</h1>
+<div class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title">Advanced Diagnostic System for<br>Melanocytic Skin Lesions</h1>
+        <div class="hero-buttons">
+            <a href="{{ url_for('diagnostics') }}" class="btn btn-grad">Start Diagnosis</a>
+            <a href="#" class="btn btn-grad">Learn More</a>
+        </div>
+    </div>
 </div>
-<div class="container text-center mt-5 mb-5">
-    <p>
-        Research project No. 7 T11E 030 21<br />
-        of the State Committee for Scientific Research<br />
-        Warsaw, Poland
-    </p>
+
+<!--
+<div class="container py-6">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <p class="lead text-muted">
+                Research project No. 7 T11E 030 21<br>
+                State Committee for Scientific Research<br>
+                Warsaw, Poland
+            </p>
+        </div>
+    </div>
 </div>
+-->
+
 {% endblock %}

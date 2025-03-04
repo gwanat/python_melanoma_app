@@ -27,7 +27,7 @@ def diagnostics():
         else:
             tds_message = "Based on the TDS, the lesion is likely malignant."
 
-    #//////#
+
         color_weights = {
             "C_White": 0.5,
             "C_Blue": 0.8,
