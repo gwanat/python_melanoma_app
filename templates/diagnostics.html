@@ -1,88 +1,88 @@
 {% extends "base.html" %}
 
-{% block title %}Diagnostics - Melanoma Analysis{% endblock %}
+{% block title %}{{ _('Diagnostics - Melanoma Analysis') }}{% endblock %}
 
 {% block content %}
     <main class="main-diagnostics">
         <div class="form-container">
-            <h1 class="form-header">Melanoma Diagnostics</h1>
+            <h1 class="form-header">{{ _('Melanoma Diagnostics') }}</h1>
             <form method="POST" action="/diagnostics">
                 <div class="form-sections">
                     <div class="section">
-                        <label for="asymmetry"><strong>Asymmetry (A):</strong></label>
+                        <label for="asymmetry"><strong>{{ _('Asymmetry (A):') }}</strong></label>
                         <select id="asymmetry" name="asymmetry" class="form-select" required>
-                            <option value="0">0 (Symmetrical)</option>
-                            <option value="1">1 (One-Axial Asymmetry)</option>
-                            <option value="2">2 (Two-Axial Asymmetry)</option>
+                            <option value="0">{{ _('0 (Symmetrical)') }}</option>
+                            <option value="1">{{ _('1 (One-Axial Asymmetry)') }}</option>
+                            <option value="2">{{ _('2 (Two-Axial Asymmetry)') }}</option>
                         </select>
                     </div>
                     
                     <div class="section">
-                        <label for="border"><strong>Border (B):</strong></label>
+                        <label for="border"><strong>{{ _('Border (B):') }}</strong></label>
                         <input type="number" id="border" name="border" class="form-control" min="0" max="8" required>
                     </div>
                     
                     <div class="section">
-                        <label><strong>Colors (C):</strong></label>
+                        <label><strong>{{ _('Colors (C):') }}</strong></label>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="colors" value="C_LightBrown" id="lightBrown">
-                            <label for="lightBrown" class="form-check-label">Light Brown</label>
+                            <label for="lightBrown" class="form-check-label">{{ _('Light Brown') }}</label>
                         </div>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="colors" value="C_DarkBrown" id="darkBrown">
-                            <label for="darkBrown" class="form-check-label">Dark Brown</label>
+                            <label for="darkBrown" class="form-check-label">{{ _('Dark Brown') }}</label>
                         </div>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="colors" value="C_Red" id="red">
-                            <label for="red" class="form-check-label">Red</label>
+                            <label for="red" class="form-check-label">{{ _('Red') }}</label>
                         </div>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="colors" value="C_White" id="white">
-                            <label for="white" class="form-check-label">White</label>
+                            <label for="white" class="form-check-label">{{ _('White') }}</label>
                         </div>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="colors" value="C_Blue" id="blue">
-                            <label for="blue" class="form-check-label">Blue/Grey</label>
+                            <label for="blue" class="form-check-label">{{ _('Blue/Grey') }}</label>
                         </div>
                     </div>
                     
                     <div class="section">
-                        <label><strong>Diversity of Structures (D):</strong></label>
+                        <label><strong>{{ _('Diversity of Structures (D):') }}</strong></label>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="structures" value="Pigment_Networks" id="network">
-                            <label for="network" class="form-check-label">Pigment Networks</label>
+                            <label for="network" class="form-check-label">{{ _('Pigment Networks') }}</label>
                         </div>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="structures" value="Pigment_Dots" id="dots">
-                            <label for="dots" class="form-check-label">Pigment Dots</label>
+                            <label for="dots" class="form-check-label">{{ _('Pigment Dots') }}</label>
                         </div>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="structures" value="Pigment_Globules" id="globules">
-                            <label for="globules" class="form-check-label">Pigment Globules</label>
+                            <label for="globules" class="form-check-label">{{ _('Pigment Globules') }}</label>
                         </div>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="structures" value="Branched_Streaks" id="streaks">
-                            <label for="streaks" class="form-check-label">Branched Streaks</label>
+                            <label for="streaks" class="form-check-label">{{ _('Branched Streaks') }}</label>
                         </div>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="structures" value="Structureless_Areas" id="structureless">
-                            <label for="structureless" class="form-check-label">Structureless Areas</label>
+                            <label for="structureless" class="form-check-label">{{ _('Structureless Areas') }}</label>
                         </div>
                     </div>
                 </div>
                 <div class="btn-container">
-                    <button type="submit" class="btn btn-secondary">Submit</button>
+                    <button type="submit" class="btn btn-secondary">{{ _('Submit') }}</button>
                 </div>
             </form>
 
             {% if tds and new_tds %}
             <div class="result-box mt-4">
-                <h4>Total Dermatoscopy Score: {{ tds }}</h4>
+                <h4>{{ _('Total Dermatoscopy Score:') }} {{ tds }}</h4>
                 <p>{{ tds_message }}</p>
-                <h4>New Total Dermatoscopy Score: {{ new_tds }}</h4>
+                <h4>{{ _('New Total Dermatoscopy Score:') }} {{ new_tds }}</h4>
                 <p>{{ new_tds_message }}</p>
             </div>
             {% endif %}
         </div>
     </main>
-    {% endblock %}
+{% endblock %}

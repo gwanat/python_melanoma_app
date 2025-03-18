@@ -1,6 +1,53 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session, redirect, g
+from flask_babel import Babel, _,lazy_gettext as _l, gettext
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
+babel = Babel(app)
+
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+app.config['BABEL_DEFAULT_LOCALE'] = 'en'
+app.config['BABEL_TRANSLATION_DIRECTORIES'] = './translations'
+
+def get_locale():
+    # Check if the language query parameter is set and valid
+    if 'lang' in request.args:
+        lang = request.args.get('lang')
+        if lang in ['en', 'pl']:
+            session['lang'] = lang
+            return session['lang']
+    # If not set via query, check if we have it stored in the session
+    elif 'lang' in session:
+        return session.get('lang')
+    # Otherwise, use the browser's preferred language
+    return request.accept_languages.best_match(['en', 'pl'])
+
+def get_timezone():
+    user = getattr(g, 'user', None)
+    if user is not None:
+        return user.timezone
+
+babel = Babel(app, locale_selector=get_locale, timezone_selector=get_timezone)
+
+
+@app.route('/setlang')
+def setlang():
+    lang = request.args.get('lang', 'en')
+    session['lang'] = lang
+    return redirect(request.referrer)
+
+@app.context_processor
+def inject_babel():
+    return dict(_=gettext)
+
+@app.context_processor
+def inject_locale():
+    # This makes the function available directly, allowing you to call it in the template
+    return {'get_locale': get_locale}
 
 @app.route("/")
 def index():
@@ -21,11 +68,11 @@ def diagnostics():
 
         
         if tds <= 4.75:
-            tds_message = "Based on the TDS, the lesion is likely benign."
+            tds_message = _l("Based on the TDS, the lesion is likely benign.")
         elif 4.75 < tds <= 5.45:
-            tds_message = "Based on the TDS, the lesion is suspicious."
+            tds_message = _l("Based on the TDS, the lesion is suspicious.")
         else:
-            tds_message = "Based on the TDS, the lesion is likely malignant."
+            tds_message = _l("Based on the TDS, the lesion is likely malignant.")
 
 
         color_weights = {
@@ -53,11 +100,11 @@ def diagnostics():
 
 
         if new_tds <= 4.85:
-            new_tds_message = "Based on the improved TDS, the lesion is likely benign."
+            new_tds_message = _l("Based on the improved TDS, the lesion is likely benign.")
         elif 4.85 < new_tds < 5.45:
-            new_tds_message = "Based on the improved TDS, the lesion is suspicious."
+            new_tds_message = _l("Based on the improved TDS, the lesion is suspicious.")
         else:
-            new_tds_message = "Based on the improved TDS, the lesion is likely malignant."
+            new_tds_message = _l("Based on the improved TDS, the lesion is likely malignant.")
 
         return render_template(
             "diagnostics.html",

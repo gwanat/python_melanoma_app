@@ -1,0 +1,179 @@
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-03-18 16:15+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: templates/base.html:10 templates/base.html:17
+msgid "Melanoma Analysis"
+msgstr ""
+
+#: templates/base.html:24
+msgid "Home"
+msgstr ""
+
+#: templates/base.html:27
+msgid "Diagnostics"
+msgstr ""
+
+#: templates/base.html:31
+msgid "About Melanoma"
+msgstr ""
+
+#: templates/base.html:37
+msgid "Definitions"
+msgstr ""
+
+#: templates/base.html:38
+msgid "Detection"
+msgstr ""
+
+#: templates/base.html:39
+msgid "Prevention"
+msgstr ""
+
+#: templates/base.html:45 templates/base.html:47
+msgid "Polski"
+msgstr ""
+
+#: templates/base.html:51 templates/base.html:53
+msgid "English"
+msgstr ""
+
+#: templates/base.html:68
+msgid "Department of Artificial Intelligence"
+msgstr ""
+
+#: templates/base.html:69
+msgid "University of Information Technology and Management"
+msgstr ""
+
+#: templates/base.html:70
+msgid "Sucharskiego St. 2"
+msgstr ""
+
+#: templates/base.html:71
+msgid "35-225 Rzeszow, PL"
+msgstr ""
+
+#: templates/base.html:74
+msgid "MelanomaWebApp"
+msgstr ""
+
+#: templates/diagnostics.html:3
+msgid "Diagnostics - Melanoma Analysis"
+msgstr ""
+
+#: templates/diagnostics.html:8
+msgid "Melanoma Diagnostics"
+msgstr ""
+
+#: templates/diagnostics.html:12
+msgid "Asymmetry (A):"
+msgstr ""
+
+#: templates/diagnostics.html:14
+msgid "0 (Symmetrical)"
+msgstr ""
+
+#: templates/diagnostics.html:15
+msgid "1 (One-Axial Asymmetry)"
+msgstr ""
+
+#: templates/diagnostics.html:16
+msgid "2 (Two-Axial Asymmetry)"
+msgstr ""
+
+#: templates/diagnostics.html:21
+msgid "Border (B):"
+msgstr ""
+
+#: templates/diagnostics.html:26
+msgid "Colors (C):"
+msgstr ""
+
+#: templates/diagnostics.html:29
+msgid "Light Brown"
+msgstr ""
+
+#: templates/diagnostics.html:33
+msgid "Dark Brown"
+msgstr ""
+
+#: templates/diagnostics.html:37
+msgid "Red"
+msgstr ""
+
+#: templates/diagnostics.html:41
+msgid "White"
+msgstr ""
+
+#: templates/diagnostics.html:45
+msgid "Blue/Grey"
+msgstr ""
+
+#: templates/diagnostics.html:50
+msgid "Diversity of Structures (D):"
+msgstr ""
+
+#: templates/diagnostics.html:53
+msgid "Pigment Networks"
+msgstr ""
+
+#: templates/diagnostics.html:57
+msgid "Pigment Dots"
+msgstr ""
+
+#: templates/diagnostics.html:61
+msgid "Pigment Globules"
+msgstr ""
+
+#: templates/diagnostics.html:65
+msgid "Branched Streaks"
+msgstr ""
+
+#: templates/diagnostics.html:69
+msgid "Structureless Areas"
+msgstr ""
+
+#: templates/diagnostics.html:74
+msgid "Submit"
+msgstr ""
+
+#: templates/diagnostics.html:80
+msgid "Total Dermatoscopy Score:"
+msgstr ""
+
+#: templates/diagnostics.html:82
+msgid "New Total Dermatoscopy Score:"
+msgstr ""
+
+#: templates/index.html:6
+msgid "Advanced Diagnostic System for"
+msgstr ""
+
+#: templates/index.html:6
+msgid "Melanocytic Skin Lesions"
+msgstr ""
+
+#: templates/index.html:8
+msgid "Start Diagnosis"
+msgstr ""
+
+#: templates/index.html:9
+msgid "Learn More"
+msgstr ""
+

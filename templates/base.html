@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ current_locale }}">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,49 +7,50 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
-        <title>{% block title %}Melanoma Analysis{% endblock %}</title>
+        <title>{% block title %} {{ _('Melanoma Analysis') }} {% endblock %}</title>
     </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{{ url_for('index') }}">Melanoma Analysis</a>
+                <a class="navbar-brand" href="{{ url_for('index') }}">{{ _('Melanoma Analysis') }}</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="{{ url_for('index') }}">Home</a>
+                            <a class="nav-link text-dark" href="{{ url_for('index') }}">{{ _('Home') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="{{ url_for('diagnostics') }}">Diagnostics</a>
+                            <a class="nav-link text-dark" href="{{ url_for('diagnostics') }}">{{ _('Diagnostics') }}</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
-                                About Melanoma
+                                {{ _('About Melanoma') }}
                                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
                                     <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end bg-light text-center">
-                                <a class="dropdown-item text-secondary" href="#">Definitions</a>
-                                <a class="dropdown-item text-secondary" href="#">Detection</a>
-                                <a class="dropdown-item text-secondary" href="#">Prevention</a>
+                                <a class="dropdown-item text-secondary" href="#">{{ _('Definitions') }}</a>
+                                <a class="dropdown-item text-secondary" href="#">{{ _('Detection') }}</a>
+                                <a class="dropdown-item text-secondary" href="#">{{ _('Prevention') }}</a>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="ms-3 d-flex align-items-center">
-                    <a href="#" class="text-decoration-none me-2" title="Polski">
+                    <a href="{{ url_for('setlang') }}?lang=pl" class="text-decoration-none me-2" title="{{ _('Polski') }}">
                         <img src="{{ url_for('static', filename='images/poland.png') }}" 
-                             alt="Polski" 
+                             alt="{{ _('Polski') }}" 
                              class="lang-flag">
                     </a>
-                    <a href="#" class="text-decoration-none" title="English">
+
+                    <a href="{{ url_for('setlang') }}?lang=en" class="text-decoration-none" title="{{ _('English') }}">
                         <img src="{{ url_for('static', filename='images/union-jack.png') }}" 
-                             alt="English" 
+                             alt="{{ _('English') }}" 
                              class="lang-flag">
                     </a>
                 </div>
@@ -64,13 +65,13 @@
     <footer class="footer text-muted">
         <div class="container">
             <p class="text-start mb-2">
-                Department of Artificial Intelligence <br />
-                University of Information Technology and Management <br />
-                Sucharskiego St. 2 <br />
-                35-225 Rzeszow, PL
+                {{ _('Department of Artificial Intelligence') }} <br />
+                {{ _('University of Information Technology and Management') }} <br />
+                {{ _('Sucharskiego St. 2') }} <br />
+                {{ _('35-225 Rzeszow, PL') }}
             </p>
             <div class="text-center">
-                <small>&copy; 2024 - MelanomaWebApp</small>
+                <small>&copy; 2024 - {{ _('MelanomaWebApp') }}</small>
             </div>
         </div>
     </footer>    
