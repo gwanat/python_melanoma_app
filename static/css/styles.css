@@ -35,7 +35,7 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--hover-black) !important;
+    color:#4f6277 !important;
 }
 
 .navbar-brand {
@@ -80,7 +80,7 @@ main {
     font-weight: 300;
     letter-spacing: 1px;
     margin-bottom: 2rem;
-    margin-left: 2rem;
+    margin-left: 5px;
     font-family: 'Oswald', sans-serif;
 }
 .hero-buttons .btn {
@@ -195,7 +195,6 @@ footer {
    box-shadow: 0 0 20px 7px rgba(143, 145, 153, 0.2);
    border-radius: 10px;
    display: inline-block;
-   width: 210px;
  }
 
  .btn-grad:hover {
@@ -203,3 +202,23 @@ footer {
    color: #fff;
    text-decoration: none;
  } 
+
+.dropdown-menu {
+    background-color: var(--background);
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    padding: 0.5rem 0;
+}
+
+.dropdown-item {
+    color: var(--primary-blue) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(47, 62, 80, 0.1);
+    color: #4f6277 !important;
+}

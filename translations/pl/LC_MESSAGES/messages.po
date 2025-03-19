@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-03-18 16:15+0100\n"
+"POT-Creation-Date: 2025-03-19 07:19+0100\n"
 "PO-Revision-Date: 2025-03-18 16:16+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
@@ -18,6 +18,30 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
+
+#: app.py:68
+msgid "Based on the TDS, the lesion is likely benign."
+msgstr "Na podstawie TDS, zmiana jest najprawdopodobniej łagodna."
+
+#: app.py:70
+msgid "Based on the TDS, the lesion is suspicious."
+msgstr "Na podstawie TDS, zmiana jest podejrzana."
+
+#: app.py:72
+msgid "Based on the TDS, the lesion is likely malignant."
+msgstr "Na podstawie TDS, zmiana jest prawdopodobnie złośliwa."
+
+#: app.py:100
+msgid "Based on the improved TDS, the lesion is likely benign."
+msgstr "Na podstawie TDS, zmiana jest najprawdopodobniej łagodna."
+
+#: app.py:102
+msgid "Based on the improved TDS, the lesion is suspicious."
+msgstr "Na podstawie TDS, zmiana jest podejrzana."
+
+#: app.py:104
+msgid "Based on the improved TDS, the lesion is likely malignant."
+msgstr "Na podstawie TDS, zmiana jest prawdopodobnie złośliwa."
 
 #: templates/base.html:10 templates/base.html:17
 msgid "Melanoma Analysis"
@@ -51,29 +75,37 @@ msgstr "Profilaktyka"
 msgid "Polski"
 msgstr "Polski"
 
-#: templates/base.html:50 templates/base.html:52
+#: templates/base.html:51 templates/base.html:53
 msgid "English"
 msgstr "English"
 
-#: templates/base.html:80
+#: templates/base.html:68
 msgid "Department of Artificial Intelligence"
 msgstr "Katedra Sztucznej Inteligencji"
 
-#: templates/base.html:81
+#: templates/base.html:69
 msgid "University of Information Technology and Management"
 msgstr "Wyższa Szkoła Informatyki i Zarządzania"
 
-#: templates/base.html:82
+#: templates/base.html:70
 msgid "Sucharskiego St. 2"
 msgstr "ul. Sucharskiego 2"
 
-#: templates/base.html:83
+#: templates/base.html:71
 msgid "35-225 Rzeszow, PL"
 msgstr "35-225 Rzeszów, PL"
 
-#: templates/base.html:86
+#: templates/base.html:74
 msgid "MelanomaWebApp"
 msgstr "MelanomaWebApp"
+
+#: templates/definitions.html:6
+msgid "Definitions subpage"
+msgstr "Podstrona Definicje"
+
+#: templates/detection.html:6
+msgid "Detection subpage"
+msgstr "Podstrona Wykrywanie"
 
 #: templates/diagnostics.html:3
 msgid "Diagnostics - Melanoma Analysis"
@@ -178,3 +210,8 @@ msgstr "Rozpocznij diagnostykę"
 #: templates/index.html:9
 msgid "Learn More"
 msgstr "Dowiedz się więcej"
+
+#: templates/prevention.html:6
+msgid "Prevention subpage"
+msgstr "Podstrona Profilaktyka"
+

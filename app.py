@@ -14,16 +14,13 @@ app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 app.config['BABEL_TRANSLATION_DIRECTORIES'] = './translations'
 
 def get_locale():
-    # Check if the language query parameter is set and valid
     if 'lang' in request.args:
         lang = request.args.get('lang')
         if lang in ['en', 'pl']:
             session['lang'] = lang
             return session['lang']
-    # If not set via query, check if we have it stored in the session
     elif 'lang' in session:
         return session.get('lang')
-    # Otherwise, use the browser's preferred language
     return request.accept_languages.best_match(['en', 'pl'])
 
 def get_timezone():
@@ -32,7 +29,6 @@ def get_timezone():
         return user.timezone
 
 babel = Babel(app, locale_selector=get_locale, timezone_selector=get_timezone)
-
 
 @app.route('/setlang')
 def setlang():
@@ -46,8 +42,9 @@ def inject_babel():
 
 @app.context_processor
 def inject_locale():
-    # This makes the function available directly, allowing you to call it in the template
     return {'get_locale': get_locale}
+
+
 
 @app.route("/")
 def index():
@@ -68,11 +65,11 @@ def diagnostics():
 
         
         if tds <= 4.75:
-            tds_message = _l("Based on the TDS, the lesion is likely benign.")
+            tds_message = _("Based on the TDS, the lesion is likely benign.")
         elif 4.75 < tds <= 5.45:
-            tds_message = _l("Based on the TDS, the lesion is suspicious.")
+            tds_message = _("Based on the TDS, the lesion is suspicious.")
         else:
-            tds_message = _l("Based on the TDS, the lesion is likely malignant.")
+            tds_message = _("Based on the TDS, the lesion is likely malignant.")
 
 
         color_weights = {
@@ -100,11 +97,11 @@ def diagnostics():
 
 
         if new_tds <= 4.85:
-            new_tds_message = _l("Based on the improved TDS, the lesion is likely benign.")
+            new_tds_message = _("Based on the improved TDS, the lesion is likely benign.")
         elif 4.85 < new_tds < 5.45:
-            new_tds_message = _l("Based on the improved TDS, the lesion is suspicious.")
+            new_tds_message = _("Based on the improved TDS, the lesion is suspicious.")
         else:
-            new_tds_message = _l("Based on the improved TDS, the lesion is likely malignant.")
+            new_tds_message = _("Based on the improved TDS, the lesion is likely malignant.")
 
         return render_template(
             "diagnostics.html",
@@ -115,6 +112,18 @@ def diagnostics():
         )
 
     return render_template("diagnostics.html")
+
+@app.route("/definitions")
+def definitions():
+    return render_template("definitions.html")
+
+@app.route("/detection")
+def detection():
+    return render_template("detection.html")
+
+@app.route("/prevention")
+def prevention():
+    return render_template("prevention.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
