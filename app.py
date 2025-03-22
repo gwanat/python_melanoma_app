@@ -113,17 +113,17 @@ def diagnostics():
 
     return render_template("diagnostics.html")
 
-@app.route("/definitions")
-def definitions():
-    return render_template("definitions.html")
+@app.route("/characteristics")
+def characteristics():
+    return render_template("characteristics.html")
 
-@app.route("/detection")
-def detection():
-    return render_template("detection.html")
+@app.route("/publications")
+def publications():
+    return render_template("publications.html")
 
-@app.route("/prevention")
-def prevention():
-    return render_template("prevention.html")
+@app.route("/industry")
+def industry():
+    return render_template("industry.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

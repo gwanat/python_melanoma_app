@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-03-19 07:19+0100\n"
+"POT-Creation-Date: 2025-03-22 08:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,15 +58,15 @@ msgid "About Melanoma"
 msgstr ""
 
 #: templates/base.html:37
-msgid "Definitions"
+msgid "Characteristics"
 msgstr ""
 
 #: templates/base.html:38
-msgid "Detection"
+msgid "Publications"
 msgstr ""
 
 #: templates/base.html:39
-msgid "Prevention"
+msgid "Industry"
 msgstr ""
 
 #: templates/base.html:45 templates/base.html:47
@@ -97,12 +97,8 @@ msgstr ""
 msgid "MelanomaWebApp"
 msgstr ""
 
-#: templates/definitions.html:6
-msgid "Definitions subpage"
-msgstr ""
-
-#: templates/detection.html:6
-msgid "Detection subpage"
+#: templates/characteristics.html:6
+msgid "Characteristics subpage"
 msgstr ""
 
 #: templates/diagnostics.html:3
@@ -209,7 +205,11 @@ msgstr ""
 msgid "Learn More"
 msgstr ""
 
-#: templates/prevention.html:6
-msgid "Prevention subpage"
+#: templates/industry.html:6
+msgid "Industry subpage"
+msgstr ""
+
+#: templates/publications.html:6
+msgid "Publications subpage"
 msgstr ""
 

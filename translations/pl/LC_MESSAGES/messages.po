@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-03-19 07:19+0100\n"
+"POT-Creation-Date: 2025-03-22 08:21+0100\n"
 "PO-Revision-Date: 2025-03-18 16:16+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
@@ -60,16 +60,16 @@ msgid "About Melanoma"
 msgstr "O Melanomie"
 
 #: templates/base.html:37
-msgid "Definitions"
-msgstr "Definicje"
+msgid "Characteristics"
+msgstr "Charakterystyka"
 
 #: templates/base.html:38
-msgid "Detection"
-msgstr "Wykrywanie"
+msgid "Publications"
+msgstr "Publikacje"
 
 #: templates/base.html:39
-msgid "Prevention"
-msgstr "Profilaktyka"
+msgid "Industry"
+msgstr "Branża"
 
 #: templates/base.html:45 templates/base.html:47
 msgid "Polski"
@@ -99,13 +99,9 @@ msgstr "35-225 Rzeszów, PL"
 msgid "MelanomaWebApp"
 msgstr "MelanomaWebApp"
 
-#: templates/definitions.html:6
-msgid "Definitions subpage"
-msgstr "Podstrona Definicje"
-
-#: templates/detection.html:6
-msgid "Detection subpage"
-msgstr "Podstrona Wykrywanie"
+#: templates/characteristics.html:6
+msgid "Characteristics subpage"
+msgstr "Podstrona Charakterystyka"
 
 #: templates/diagnostics.html:3
 msgid "Diagnostics - Melanoma Analysis"
@@ -211,7 +207,10 @@ msgstr "Rozpocznij diagnostykę"
 msgid "Learn More"
 msgstr "Dowiedz się więcej"
 
-#: templates/prevention.html:6
-msgid "Prevention subpage"
-msgstr "Podstrona Profilaktyka"
+#: templates/industry.html:6
+msgid "Industry subpage"
+msgstr "Podstrona Branża"
 
+#: templates/publications.html:6
+msgid "Publications subpage"
+msgstr "Podstrona Publikacje"
