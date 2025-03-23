@@ -69,8 +69,8 @@ main {
 .hero-content {
     position: absolute;
     top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+    left: 8%;
+    transform: translateY(-50%); 
     text-align: left;
     color: white;
 }
@@ -80,12 +80,11 @@ main {
     font-weight: 300;
     letter-spacing: 1px;
     margin-bottom: 2rem;
-    margin-left: 5px;
+    padding-left: 5px;
     font-family: 'Oswald', sans-serif;
 }
 .hero-buttons .btn {
     padding: 0.8rem 2rem;
-    margin-left: 2rem;
     border-radius: 16px;
     font-weight: 500;
 }
@@ -203,22 +202,56 @@ footer {
    text-decoration: none;
  } 
 
+.nav-item.dropdown {
+    position: relative;
+}
+
 .dropdown-menu {
-    background-color: var(--background);
-    border: none;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    text-align: center;
     min-width: 180px;
-    padding: 0.5rem 0;
+    border: 1px solid rgba(45, 62, 80, 0.15) !important;
+    margin-top: 8px;
+    padding: 0.75rem 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .dropdown-item {
+    padding: 0.6rem 1.5rem !important;
+    font-size: 0.95rem;
     color: var(--primary-blue) !important;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .dropdown-item:hover {
-    background-color: rgba(47, 62, 80, 0.1);
+    background: rgba(45, 62, 80, 0.05) !important;
     color: #4f6277 !important;
+    transform: translateX(3px);
+}
+
+.form-check-input {
+    background-color: #f8fafc;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.form-check-input:hover {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 2px rgba(45, 62, 80, 0.1);
+    transition: all 0.15s ease-in-out;
+}
+
+.btn-secondary {
+    background-color: var(--primary-blue) !important; /* Original color */
+    border-color: var(--primary-blue) !important;
+    transition: background-color 0.3s ease, border-color 0.3s ease !important;
+}
+
+.btn-secondary:hover {
+    background-color: #4f6277 !important; /* Navbar's hover color */
+    border-color: #4f6277 !important;
 }

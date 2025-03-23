@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-03-22 08:21+0100\n"
+"POT-Creation-Date: 2025-03-23 06:48+0100\n"
 "PO-Revision-Date: 2025-03-18 16:16+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
@@ -201,11 +201,11 @@ msgstr "Skórnych Zmian Melanocytowych"
 
 #: templates/index.html:8
 msgid "Start Diagnosis"
-msgstr "Rozpocznij diagnostykę"
+msgstr "Zacznij diagnostykę"
 
 #: templates/index.html:9
 msgid "Learn More"
-msgstr "Dowiedz się więcej"
+msgstr "Czytaj więcej"
 
 #: templates/industry.html:6
 msgid "Industry subpage"
@@ -214,3 +214,4 @@ msgstr "Podstrona Branża"
 #: templates/publications.html:6
 msgid "Publications subpage"
 msgstr "Podstrona Publikacje"
+
