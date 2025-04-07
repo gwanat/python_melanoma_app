@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-03-23 06:48+0100\n"
+"POT-Creation-Date: 2025-04-07 15:40+0200\n"
 "PO-Revision-Date: 2025-03-18 16:16+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
@@ -63,7 +63,7 @@ msgstr "O Melanomie"
 msgid "Characteristics"
 msgstr "Charakterystyka"
 
-#: templates/base.html:38
+#: templates/base.html:38 templates/publications.html:6
 msgid "Publications"
 msgstr "Publikacje"
 
@@ -111,89 +111,138 @@ msgstr "Diagnostyka - Analiza zmiany skórnej"
 msgid "Melanoma Diagnostics"
 msgstr "Diagnostyka zmiany skórnej"
 
-#: templates/diagnostics.html:12
-msgid "Asymmetry (A):"
-msgstr "Asymetria (A):"
+#: templates/diagnostics.html:13
+msgid "Asymmetry (A)"
+msgstr "Asymetria (A)"
 
-#: templates/diagnostics.html:14
+#: templates/diagnostics.html:19
+msgid " Measures whether the shape of the lesion is uneven."
+msgstr " Uwzględnia nierównomierność w kształcie zmiany."
+
+#: templates/diagnostics.html:23
 msgid "0 (Symmetrical)"
 msgstr "0 (Symetryczna)"
 
-#: templates/diagnostics.html:15
+#: templates/diagnostics.html:24
 msgid "1 (One-Axial Asymmetry)"
 msgstr "1 (Jednoosiowa Asymetria)"
 
-#: templates/diagnostics.html:16
+#: templates/diagnostics.html:25
 msgid "2 (Two-Axial Asymmetry)"
 msgstr "2 (Dwuosiowa Asymetria)"
 
-#: templates/diagnostics.html:21
-msgid "Border (B):"
-msgstr "Brzeg (B):"
+#: templates/diagnostics.html:35
+msgid "More about the Asymmetry factor"
+msgstr "Więcej o czynniku Asymetrii"
 
-#: templates/diagnostics.html:26
-msgid "Colors (C):"
-msgstr "Kolory (C):"
+#: templates/diagnostics.html:41 templates/diagnostics.html:78
+#: templates/diagnostics.html:136 templates/diagnostics.html:198
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n"
+"                                        Proin sit amet magna id mauris "
+"luctus cursus. Proin in ante pharetra, \n"
+"                                        venenatis nisi feugiat, accumsan "
+"neque. Fusce rutrum arcu tellus, \n"
+"                                        sit amet rutrum est fringilla id."
+" Maecenas in nisl nec nisl vestibulum \n"
+"                                        aliquet. Morbi a metus mauris. "
+"Donec vel odio eu orci condimentum pulvinar. \n"
+"                                        Etiam porta odio et sagittis "
+"tincidunt. Etiam pulvinar nibh mauris, at faucibus \n"
+"                                        augue scelerisque rutrum. "
+msgstr ""
 
-#: templates/diagnostics.html:29
+#: templates/diagnostics.html:56
+msgid "Border (B)"
+msgstr "Brzeg (B)"
+
+#: templates/diagnostics.html:61
+msgid " Measures irregularity of the lesion divided into eight sections."
+msgstr " Uwzględnia nieregularność zmiany podzielonej na 8 sekcji."
+
+#: templates/diagnostics.html:73
+msgid "More about the Border factor"
+msgstr "Więcej o czynniku Brzegu"
+
+#: templates/diagnostics.html:93
+msgid "Color (C)"
+msgstr "Kolor (C)"
+
+#: templates/diagnostics.html:98
+msgid " Measures presence of multiple colors within the lesion."
+msgstr " Uwzględnia obecność różnych kolorów w obrębie zmiany."
+
+#: templates/diagnostics.html:104
 msgid "Light Brown"
 msgstr "Jasny brąz"
 
-#: templates/diagnostics.html:33
+#: templates/diagnostics.html:109
 msgid "Dark Brown"
 msgstr "Ciemny brąz"
 
-#: templates/diagnostics.html:37
+#: templates/diagnostics.html:113
 msgid "Red"
 msgstr "Czerwony"
 
-#: templates/diagnostics.html:41
+#: templates/diagnostics.html:117
 msgid "White"
 msgstr "Biały"
 
-#: templates/diagnostics.html:45
+#: templates/diagnostics.html:121
 msgid "Blue/Grey"
 msgstr "Niebieski/Szary"
 
-#: templates/diagnostics.html:50
-msgid "Diversity of Structures (D):"
-msgstr "Różnorodność struktury (D):"
+#: templates/diagnostics.html:131
+msgid "More about the Color factor"
+msgstr "Więcej o czynniku Koloru"
 
-#: templates/diagnostics.html:53
+#: templates/diagnostics.html:151
+msgid "Diversity of Structures (D)"
+msgstr "Różnorodność struktury (D)"
+
+#: templates/diagnostics.html:157
+msgid " Measures variety of patterns and structures within the lesion."
+msgstr " Uwzględnia różnorodność wzorców i struktur w obrebie zmiany."
+
+#: templates/diagnostics.html:163
 msgid "Pigment Networks"
 msgstr "Sieć barwnikowa"
 
-#: templates/diagnostics.html:57
+#: templates/diagnostics.html:168
 msgid "Pigment Dots"
 msgstr "Kropki barwnikowe"
 
-#: templates/diagnostics.html:61
+#: templates/diagnostics.html:173
 msgid "Pigment Globules"
 msgstr "Ciałka barwnikowe"
 
-#: templates/diagnostics.html:65
+#: templates/diagnostics.html:178
 msgid "Branched Streaks"
 msgstr "Rozgałęzienia pasmowate"
 
-#: templates/diagnostics.html:69
+#: templates/diagnostics.html:183
 msgid "Structureless Areas"
 msgstr "Pole bezstrukturalne"
 
-#: templates/diagnostics.html:74
+#: templates/diagnostics.html:193
+msgid "More about the Diversity of Structures factor"
+msgstr "Więcej o czynniku Różnorodności struktury"
+
+#: templates/diagnostics.html:212
 msgid "Submit"
 msgstr "Zatwierdź"
 
-#: templates/diagnostics.html:80
+#: templates/diagnostics.html:218
 msgid "Total Dermatoscopy Score:"
 msgstr "Całkowity wskaźnik dermatoskopowy:"
 
-#: templates/diagnostics.html:82
+#: templates/diagnostics.html:220
 msgid "New Total Dermatoscopy Score:"
 msgstr "Nowy całkowity wskaźnik dermatoskopowy:"
 
 #: templates/index.html:6
-msgid "Advanced Diagnostic System for"
-msgstr "Zaawansowany System Diagnostyki dla"
+msgid "Diagnostic System for"
+msgstr "System Diagnostyki dla"
 
 #: templates/index.html:6
 msgid "Melanocytic Skin Lesions"
@@ -211,7 +260,213 @@ msgstr "Czytaj więcej"
 msgid "Industry subpage"
 msgstr "Podstrona Branża"
 
-#: templates/publications.html:6
-msgid "Publications subpage"
-msgstr "Podstrona Publikacje"
+#: templates/publications.html:11
+msgid "Piątek Ł., Fiedler P., Haueisen J."
+msgstr ""
+
+#: templates/publications.html:12
+msgid ""
+"Eye state classification from electroencephalography recordings using "
+"machine learning algorithms."
+msgstr ""
+"Klasyfikacja stanu oczu na podstawie zapisów elektroencefalograficznych "
+"przy użyciu algorytmów uczenia maszynowego."
+
+#: templates/publications.html:13
+msgid "Digital Medicine journal"
+msgstr ""
+
+#: templates/publications.html:13
+msgid "Issue: 2, Volume: 4, pp.84-95, 2018."
+msgstr ""
+
+#: templates/publications.html:14 templates/publications.html:20
+msgid "DOI:"
+msgstr ""
+
+#: templates/publications.html:17 templates/publications.html:23
+msgid "Piątek Ł., Grzymała-Busse J.W."
+msgstr ""
+
+#: templates/publications.html:18 templates/publications.html:24
+msgid ""
+"LEMRG – Decision Rule Generations Algorithm for Mining MicroRNA "
+"Expression Data."
+msgstr ""
+
+#: templates/publications.html:19
+msgid "In: Shen B. (Eds.),"
+msgstr ""
+
+#: templates/publications.html:19
+msgid "Healthcare and Big Data Management"
+msgstr ""
+
+#: templates/publications.html:19
+msgid ""
+"Advances in Experimental Medicine and Biology, vol 1028, pp 105-37. "
+"Springer, Singapore, 2017."
+msgstr ""
+
+#: templates/publications.html:25
+msgid ""
+"Proc. of the 1st International Conference of Digital Medicine & Medical "
+"3D Printing, Nanjing, China, June 17-19, 2016."
+msgstr ""
+
+#: templates/publications.html:28
+msgid "Grzymała-Busse J.W., Piątek Ł."
+msgstr ""
+
+#: templates/publications.html:29
+msgid ""
+"LEMRG – Decision Rule Generations Algorithm for Large Datasets. The "
+"Preliminary Research."
+msgstr ""
+
+#: templates/publications.html:30 templates/publications.html:35
+#: templates/publications.html:55 templates/publications.html:60
+msgid "In: Nowakowski A. (Ed.),"
+msgstr ""
+
+#: templates/publications.html:30 templates/publications.html:35
+msgid "INFOBAZY’2014"
+msgstr ""
+
+#: templates/publications.html:30 templates/publications.html:35
+msgid ""
+"Inspiration, integration, implementation. Centrum Informatyczne TASK, "
+"Gdańsk-Sopot, Poland, September 8-10, 2014 (in Polish)."
+msgstr ""
+
+#: templates/publications.html:33
+msgid "Hippe Z.S., Piątek Ł."
+msgstr ""
+
+#: templates/publications.html:34
+msgid "A New Internet System of Melanocytic Lesions. The Current Status."
+msgstr ""
+
+#: templates/publications.html:38
+msgid "Piątek Ł., Hippe Z.S."
+msgstr ""
+
+#: templates/publications.html:39
+#, fuzzy
+msgid "Synthesis of Selected Melanocytic Skin Lesion Features."
+msgstr "Skórnych Zmian Melanocytowych"
+
+#: templates/publications.html:40
+msgid ""
+"Proc. of the 27th Image and Vision Computing New Zealand (IVCNZ’2012), "
+"Dunedin, New Zealand, November 26-28, 2012."
+msgstr ""
+
+#: templates/publications.html:43
+msgid "Grzymała-Busse J.W., Hippe Z.S., Piątek Ł."
+msgstr ""
+
+#: templates/publications.html:44
+msgid "Synthesis of Shapes in the Domain of Melanocytic Skin Lesions."
+msgstr ""
+
+#: templates/publications.html:45
+msgid ""
+"Proc. of the International Conference on Applied and Theoretical "
+"Information Systems Research (ATISR’2012), Taipei, Taiwan, February "
+"10-12, 2012."
+msgstr ""
+
+#: templates/publications.html:48
+msgid "Piątek Ł., Pancerz K., Owsiany G."
+msgstr ""
+
+#: templates/publications.html:49
+msgid ""
+"Validation of Data Categorization Using Extensions of Information "
+"Systems: Experiments on Melanocytic Skin Lesion Data."
+msgstr ""
+
+#: templates/publications.html:50
+msgid "In: Ganzha M., Maciaszek L., Paprzycki M. (Eds.),"
+msgstr ""
+
+#: templates/publications.html:50
+msgid ""
+"Proc. of the Federated Conference on Computer Science and Information "
+"Systems (FedCSIS’2011), Szczecin, Poland, September 18-21, 2011, "
+"pp.147-151."
+msgstr ""
+
+#: templates/publications.html:53
+msgid "Piątek Ł., Hippe Z.S., Grzymała-Busse J.W."
+msgstr ""
+
+#: templates/publications.html:54
+msgid ""
+"Research Over Algorithms of Synthesis Static Images of Melanocytic Skin "
+"Lesions."
+msgstr ""
+
+#: templates/publications.html:55 templates/publications.html:60
+msgid "INFOBAZY’2011"
+msgstr ""
+
+#: templates/publications.html:55
+msgid ""
+"Databases for Science, European Projects, and Information Society. "
+"Centrum Informatyczne TASK, Gdańsk, Poland, September 5-7, 2011, "
+"pp.162-167 (in Polish)."
+msgstr ""
+
+#: templates/publications.html:58
+msgid "Pancerz K., Piątek Ł., Wrzesień M."
+msgstr ""
+
+#: templates/publications.html:59
+msgid ""
+"Validation of Algorithms of Synthesis Medical Images, Using Methods of "
+"Constructive Induction and Rough Sets."
+msgstr ""
+
+#: templates/publications.html:60
+msgid ""
+"Databases for Science, European Projects, and Information Society. "
+"Centrum Informatyczne TASK, Gdańsk, Poland, September 5-7, 2011, "
+"pp.178-183 (in Polish)."
+msgstr ""
+
+#: templates/publications.html:63
+msgid "Piątek Ł., Owsiany G."
+msgstr ""
+
+#: templates/publications.html:64
+msgid "Synthesis of Static Medical Images Using Machine Learning Methods."
+msgstr ""
+
+#: templates/publications.html:65
+msgid ""
+"Proc. of the 3rd International Conference on Intelligent Information and "
+"Engineering Systems (INFOS’2010), ITHEA International Scientific Society "
+"Edit Office, Rzeszów, Krynica-Zdrój, Poland, September 20-24, 2010."
+msgstr ""
+
+#: templates/publications.html:68
+msgid "Piątek Ł."
+msgstr ""
+
+#: templates/publications.html:69
+msgid ""
+"Research Over Algorithms of Synthesis Static Biomedical Images – An "
+"Example of Melanocytic Skin Lesions."
+msgstr ""
+
+#: templates/publications.html:70
+msgid ""
+"Ph.D. Thesis, Gdańsk Technical University, Faculty of Electronics, "
+"Telecommunications, and Informatics, Gdańsk, Poland, 2010 (in Polish)."
+msgstr ""
+
+#~ msgid "Publications subpage"
+#~ msgstr "Podstrona Publikacje"
 
