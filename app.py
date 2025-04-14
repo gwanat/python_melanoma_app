@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, session, redirect, g
 from flask_babel import Babel, _,lazy_gettext as _l, gettext
+from lesions_data import lesions
 
 import os
 from dotenv import load_dotenv
@@ -44,11 +45,13 @@ def inject_babel():
 def inject_locale():
     return {'get_locale': get_locale}
 
-
-
 @app.route("/")
 def index():
     return render_template("index.html")
+
+@app.route("/abcd_formula")
+def abcd_formula():
+    return render_template("abcd_formula.html")
 
 @app.route("/diagnostics", methods=["GET", "POST"])
 def diagnostics():
@@ -115,7 +118,7 @@ def diagnostics():
 
 @app.route("/characteristics")
 def characteristics():
-    return render_template("characteristics.html")
+    return render_template("characteristics.html", lesions=lesions)
 
 @app.route("/publications")
 def publications():

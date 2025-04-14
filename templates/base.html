@@ -23,8 +23,17 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="{{ url_for('index') }}">{{ _('Home') }}</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="{{ url_for('diagnostics') }}">{{ _('Diagnostics') }}</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
+                                {{ _('Diagnostics') }}
+                                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                                    <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end bg-light text-center">
+                                <a class="dropdown-item text-secondary" href="{{ url_for('abcd_formula') }}">{{ _('About ABCD Formula') }}</a>
+                                <a class="dropdown-item text-secondary" href="{{ url_for('diagnostics') }}">{{ _('Diagnostics') }}</a>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
