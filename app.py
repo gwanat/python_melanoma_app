@@ -68,11 +68,11 @@ def diagnostics():
 
         
         if tds <= 4.75:
-            tds_message = _("Based on the TDS, the lesion is likely benign.")
+            tds_message = _("Based on the TDS, the lesion is benign.")
         elif 4.75 < tds <= 5.45:
             tds_message = _("Based on the TDS, the lesion is suspicious.")
         else:
-            tds_message = _("Based on the TDS, the lesion is likely malignant.")
+            tds_message = _("Based on the TDS, the lesion is malignant.")
 
 
         color_weights = {
@@ -100,11 +100,11 @@ def diagnostics():
 
 
         if new_tds <= 4.85:
-            new_tds_message = _("Based on the improved TDS, the lesion is likely benign.")
+            new_tds_message = _("Based on the improved TDS, the lesion is benign.")
         elif 4.85 < new_tds < 5.45:
             new_tds_message = _("Based on the improved TDS, the lesion is suspicious.")
         else:
-            new_tds_message = _("Based on the improved TDS, the lesion is likely malignant.")
+            new_tds_message = _("Based on the improved TDS, the lesion is malignant.")
 
         return render_template(
             "diagnostics.html",

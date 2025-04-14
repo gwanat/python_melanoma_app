@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-07 15:40+0200\n"
+"POT-Creation-Date: 2025-04-14 15:05+0200\n"
 "PO-Revision-Date: 2025-03-18 16:16+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
@@ -19,29 +19,150 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: app.py:68
-msgid "Based on the TDS, the lesion is likely benign."
-msgstr "Na podstawie TDS, zmiana jest najprawdopodobniej łagodna."
+#: app.py:71
+msgid "Based on the TDS, the lesion is benign."
+msgstr "Na podstawie TDS, zmiana jest łagodna."
 
-#: app.py:70
+#: app.py:73
 msgid "Based on the TDS, the lesion is suspicious."
 msgstr "Na podstawie TDS, zmiana jest podejrzana."
 
-#: app.py:72
-msgid "Based on the TDS, the lesion is likely malignant."
-msgstr "Na podstawie TDS, zmiana jest prawdopodobnie złośliwa."
+#: app.py:75
+msgid "Based on the TDS, the lesion is malignant."
+msgstr "Na podstawie TDS, zmiana jest złośliwa."
 
-#: app.py:100
-msgid "Based on the improved TDS, the lesion is likely benign."
-msgstr "Na podstawie TDS, zmiana jest najprawdopodobniej łagodna."
+#: app.py:103
+msgid "Based on the improved TDS, the lesion is benign."
+msgstr "Na podstawie TDS, zmiana jest łagodna."
 
-#: app.py:102
+#: app.py:105
 msgid "Based on the improved TDS, the lesion is suspicious."
 msgstr "Na podstawie TDS, zmiana jest podejrzana."
 
-#: app.py:104
-msgid "Based on the improved TDS, the lesion is likely malignant."
-msgstr "Na podstawie TDS, zmiana jest prawdopodobnie złośliwa."
+#: app.py:107
+msgid "Based on the improved TDS, the lesion is malignant."
+msgstr "Na podstawie TDS, zmiana jest złośliwa."
+
+#: lesions_data.py:5
+msgid "Benign Nevus"
+msgstr "Znamię łagodne"
+
+#: lesions_data.py:6
+msgid "Common benign mole, usually brown and symmetrical."
+msgstr "Powszechne łagodne znamię, zazwyczaj brązowe i symetryczne."
+
+#: lesions_data.py:7
+msgid ""
+"Melanocytic nevi, or moles, are usually uniform in color, with regular "
+"borders and symmetry. While mostly harmless, any changes in size, shape, "
+"or color should be monitored."
+msgstr ""
+"Znamiona melanocytowe (nevi) zwykle mają jednolity kolor, regularne "
+"brzegi i zachowują symetrię. Choć w większości nieszkodliwe, wszelkie "
+"zmiany rozmiaru, kształtu lub koloru powinny być monitorowane."
+
+#: lesions_data.py:12
+msgid "Seborrheic Keratosis"
+msgstr "Rogowacenie łojotokowe"
+
+#: lesions_data.py:13
+msgid "Warty, stuck-on appearance; non-cancerous."
+msgstr "Brodawkowaty, 'przyklejony' wygląd; zmiana niezłośliwa."
+
+#: lesions_data.py:14
+msgid ""
+"These lesions often appear waxy or wart-like, and may look alarming but "
+"are benign. Commonly seen in older adults and can vary in color from "
+"light tan to black."
+msgstr ""
+"Te zmiany często mają woskowatą lub brodawkowatą powierzchnię. Mimo "
+"niepokojącego wyglądu są łagodne. Występują głównie u osób starszych, "
+"mogąc przybierać kolory od jasnobrązowego do czarnego."
+
+#: lesions_data.py:19
+msgid "Superficial Spreading Melanoma"
+msgstr "Czerniak szerzący się powierzchownie"
+
+#: lesions_data.py:20
+msgid "Most common type, spreads along the surface before going deeper."
+msgstr ""
+"Najczęstszy typ, rozprzestrzenia się powierzchniowo przed penetracją "
+"głębszych warstw."
+
+#: lesions_data.py:21
+msgid ""
+"Superficial spreading melanoma starts by growing along the top layer of "
+"the skin. Over time, it may begin to grow vertically into deeper layers. "
+"It often appears as a flat or slightly raised patch with irregular "
+"borders and varying colors."
+msgstr ""
+"Ten typ czerniaka początkowo rozrasta się w warstwie powierzchniowej "
+"skóry. Z czasem może wnikać głębiej. Typowo objawia się jako płaska lub "
+"lekko wypukła zmiana o nieregularnych brzegach i zróżnicowanej "
+"kolorystyce."
+
+#: lesions_data.py:26
+msgid "Nodular Melanoma"
+msgstr "Czerniak guzkowy"
+
+#: lesions_data.py:27
+msgid "Aggressive, fast-growing melanoma that forms a bump or node."
+msgstr "Agresywna, szybko rosnąca postać tworząca wyczuwalny guzek."
+
+#: lesions_data.py:28
+msgid ""
+"Nodular melanoma often appears as a dark bump that is firm to the touch "
+"and grows rapidly. Unlike superficial spreading melanoma, it tends to "
+"grow vertically much earlier, making early detection crucial."
+msgstr ""
+"Czerniak guzkowy często manifestuje się jako ciemny, twardy guzek szybko "
+"powiększający swój rozmiar. W przeciwieństwie do postaci powierzchownej, "
+"wcześnie rozpoczyna wzrost pionowy, co czyni wczesne wykrycie szczególnie"
+" istotnym."
+
+#: lesions_data.py:33
+msgid "Lentigo Maligna Melanoma"
+msgstr "Czerniak lentigo maligna"
+
+#: lesions_data.py:34
+msgid "Appears on sun-damaged skin, usually in older adults."
+msgstr "Występuje na skórze uszkodzonej przez UV, głównie u osób starszych."
+
+#: lesions_data.py:35
+msgid ""
+"Lentigo maligna melanoma typically forms on the face, scalp, or neck of "
+"older adults with significant sun exposure history. It begins as a flat, "
+"tan or brown patch (lentigo maligna) and may slowly darken or become "
+"raised over time."
+msgstr ""
+"Ten typ czerniaka rozwija się zwykle na twarzy, owłosionej skórze głowy "
+"lub szyi u osób z długą historią ekspozycji na słońce. Początkowo jako "
+"płaska, jasnobrązowa plama (lentigo maligna), z czasem może ciemnieć i "
+"uwypuklać się."
+
+#: lesions_data.py:40
+msgid "Acral Lentiginous Melanoma"
+msgstr "Czerniak akralny lentiginowy"
+
+#: lesions_data.py:41
+msgid "Rare type, appears on palms, soles, or under nails."
+msgstr "Rzadki typ lokalizujący się na dłoniach, podeszwach lub pod paznokciami."
+
+#: lesions_data.py:42
+msgid ""
+"Acral lentiginous melanoma is more common in people with darker skin "
+"tones and often shows up on the hands, feet, or beneath fingernails and "
+"toenails. It may look like a dark stripe or spot and is frequently "
+"misdiagnosed due to its unusual location."
+msgstr ""
+"Czerniak akralny występuje częściej u osób z ciemną karnacją. Typowa "
+"lokalizacja obejmuje ręce, stopy oraz okolice podpaznokciowe. Często "
+"przybiera formę ciemnej smugi lub plamy, bywając błędnie diagnozowany z "
+"powodu nietypowej lokalizacji."
+
+#: templates/abcd_formula.html:6
+msgid "ABCD formula subpage"
+msgstr "Podstrona formuły ABCD"
 
 #: templates/base.html:10 templates/base.html:17
 msgid "Melanoma Analysis"
@@ -51,57 +172,101 @@ msgstr "Analiza Melanomy"
 msgid "Home"
 msgstr "Strona główna"
 
-#: templates/base.html:27
+#: templates/base.html:28 templates/base.html:35
 msgid "Diagnostics"
 msgstr "Diagnostyka"
 
-#: templates/base.html:31
+#: templates/base.html:34
+msgid "About ABCD Formula"
+msgstr "O formule ABCD"
+
+#: templates/base.html:40
 msgid "About Melanoma"
 msgstr "O Melanomie"
 
-#: templates/base.html:37
+#: templates/base.html:46
 msgid "Characteristics"
 msgstr "Charakterystyka"
 
-#: templates/base.html:38 templates/publications.html:6
+#: templates/base.html:47 templates/publications.html:6
 msgid "Publications"
 msgstr "Publikacje"
 
-#: templates/base.html:39
+#: templates/base.html:48
 msgid "Industry"
 msgstr "Branża"
 
-#: templates/base.html:45 templates/base.html:47
+#: templates/base.html:54 templates/base.html:56
 msgid "Polski"
 msgstr "Polski"
 
-#: templates/base.html:51 templates/base.html:53
+#: templates/base.html:60 templates/base.html:62
 msgid "English"
 msgstr "English"
 
-#: templates/base.html:68
+#: templates/base.html:77
 msgid "Department of Artificial Intelligence"
 msgstr "Katedra Sztucznej Inteligencji"
 
-#: templates/base.html:69
+#: templates/base.html:78
 msgid "University of Information Technology and Management"
 msgstr "Wyższa Szkoła Informatyki i Zarządzania"
 
-#: templates/base.html:70
+#: templates/base.html:79
 msgid "Sucharskiego St. 2"
 msgstr "ul. Sucharskiego 2"
 
-#: templates/base.html:71
+#: templates/base.html:80
 msgid "35-225 Rzeszow, PL"
 msgstr "35-225 Rzeszów, PL"
 
-#: templates/base.html:74
+#: templates/base.html:83
 msgid "MelanomaWebApp"
 msgstr "MelanomaWebApp"
 
-#: templates/characteristics.html:6
-msgid "Characteristics subpage"
-msgstr "Podstrona Charakterystyka"
+#: templates/characteristics.html:2
+msgid "Skin Lesion Characteristics"
+msgstr "Charakterystyka"
+
+#: templates/characteristics.html:7
+#, fuzzy
+msgid "Understanding Skin Lesions TESTING"
+msgstr "Skórnych Zmian Melanocytowych TESTOWANIE"
+
+#: templates/characteristics.html:8
+msgid "Read more about common skin lesions and learn how to recognize them."
+msgstr ""
+"Czytaj więcej o powszechnych zmianach skórnych i dowiedz się jak je "
+"rozróżniać."
+
+#: templates/characteristics.html:13
+msgid "What Are Melanocytic Lesions?"
+msgstr "Czym są zmiany Melanocytowe?"
+
+#: templates/characteristics.html:15
+msgid ""
+"Melanoma is a type of skin cancer that occurs when pigment-producing "
+"cells—known as melanocytes—mutate and become cancerous. Melanoma is the "
+"most serious form of skin cancer and is the fifth most common cancer "
+"among both men and women. Even though invasive melanoma accounts for only"
+" about 1 percent of all skin cancers, it is responsible for the majority "
+"of deaths from skin cancer. Melanoma is dangerous because it is more "
+"likely to spread, or metastasize, than other skin cancers, such as basal "
+"cell carcinoma and squamous cell carcinoma."
+msgstr ""
+"Czerniak to rodzaj raka skóry rozwijający się, gdy komórki pigmentowe "
+"(melanocyty) ulegają mutacji i przekształcają w komórki nowotworowe."
+"      Jest to najgroźniejsza postać raka skóry i piąty pod względem "
+"częstości nowotwór u kobiet i mężczyzn. Mimo że postać inwazyjna       "
+"stanowi zaledwie około 1 procent wszystkich nowotworów skóry, odpowiada "
+"za większość zgonów związanych z tymi schorzeniami.       "
+"Niebezpieczeństwo czerniaka wynika z jego większej skłonności do "
+"przerzutów w porównaniu z innymi nowotworami skóry,        takimi jak rak"
+" podstawnokomórkowy czy płaskonabłonkowy."
+
+#: templates/characteristics.html:36 templates/index.html:9
+msgid "Learn More"
+msgstr "Czytaj więcej"
 
 #: templates/diagnostics.html:3
 msgid "Diagnostics - Melanoma Analysis"
@@ -251,10 +416,6 @@ msgstr "Skórnych Zmian Melanocytowych"
 #: templates/index.html:8
 msgid "Start Diagnosis"
 msgstr "Zacznij diagnostykę"
-
-#: templates/index.html:9
-msgid "Learn More"
-msgstr "Czytaj więcej"
 
 #: templates/industry.html:6
 msgid "Industry subpage"
@@ -469,4 +630,7 @@ msgstr ""
 
 #~ msgid "Publications subpage"
 #~ msgstr "Podstrona Publikacje"
+
+#~ msgid "Characteristics subpage"
+#~ msgstr "Podstrona Charakterystyka"
 
