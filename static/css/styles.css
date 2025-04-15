@@ -16,10 +16,16 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
 .navbar {
     padding: 1rem 0;
-    border-bottom: none;
     background-color: var(--background) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .navbar .container-fluid {
@@ -62,9 +68,11 @@ main {
     height: 70vh;
     margin-left: calc(-50vw + 50%);
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: url('../images/plecy.png') center/cover;
+    clip-path: inset(0); 
 }
+
 
 .hero-content {
     position: absolute;
@@ -288,7 +296,7 @@ footer {
 .square-thumb-wrapper {
     width: 100%;
     aspect-ratio: 1 / 1;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -376,3 +384,32 @@ footer {
     max-width: 600px;
 }
   
+html {
+    scroll-behavior: smooth;
+}
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s ease;
+    opacity: 0.8;
+}
+
+#scrollTopBtn:hover {
+    opacity: 1;
+}
+
+#scrollTopBtn img {
+    width: 24px;
+    height: 24px;
+}

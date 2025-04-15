@@ -85,6 +85,27 @@
         </div>
     </footer>    
 
+    <button id="scrollTopBtn" title="Go to top">
+        <img src="{{ url_for('static', filename='images/arrow-up-icon.png') }}" alt="Scroll to top" />
+    </button>
+
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+    
+        window.onscroll = function () {
+            scrollTopBtn.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) 
+                ? "block" 
+                : "none";
+        };
+    
+        scrollTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>
