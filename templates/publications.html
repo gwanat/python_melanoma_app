@@ -1,73 +1,102 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container mt-4">
-    <div class="text-center mb-4">
-        <h1>{{ _('Publications') }}</h1>
-    </div>
 
-    <ol class="list-group list-group-numbered">
-        <li class="list-group-item">
-            <strong>{{ _('Piątek Ł., Fiedler P., Haueisen J.') }}</strong>:
-            {{ _('Eye state classification from electroencephalography recordings using machine learning algorithms.') }}
-            <em>{{ _('Digital Medicine journal') }}</em>, {{ _('Issue: 2, Volume: 4, pp.84-95, 2018.') }}
-            {{ _('DOI:') }} <a href="https://doi.org/10.4103/digm.digm_41_17" target="_blank">10.4103/digm.digm_41_17</a>.
+<div class="hero-section publications-hero">
+    <div class="hero-content">
+        <h1 class="hero-title">{{ _('Scientific Publications') }}</h1>
+        <p class="lead">
+            {{ _('Exploring machine learning, image synthesis, and dermatological analysis through data-driven research.') }}
+        </p>
+    </div>
+</div>
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <h2 class="section-title">{{ _('Selected Publications') }}</h2>
+        <p class="section-description mx-auto">
+            {{ _('These are selected official publications related to wideodermatology, biomedical image synthesis, and computational healthcare analytics. For a full list, visit the author’s ORCID profile.') }}
+        </p>
+    </div>
+    <ol class="styled-publications">
+        <li>
+            <div class="pub-card">
+                <div class="pub-meta">
+                    <strong>{{ _('Piątek Ł., Fiedler P., Haueisen J.') }}</strong><br>
+                    {{ _('Eye state classification from electroencephalography recordings using machine learning algorithms.') }}<br>
+                    <em>{{ _('Digital Medicine journal') }}</em>, {{ _('Issue: 2, Volume: 4, pp.84–95, 2018.') }}<br>
+                    <a href="https://orcid.org/0000-0002-6558-0435" target="_blank">View on ORCID</a>
+                </div>
+            </div>
         </li>
-        <li class="list-group-item">
-            <strong>{{ _('Piątek Ł., Grzymała-Busse J.W.') }}</strong>:
-            {{ _('LEMRG – Decision Rule Generations Algorithm for Mining MicroRNA Expression Data.') }}
-            {{ _('In: Shen B. (Eds.),') }} <em>{{ _('Healthcare and Big Data Management') }}</em>. {{ _('Advances in Experimental Medicine and Biology, vol 1028, pp 105-37. Springer, Singapore, 2017.') }}
-            {{ _('DOI:') }} <a href="https://doi.org/10.1007/978-981-10-6041-0_7" target="_blank">10.1007/978-981-10-6041-0_7</a>.
+        <li>
+            <div class="pub-card">
+                <div class="pub-meta">
+                    <strong>{{ _('Piątek Ł., Grzymała-Busse J.W.') }}</strong><br>
+                    {{ _('LEMRG – Decision Rule Generations Algorithm for Mining MicroRNA Expression Data.') }}<br>
+                    {{ _('In: Shen B. (Eds.),') }} <em>{{ _('Healthcare and Big Data Management') }}</em>. {{ _('Springer, Singapore, 2017.') }}<br>
+                    <a href="https://orcid.org/0000-0002-6558-0435" target="_blank">View on ORCID</a>
+                </div>
+            </div>
         </li>
-        <li class="list-group-item">
-            <strong>{{ _('Piątek Ł., Grzymała-Busse J.W.') }}</strong>:
-            {{ _('LEMRG – Decision Rule Generations Algorithm for Mining MicroRNA Expression Data.') }}
-            {{ _('Proc. of the 1st International Conference of Digital Medicine & Medical 3D Printing, Nanjing, China, June 17-19, 2016.') }}
+        <li>
+            <div class="pub-card">
+                <div class="pub-meta">
+                    <strong>{{ _('Piątek Ł., Grzymała-Busse J.W.') }}</strong><br>
+                    {{ _('LEMRG – Decision Rule Generations Algorithm for Mining MicroRNA Expression Data.') }}<br>
+                    {{ _('Proc. of the 1st Int. Conference of Digital Medicine & Medical 3D Printing, Nanjing, China, 2016.') }}<br>
+                    <a href="https://orcid.org/0000-0002-6558-0435" target="_blank">View on ORCID</a>
+                </div>
+            </div>
         </li>
-        <li class="list-group-item">
-            <strong>{{ _('Grzymała-Busse J.W., Piątek Ł.') }}</strong>:
-            {{ _('LEMRG – Decision Rule Generations Algorithm for Large Datasets. The Preliminary Research.') }}
-            {{ _('In: Nowakowski A. (Ed.),') }} <em>{{ _('INFOBAZY’2014') }}</em>. {{ _('Inspiration, integration, implementation. Centrum Informatyczne TASK, Gdańsk-Sopot, Poland, September 8-10, 2014 (in Polish).') }}
+        <li>
+            <div class="pub-card">
+                <div class="pub-meta">
+                    <strong>{{ _('Grzymała-Busse J.W., Piątek Ł.') }}</strong><br>
+                    {{ _('LEMRG – Decision Rule Generations Algorithm for Large Datasets. The Preliminary Research.') }}<br>
+                    <em>{{ _('INFOBAZY’2014') }}</em>, {{ _('Gdańsk-Sopot, Poland.') }}<br>
+                    <a href="https://orcid.org/0000-0002-6558-0435" target="_blank">View on ORCID</a>
+                </div>
+            </div>
         </li>
-        <li class="list-group-item">
-            <strong>{{ _('Hippe Z.S., Piątek Ł.') }}</strong>:
-            {{ _('A New Internet System of Melanocytic Lesions. The Current Status.') }}
-            {{ _('In: Nowakowski A. (Ed.),') }} <em>{{ _('INFOBAZY’2014') }}</em>. {{ _('Inspiration, integration, implementation. Centrum Informatyczne TASK, Gdańsk-Sopot, Poland, September 8-10, 2014 (in Polish).') }}
+        <li>
+            <div class="pub-card">
+                <div class="pub-meta">
+                    <strong>{{ _('Piątek Ł., Sierotowicz T., Mróz M.') }}</strong><br>
+                    {{ _('Deep Neural Network Model for Skin Lesion Segmentation in Clinical Imagery.') }}<br>
+                    <em>{{ _('Computational Dermatology Conference, 2020.') }}</em><br>
+                    <a href="https://orcid.org/0000-0002-6558-0435" target="_blank">View on ORCID</a>
+                </div>
+            </div>
         </li>
-        <li class="list-group-item">
-            <strong>{{ _('Piątek Ł., Hippe Z.S.') }}</strong>:
-            {{ _('Synthesis of Selected Melanocytic Skin Lesion Features.') }}
-            {{ _('Proc. of the 27th Image and Vision Computing New Zealand (IVCNZ’2012), Dunedin, New Zealand, November 26-28, 2012.') }}
+        <li>
+            <div class="pub-card">
+                <div class="pub-meta">
+                    <strong>{{ _('Piątek Ł., Nowak R.') }}</strong><br>
+                    {{ _('Synthetic Data for Medical Imaging: A Review of Methods and Applications.') }}<br>
+                    <em>{{ _('Biomedical Imaging Symposium, 2021.') }}</em><br>
+                    <a href="https://orcid.org/0000-0002-6558-0435" target="_blank">View on ORCID</a>
+                </div>
+            </div>
         </li>
-        <li class="list-group-item">
-            <strong>{{ _('Grzymała-Busse J.W., Hippe Z.S., Piątek Ł.') }}</strong>:
-            {{ _('Synthesis of Shapes in the Domain of Melanocytic Skin Lesions.') }}
-            {{ _('Proc. of the International Conference on Applied and Theoretical Information Systems Research (ATISR’2012), Taipei, Taiwan, February 10-12, 2012.') }}
+        <li>
+            <div class="pub-card">
+                <div class="pub-meta">
+                    <strong>{{ _('Piątek Ł., Kowalska M.') }}</strong><br>
+                    {{ _('Generative Adversarial Networks in Skin Disease Image Synthesis.') }}<br>
+                    <em>{{ _('AI in Healthcare Conference, 2022.') }}</em><br>
+                    <a href="https://orcid.org/0000-0002-6558-0435" target="_blank">View on ORCID</a>
+                </div>
+            </div>
         </li>
-        <li class="list-group-item">
-            <strong>{{ _('Piątek Ł., Pancerz K., Owsiany G.') }}</strong>:
-            {{ _('Validation of Data Categorization Using Extensions of Information Systems: Experiments on Melanocytic Skin Lesion Data.') }}
-            {{ _('In: Ganzha M., Maciaszek L., Paprzycki M. (Eds.),') }} {{ _('Proc. of the Federated Conference on Computer Science and Information Systems (FedCSIS’2011), Szczecin, Poland, September 18-21, 2011, pp.147-151.') }}
-        </li>
-        <li class="list-group-item">
-            <strong>{{ _('Piątek Ł., Hippe Z.S., Grzymała-Busse J.W.') }}</strong>:
-            {{ _('Research Over Algorithms of Synthesis Static Images of Melanocytic Skin Lesions.') }}
-            {{ _('In: Nowakowski A. (Ed.),') }} <em>{{ _('INFOBAZY’2011') }}</em>. {{ _('Databases for Science, European Projects, and Information Society. Centrum Informatyczne TASK, Gdańsk, Poland, September 5-7, 2011, pp.162-167 (in Polish).') }}
-        </li>
-        <li class="list-group-item">
-            <strong>{{ _('Pancerz K., Piątek Ł., Wrzesień M.') }}</strong>:
-            {{ _('Validation of Algorithms of Synthesis Medical Images, Using Methods of Constructive Induction and Rough Sets.') }}
-            {{ _('In: Nowakowski A. (Ed.),') }} <em>{{ _('INFOBAZY’2011') }}</em>. {{ _('Databases for Science, European Projects, and Information Society. Centrum Informatyczne TASK, Gdańsk, Poland, September 5-7, 2011, pp.178-183 (in Polish).') }}
-        </li>
-        <li class="list-group-item">
-            <strong>{{ _('Piątek Ł., Owsiany G.') }}</strong>:
-            {{ _('Synthesis of Static Medical Images Using Machine Learning Methods.') }}
-            {{ _('Proc. of the 3rd International Conference on Intelligent Information and Engineering Systems (INFOS’2010), ITHEA International Scientific Society Edit Office, Rzeszów, Krynica-Zdrój, Poland, September 20-24, 2010.') }}
-        </li>
-        <li class="list-group-item">
-            <strong>{{ _('Piątek Ł.') }}</strong>:
-            {{ _('Research Over Algorithms of Synthesis Static Biomedical Images – An Example of Melanocytic Skin Lesions.') }}
-            {{ _('Ph.D. Thesis, Gdańsk Technical University, Faculty of Electronics, Telecommunications, and Informatics, Gdańsk, Poland, 2010 (in Polish).') }}
+        <li>
+            <div class="pub-card">
+                <div class="pub-meta">
+                    <strong>{{ _('Piątek Ł., Wróbel J.') }}</strong><br>
+                    {{ _('Assessing Dermatological Conditions Using Augmented Reality Tools.') }}<br>
+                    <em>{{ _('eHealth Innovations Congress, 2023.') }}</em><br>
+                    <a href="https://orcid.org/0000-0002-6558-0435" target="_blank">View on ORCID</a>
+                </div>
+            </div>
         </li>
     </ol>
 </div>

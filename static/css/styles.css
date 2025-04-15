@@ -312,4 +312,67 @@ footer {
     font-size: 1.125rem;
     line-height: 1.7;
   }
+
+  .styled-publications {
+    counter-reset: pub-counter;
+    list-style: none;
+    padding-left: 0;
+    max-width: 850px;
+    margin: auto;
+}
+
+.styled-publications li {
+    counter-increment: pub-counter;
+    position: relative;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+.styled-publications li::before {
+    content: counter(pub-counter) ".";
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+}
+
+.pub-card {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.pub-card:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.pub-meta {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.pub-meta a {
+    font-size: 0.9rem;
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.pub-meta a:hover {
+    text-decoration: underline;
+}
+
+.publications-hero {
+    background: url("../images/publications-hero.jpg") center/cover;
+}
+
+.publications-hero .lead {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
   
