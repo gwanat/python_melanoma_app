@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="abcd-hero">
+    <div class="abcd-hero-text">
+        <h1>{{ _('ABCD Rule for Melanoma Detection') }}</h1>
+        <p class="lead">{{ _('Early detection can save lives. Learn how to assess suspicious moles using the ABCD rule.') }}</p>
+    </div>
+</div>
+<div class="container mt-4">
+
+    <section>
+        <h2 class="section-title">{{ _('What is the ABCD Rule?') }}</h2>
+        <p class="section-description">
+            {{ _('The ABCD rule is a guideline used to assess the risk of melanoma based on four key characteristics of a skin lesion: Asymmetry, Border irregularity, Color variation, and Diameter. These characteristics help doctors evaluate if a mole or lesion might be cancerous.') }}
+        </p>
+    </section>
+
+    <section class="mt-4">
+        <h2 class="section-title">{{ _('Understanding Each Factor') }}</h2>
+        
+        <div class="row align-items-center mt-4">
+            <div class="col-md-6">
+                <h3>{{ _('A: Asymmetry') }}</h3>
+                <p>{{ _('If one half of the mole doesn’t match the other half, it may indicate a problem. Cancerous moles are often asymmetric.') }}</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/a_asymmetrical.png') }}" alt="Asymmetry Example" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <div class="row align-items-center mt-4">
+            <div class="col-md-6">
+                <h3>{{ _('B: Border Irregularity') }}</h3>
+                <p>{{ _('Moles with jagged, irregular borders are more likely to be malignant.') }}</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/b_uneven.png') }}" alt="Border Irregularity Example" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <div class="row align-items-center mt-4">
+            <div class="col-md-6">
+                <h3>{{ _('C: Color Variation') }}</h3>
+                <p>{{ _('Moles with multiple colors, especially shades of brown, black, or even red and blue, can be signs of melanoma.') }}</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/c_multi.png') }}" alt="Color Variation Example" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <div class="row align-items-center mt-4">
+            <div class="col-md-6">
+                <h3>{{ _('D: Diameter') }}</h3>
+                <p>{{ _('Moles that are larger than 6mm in diameter (about the size of a pencil eraser) should be examined by a doctor.') }}</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/d_diverse.png') }}" alt="Diameter Example" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <h2 class="section-title">{{ _('Important Notes') }}</h2>
+        <p>{{ _('Remember that the ABCD rule is a guideline, not a definitive diagnostic tool. If you notice suspicious changes in a mole, seek professional medical advice for a thorough examination.') }}</p>
+    </section>
+
+    <section class="mt-5 text-center">
+        <h3>{{ _('Do you want to analyze a lesion?') }}</h3>
+        <a href="{{ url_for('diagnostics') }}" class="btn btn-secondary">{{ _('Start Diagnostics') }}</a>
+    </section>
+</div>
+{% endblock %}

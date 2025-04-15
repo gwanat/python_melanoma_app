@@ -273,14 +273,26 @@ footer {
 }
 
 .characteristics-hero {
-    height: 60vh;
-    background: url('../images/characteristics-hero.jpg') center/cover no-repeat;
+    height: 40vh;
+    background: url('../images/characteristics-hero.jpg') center 30% /cover no-repeat;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding-left: 5%;
     color: white;
+}
+
+.characteristics-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.55), transparent);
+    z-index: 0;
+    pointer-events: none;
 }
 
 .characteristics-hero {
@@ -376,7 +388,20 @@ footer {
 }
 
 .publications-hero {
-    background: url("../images/publications-hero.jpg") center/cover;
+    height: 40vh;
+    background: url("../images/publications-hero.jpeg") center/cover;
+}
+
+.publications-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.55), transparent);
+    z-index: 0;
+    pointer-events: none;
 }
 
 .publications-hero .lead {
@@ -412,4 +437,72 @@ html {
 #scrollTopBtn img {
     width: 24px;
     height: 24px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.section-description {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+img.img-fluid {
+    max-height: 150px;
+    object-fit: cover;
+    width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.row.mt-4 {
+    margin-top: 2rem;
+}
+
+.row img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.abcd-hero {
+    height: 40vh;
+    background: url('../images/abcd-hero.webp') center 60%/ cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.abcd-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.55), transparent);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.abcd-hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.abcd-hero-text .lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    max-width: 600px;
+    color: #f0f0f0;
+    margin-top: 1rem;
 }

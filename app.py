@@ -49,9 +49,9 @@ def inject_locale():
 def index():
     return render_template("index.html")
 
-@app.route("/abcd_formula")
-def abcd_formula():
-    return render_template("abcd_formula.html")
+@app.route("/abcd_rule")
+def abcd_rule():
+    return render_template("abcd_rule.html")
 
 @app.route("/diagnostics", methods=["GET", "POST"])
 def diagnostics():
