@@ -109,6 +109,11 @@
                         <label for="darkBrown" class="form-check-label">{{ _('Dark Brown') }}</label>
                     </div>
                     <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="colors" value="C_Black"
+                            id="black">
+                        <label for="black" class="form-check-label">{{ _('Black') }}</label>
+                    </div>
+                    <div class="form-check">
                         <input type="checkbox" class="form-check-input" name="colors" value="C_Red" id="red">
                         <label for="red" class="form-check-label">{{ _('Red') }}</label>
                     </div>
@@ -119,6 +124,10 @@
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" name="colors" value="C_Blue" id="blue">
                         <label for="blue" class="form-check-label">{{ _('Blue/Grey') }}</label>
+                    </div>
+                    <div id="blueDominantContainer" class="form-check ms-4" style="display: none;">
+                        <input type="checkbox" class="form-check-input" name="blue_dominant" value="1" id="blue_dominant">
+                        <label for="blue_dominant" class="form-check-label text-muted">{{ _('Blue covers over half?') }}</label>
                     </div>
                 </div>
 
@@ -223,4 +232,21 @@
         {% endif %}
     </div>
 </main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const blueCheckbox = document.getElementById('blue');
+        const blueDominantContainer = document.getElementById('blueDominantContainer');
+
+        blueCheckbox.addEventListener('change', function () {
+            if (blueCheckbox.checked) {
+                blueDominantContainer.style.display = 'block';
+            } else {
+                blueDominantContainer.style.display = 'none';
+                document.getElementById('blue_dominant').checked = false;
+            }
+        });
+    });
+</script>
+
 {% endblock %}

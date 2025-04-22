@@ -60,6 +60,7 @@ def diagnostics():
         asymmetry = int(request.form["asymmetry"])
         border = int(request.form["border"])
         colors = request.form.getlist("colors")
+        blue_dominant = request.form.get("blue_dominant") == "1"
         structures = request.form.getlist("structures")
         
         color_count = len(colors)
@@ -67,21 +68,23 @@ def diagnostics():
         tds = (1.3 * asymmetry) + (0.1 * border) + (0.5 * color_count) + (0.5 * structure_count)
 
         
-        if tds <= 4.75:
-            tds_message = _("Based on the TDS, the lesion is benign.")
+        if tds <= 4.75 and blue_dominant:
+            tds_message = _("Based on the Total Dermatoscopy Score (TSD), the lesion is a benign blue nevus.")
+        elif tds <= 4.75:
+            tds_message = _("Based on the Total Dermatoscopy Score (TSD), the lesion is benign.")
         elif 4.75 < tds <= 5.45:
-            tds_message = _("Based on the TDS, the lesion is suspicious.")
+            tds_message = _("Based on the Total Dermatoscopy Score (TSD), the lesion is suspicious.")
         else:
-            tds_message = _("Based on the TDS, the lesion is malignant.")
+            tds_message = _("Based on the Total Dermatoscopy Score (TSD), the lesion is malignant.")
 
 
         color_weights = {
-            "C_White": 0.5,
-            "C_Blue": 0.8,
-            "C_DarkBrown": 0.5,
             "C_LightBrown": 0.6,
+            "C_DarkBrown": 0.5,
             "C_Black": 0.5,
-            "C_Red": 0.5
+            "C_Red": 0.5,
+            "C_White": 0.5,
+            "C_Blue": 0.8
         }
 
         structure_weights = {
@@ -99,12 +102,14 @@ def diagnostics():
             new_tds += structure_weights.get(structure, 0)
 
 
-        if new_tds <= 4.85:
-            new_tds_message = _("Based on the improved TDS, the lesion is benign.")
+        if new_tds <= 4.85  and blue_dominant:
+            new_tds_message = _("Based on the New Total Dermatoscopy Score (TSD), the lesion is a benign blue nevus.")
+        elif new_tds <= 4.85:
+            new_tds_message = _("Based on the New Total Dermatoscopy Score (TSD), the lesion is benign.")
         elif 4.85 < new_tds < 5.45:
-            new_tds_message = _("Based on the improved TDS, the lesion is suspicious.")
+            new_tds_message = _("Based on the New Total Dermatoscopy Score (TSD), the lesion is suspicious.")
         else:
-            new_tds_message = _("Based on the improved TDS, the lesion is malignant.")
+            new_tds_message = _("Based on the New Total Dermatoscopy Score (TSD), the lesion is malignant.")
 
         return render_template(
             "diagnostics.html",

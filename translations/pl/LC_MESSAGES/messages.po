@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-15 06:43+0200\n"
+"POT-Creation-Date: 2025-04-22 13:07+0200\n"
 "PO-Revision-Date: 2025-03-18 16:16+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
@@ -19,29 +19,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: app.py:71
-msgid "Based on the TDS, the lesion is benign."
-msgstr "Na podstawie TDS, zmiana jest łagodna."
+#: app.py:72
+msgid ""
+"Based on the Total Dermatoscopy Score, the lesion is a benign blue nevus."
+msgstr ""
+"Na podstawie Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest znamieniem "
+"błękitnym."
 
-#: app.py:73
-msgid "Based on the TDS, the lesion is suspicious."
-msgstr "Na podstawie TDS, zmiana jest podejrzana."
+#: app.py:74
+msgid "Based on the Total Dermatoscopy Score, the lesion is benign."
+msgstr "Na podstawie Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest łagodna."
 
-#: app.py:75
-msgid "Based on the TDS, the lesion is malignant."
-msgstr "Na podstawie TDS, zmiana jest złośliwa."
+#: app.py:76
+msgid "Based on the Total Dermatoscopy Score, the lesion is suspicious."
+msgstr "Na podstawie Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest podejrzana."
 
-#: app.py:103
-msgid "Based on the improved TDS, the lesion is benign."
-msgstr "Na podstawie TDS, zmiana jest łagodna."
+#: app.py:78
+msgid "Based on the Total Dermatoscopy Score, the lesion is malignant."
+msgstr "Na podstawie Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest złośliwa."
 
-#: app.py:105
-msgid "Based on the improved TDS, the lesion is suspicious."
-msgstr "Na podstawie TDS, zmiana jest podejrzana."
+#: app.py:106
+msgid ""
+"Based on the New Total Dermatoscopy Score, the lesion is a benign blue "
+"nevus."
+msgstr ""
+"Na podstawie Nowego Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest znamieniem "
+"błękitnym."
 
-#: app.py:107
-msgid "Based on the improved TDS, the lesion is malignant."
-msgstr "Na podstawie TDS, zmiana jest złośliwa."
+#: app.py:108
+msgid "Based on the New Total Dermatoscopy Score, the lesion is benign."
+msgstr "Na podstawie Nowego Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest łagodna."
+
+#: app.py:110
+msgid "Based on the New Total Dermatoscopy Score, the lesion is suspicious."
+msgstr "Na podstawie Nowego Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest podejrzana."
+
+#: app.py:112
+msgid "Based on the New Total Dermatoscopy Score, the lesion is malignant."
+msgstr "Na podstawie Nowego Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest złośliwa."
 
 #: lesions_data.py:5
 msgid "Benign Nevus"
@@ -160,9 +175,97 @@ msgstr ""
 "przybiera formę ciemnej smugi lub plamy, bywając błędnie diagnozowany z "
 "powodu nietypowej lokalizacji."
 
-#: templates/abcd_formula.html:6
-msgid "ABCD formula subpage"
-msgstr "Podstrona formuły ABCD"
+#: templates/abcd_rule.html:6
+msgid "ABCD Rule for Melanoma Detection"
+msgstr "Formuła ABCD dla Wykrywania Czerniaka"
+
+#: templates/abcd_rule.html:7
+msgid ""
+"Early detection can save lives. Learn how to assess suspicious moles "
+"using the ABCD rule."
+msgstr ""
+"Wczesna diagnoza może uratować życie. Dowiedz się jak rozróżniać "
+"podejrzane zmiany korzystając z formuły ABCD."
+
+#: templates/abcd_rule.html:13
+msgid "What is the ABCD Rule?"
+msgstr "Czym jest fromuła ABCD?"
+
+#: templates/abcd_rule.html:15
+#, fuzzy
+msgid ""
+"The ABCD rule is a guideline used to assess the risk of melanoma based on"
+" four key characteristics of a skin lesion: Asymmetry, Border "
+"irregularity, Color variation, and Diversity of structure. These "
+"characteristics help doctors evaluate if a mole or lesion might be "
+"cancerous."
+msgstr ""
+"Zasada ABCD to wytyczna stosowana do oceny ryzyka wystąpienia czerniaka "
+"na podstawieczterech kluczowych cech zmiany skórnej: asymetrii, "
+"nieregularności obrzeża, zmienności koloru i struktury. Cechy te pomagają"
+" lekarzom ocenić, czy znamię lub zmiana może być nowotworowa. "
+
+#: templates/abcd_rule.html:20
+msgid "Understanding Each Factor"
+msgstr "Zrozumienie każdego z czynników"
+
+#: templates/abcd_rule.html:24
+msgid "A: Asymmetry"
+msgstr "A: Asymetria"
+
+#: templates/abcd_rule.html:25
+msgid ""
+"If one half of the mole doesn’t match the other half, it may indicate a "
+"problem. Cancerous moles are often asymmetric."
+msgstr ""
+
+#: templates/abcd_rule.html:34
+msgid "B: Border Irregularity"
+msgstr ""
+
+#: templates/abcd_rule.html:35
+msgid "Moles with jagged, irregular borders are more likely to be malignant."
+msgstr ""
+
+#: templates/abcd_rule.html:44
+msgid "C: Color Variation"
+msgstr ""
+
+#: templates/abcd_rule.html:45
+msgid ""
+"Moles with multiple colors, especially shades of brown, black, or even "
+"red and blue, can be signs of melanoma."
+msgstr ""
+
+#: templates/abcd_rule.html:54
+msgid "D: Diameter"
+msgstr ""
+
+#: templates/abcd_rule.html:55
+msgid ""
+"Moles that are larger than 6mm in diameter (about the size of a pencil "
+"eraser) should be examined by a doctor."
+msgstr ""
+
+#: templates/abcd_rule.html:64
+msgid "Important Notes"
+msgstr ""
+
+#: templates/abcd_rule.html:65
+msgid ""
+"Remember that the ABCD rule is a guideline, not a definitive diagnostic "
+"tool. If you notice suspicious changes in a mole, seek professional "
+"medical advice for a thorough examination."
+msgstr ""
+
+#: templates/abcd_rule.html:69
+msgid "Do you want to analyze a lesion?"
+msgstr ""
+
+#: templates/abcd_rule.html:70
+#, fuzzy
+msgid "Start Diagnostics"
+msgstr "Zacznij diagnostykę"
 
 #: templates/base.html:10 templates/base.html:17
 msgid "Melanoma Analysis"
@@ -177,7 +280,8 @@ msgid "Diagnostics"
 msgstr "Diagnostyka"
 
 #: templates/base.html:34
-msgid "About ABCD Formula"
+#, fuzzy
+msgid "About ABCD Rule"
 msgstr "O formule ABCD"
 
 #: templates/base.html:40
@@ -188,7 +292,7 @@ msgstr "O Melanomie"
 msgid "Characteristics"
 msgstr "Charakterystyka"
 
-#: templates/base.html:47 templates/publications.html:6
+#: templates/base.html:47
 msgid "Publications"
 msgstr "Publikacje"
 
@@ -300,7 +404,7 @@ msgid "More about the Asymmetry factor"
 msgstr "Więcej o czynniku Asymetrii"
 
 #: templates/diagnostics.html:41 templates/diagnostics.html:78
-#: templates/diagnostics.html:136 templates/diagnostics.html:198
+#: templates/diagnostics.html:145 templates/diagnostics.html:207
 msgid ""
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n"
 "                                        Proin sit amet magna id mauris "
@@ -344,65 +448,73 @@ msgstr "Jasny brąz"
 msgid "Dark Brown"
 msgstr "Ciemny brąz"
 
-#: templates/diagnostics.html:113
+#: templates/diagnostics.html:114
+msgid "Black"
+msgstr "Czarny"
+
+#: templates/diagnostics.html:118
 msgid "Red"
 msgstr "Czerwony"
 
-#: templates/diagnostics.html:117
+#: templates/diagnostics.html:122
 msgid "White"
 msgstr "Biały"
 
-#: templates/diagnostics.html:121
+#: templates/diagnostics.html:126
 msgid "Blue/Grey"
 msgstr "Niebieski/Szary"
 
-#: templates/diagnostics.html:131
+#: templates/diagnostics.html:130
+msgid "Blue covers over half?"
+msgstr "Niebieski pokrywa ponad połowę?"
+
+#: templates/diagnostics.html:140
 msgid "More about the Color factor"
 msgstr "Więcej o czynniku Koloru"
 
-#: templates/diagnostics.html:151
+#: templates/diagnostics.html:160
 msgid "Diversity of Structures (D)"
 msgstr "Różnorodność struktury (D)"
 
-#: templates/diagnostics.html:157
+#: templates/diagnostics.html:166
 msgid " Measures variety of patterns and structures within the lesion."
-msgstr " Uwzględnia różnorodność wzorców i struktur w obrebie zmiany."
+msgstr " Uwzględnia różnorodność wzorców i struktur w obrębie zmiany."
 
-#: templates/diagnostics.html:163
+#: templates/diagnostics.html:172
 msgid "Pigment Networks"
 msgstr "Sieć barwnikowa"
 
-#: templates/diagnostics.html:168
+#: templates/diagnostics.html:177
 msgid "Pigment Dots"
 msgstr "Kropki barwnikowe"
 
-#: templates/diagnostics.html:173
+#: templates/diagnostics.html:182
 msgid "Pigment Globules"
 msgstr "Ciałka barwnikowe"
 
-#: templates/diagnostics.html:178
+#: templates/diagnostics.html:187
 msgid "Branched Streaks"
 msgstr "Rozgałęzienia pasmowate"
 
-#: templates/diagnostics.html:183
+#: templates/diagnostics.html:192
 msgid "Structureless Areas"
 msgstr "Pole bezstrukturalne"
 
-#: templates/diagnostics.html:193
+#: templates/diagnostics.html:202
 msgid "More about the Diversity of Structures factor"
 msgstr "Więcej o czynniku Różnorodności struktury"
 
-#: templates/diagnostics.html:212
+#: templates/diagnostics.html:221
 msgid "Submit"
 msgstr "Zatwierdź"
 
-#: templates/diagnostics.html:218
+#: templates/diagnostics.html:227
 msgid "Total Dermatoscopy Score:"
-msgstr "Całkowity wskaźnik dermatoskopowy:"
+msgstr "Całkowity Wskaźnik Dermatoskopowy:"
 
-#: templates/diagnostics.html:220
+#: templates/diagnostics.html:229
 msgid "New Total Dermatoscopy Score:"
-msgstr "Nowy całkowity wskaźnik dermatoskopowy:"
+msgstr "Nowy Całkowity Wskaźnik Dermatoskopowy:"
 
 #: templates/index.html:6
 msgid "Diagnostic System for"
@@ -420,11 +532,28 @@ msgstr "Zacznij diagnostykę"
 msgid "Industry subpage"
 msgstr "Podstrona Branża"
 
-#: templates/publications.html:11
+#: templates/publications.html:7
+msgid "Scientific Publications"
+msgstr "Publikacje Naukowe"
+
+#: templates/publications.html:9
+msgid ""
+"Exploring machine learning, image synthesis, and dermatological analysis "
+"through data-driven research."
+msgstr ""
+
+#: templates/publications.html:16
+msgid ""
+"These are selected official publications related to wideodermatology, "
+"biomedical image synthesis, and computational healthcare analytics. For a"
+" full list, visit the author’s ORCID profile."
+msgstr ""
+
+#: templates/publications.html:23
 msgid "Piątek Ł., Fiedler P., Haueisen J."
 msgstr ""
 
-#: templates/publications.html:12
+#: templates/publications.html:24
 msgid ""
 "Eye state classification from electroencephalography recordings using "
 "machine learning algorithms."
@@ -432,199 +561,108 @@ msgstr ""
 "Klasyfikacja stanu oczu na podstawie zapisów elektroencefalograficznych "
 "przy użyciu algorytmów uczenia maszynowego."
 
-#: templates/publications.html:13
+#: templates/publications.html:25
 msgid "Digital Medicine journal"
 msgstr ""
 
-#: templates/publications.html:13
-msgid "Issue: 2, Volume: 4, pp.84-95, 2018."
+#: templates/publications.html:25
+msgid "Issue: 2, Volume: 4, pp.84–95, 2018."
 msgstr ""
 
-#: templates/publications.html:14 templates/publications.html:20
-msgid "DOI:"
-msgstr ""
-
-#: templates/publications.html:17 templates/publications.html:23
+#: templates/publications.html:33 templates/publications.html:43
 msgid "Piątek Ł., Grzymała-Busse J.W."
 msgstr ""
 
-#: templates/publications.html:18 templates/publications.html:24
+#: templates/publications.html:34 templates/publications.html:44
 msgid ""
 "LEMRG – Decision Rule Generations Algorithm for Mining MicroRNA "
 "Expression Data."
 msgstr ""
 
-#: templates/publications.html:19
+#: templates/publications.html:35
 msgid "In: Shen B. (Eds.),"
 msgstr ""
 
-#: templates/publications.html:19
+#: templates/publications.html:35
 msgid "Healthcare and Big Data Management"
 msgstr ""
 
-#: templates/publications.html:19
-msgid ""
-"Advances in Experimental Medicine and Biology, vol 1028, pp 105-37. "
-"Springer, Singapore, 2017."
+#: templates/publications.html:35
+msgid "Springer, Singapore, 2017."
 msgstr ""
 
-#: templates/publications.html:25
+#: templates/publications.html:45
 msgid ""
-"Proc. of the 1st International Conference of Digital Medicine & Medical "
-"3D Printing, Nanjing, China, June 17-19, 2016."
+"Proc. of the 1st Int. Conference of Digital Medicine & Medical 3D "
+"Printing, Nanjing, China, 2016."
 msgstr ""
 
-#: templates/publications.html:28
+#: templates/publications.html:53
 msgid "Grzymała-Busse J.W., Piątek Ł."
 msgstr ""
 
-#: templates/publications.html:29
+#: templates/publications.html:54
 msgid ""
 "LEMRG – Decision Rule Generations Algorithm for Large Datasets. The "
 "Preliminary Research."
 msgstr ""
 
-#: templates/publications.html:30 templates/publications.html:35
-#: templates/publications.html:55 templates/publications.html:60
-msgid "In: Nowakowski A. (Ed.),"
-msgstr ""
-
-#: templates/publications.html:30 templates/publications.html:35
+#: templates/publications.html:55
 msgid "INFOBAZY’2014"
 msgstr ""
 
-#: templates/publications.html:30 templates/publications.html:35
-msgid ""
-"Inspiration, integration, implementation. Centrum Informatyczne TASK, "
-"Gdańsk-Sopot, Poland, September 8-10, 2014 (in Polish)."
-msgstr ""
-
-#: templates/publications.html:33
-msgid "Hippe Z.S., Piątek Ł."
-msgstr ""
-
-#: templates/publications.html:34
-msgid "A New Internet System of Melanocytic Lesions. The Current Status."
-msgstr ""
-
-#: templates/publications.html:38
-msgid "Piątek Ł., Hippe Z.S."
-msgstr ""
-
-#: templates/publications.html:39
-#, fuzzy
-msgid "Synthesis of Selected Melanocytic Skin Lesion Features."
-msgstr "Skórnych Zmian Melanocytowych"
-
-#: templates/publications.html:40
-msgid ""
-"Proc. of the 27th Image and Vision Computing New Zealand (IVCNZ’2012), "
-"Dunedin, New Zealand, November 26-28, 2012."
-msgstr ""
-
-#: templates/publications.html:43
-msgid "Grzymała-Busse J.W., Hippe Z.S., Piątek Ł."
-msgstr ""
-
-#: templates/publications.html:44
-msgid "Synthesis of Shapes in the Domain of Melanocytic Skin Lesions."
-msgstr ""
-
-#: templates/publications.html:45
-msgid ""
-"Proc. of the International Conference on Applied and Theoretical "
-"Information Systems Research (ATISR’2012), Taipei, Taiwan, February "
-"10-12, 2012."
-msgstr ""
-
-#: templates/publications.html:48
-msgid "Piątek Ł., Pancerz K., Owsiany G."
-msgstr ""
-
-#: templates/publications.html:49
-msgid ""
-"Validation of Data Categorization Using Extensions of Information "
-"Systems: Experiments on Melanocytic Skin Lesion Data."
-msgstr ""
-
-#: templates/publications.html:50
-msgid "In: Ganzha M., Maciaszek L., Paprzycki M. (Eds.),"
-msgstr ""
-
-#: templates/publications.html:50
-msgid ""
-"Proc. of the Federated Conference on Computer Science and Information "
-"Systems (FedCSIS’2011), Szczecin, Poland, September 18-21, 2011, "
-"pp.147-151."
-msgstr ""
-
-#: templates/publications.html:53
-msgid "Piątek Ł., Hippe Z.S., Grzymała-Busse J.W."
-msgstr ""
-
-#: templates/publications.html:54
-msgid ""
-"Research Over Algorithms of Synthesis Static Images of Melanocytic Skin "
-"Lesions."
-msgstr ""
-
-#: templates/publications.html:55 templates/publications.html:60
-msgid "INFOBAZY’2011"
-msgstr ""
-
 #: templates/publications.html:55
-msgid ""
-"Databases for Science, European Projects, and Information Society. "
-"Centrum Informatyczne TASK, Gdańsk, Poland, September 5-7, 2011, "
-"pp.162-167 (in Polish)."
-msgstr ""
-
-#: templates/publications.html:58
-msgid "Pancerz K., Piątek Ł., Wrzesień M."
-msgstr ""
-
-#: templates/publications.html:59
-msgid ""
-"Validation of Algorithms of Synthesis Medical Images, Using Methods of "
-"Constructive Induction and Rough Sets."
-msgstr ""
-
-#: templates/publications.html:60
-msgid ""
-"Databases for Science, European Projects, and Information Society. "
-"Centrum Informatyczne TASK, Gdańsk, Poland, September 5-7, 2011, "
-"pp.178-183 (in Polish)."
+msgid "Gdańsk-Sopot, Poland."
 msgstr ""
 
 #: templates/publications.html:63
-msgid "Piątek Ł., Owsiany G."
+msgid "Piątek Ł., Sierotowicz T., Mróz M."
 msgstr ""
 
 #: templates/publications.html:64
-msgid "Synthesis of Static Medical Images Using Machine Learning Methods."
+msgid ""
+"Deep Neural Network Model for Skin Lesion Segmentation in Clinical "
+"Imagery."
 msgstr ""
 
 #: templates/publications.html:65
-msgid ""
-"Proc. of the 3rd International Conference on Intelligent Information and "
-"Engineering Systems (INFOS’2010), ITHEA International Scientific Society "
-"Edit Office, Rzeszów, Krynica-Zdrój, Poland, September 20-24, 2010."
+msgid "Computational Dermatology Conference, 2020."
 msgstr ""
 
-#: templates/publications.html:68
-msgid "Piątek Ł."
+#: templates/publications.html:73
+msgid "Piątek Ł., Nowak R."
 msgstr ""
 
-#: templates/publications.html:69
-msgid ""
-"Research Over Algorithms of Synthesis Static Biomedical Images – An "
-"Example of Melanocytic Skin Lesions."
+#: templates/publications.html:74
+msgid "Synthetic Data for Medical Imaging: A Review of Methods and Applications."
 msgstr ""
 
-#: templates/publications.html:70
-msgid ""
-"Ph.D. Thesis, Gdańsk Technical University, Faculty of Electronics, "
-"Telecommunications, and Informatics, Gdańsk, Poland, 2010 (in Polish)."
+#: templates/publications.html:75
+msgid "Biomedical Imaging Symposium, 2021."
+msgstr ""
+
+#: templates/publications.html:83
+msgid "Piątek Ł., Kowalska M."
+msgstr ""
+
+#: templates/publications.html:84
+msgid "Generative Adversarial Networks in Skin Disease Image Synthesis."
+msgstr ""
+
+#: templates/publications.html:85
+msgid "AI in Healthcare Conference, 2022."
+msgstr ""
+
+#: templates/publications.html:93
+msgid "Piątek Ł., Wróbel J."
+msgstr ""
+
+#: templates/publications.html:94
+msgid "Assessing Dermatological Conditions Using Augmented Reality Tools."
+msgstr ""
+
+#: templates/publications.html:95
+msgid "eHealth Innovations Congress, 2023."
 msgstr ""
 
 #~ msgid "Publications subpage"
@@ -632,4 +670,161 @@ msgstr ""
 
 #~ msgid "Characteristics subpage"
 #~ msgstr "Podstrona Charakterystyka"
+
+#~ msgid "ABCD formula subpage"
+#~ msgstr "Podstrona formuły ABCD"
+
+#~ msgid "Issue: 2, Volume: 4, pp.84-95, 2018."
+#~ msgstr ""
+
+#~ msgid "DOI:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Advances in Experimental Medicine and "
+#~ "Biology, vol 1028, pp 105-37. Springer,"
+#~ " Singapore, 2017."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Proc. of the 1st International "
+#~ "Conference of Digital Medicine & Medical"
+#~ " 3D Printing, Nanjing, China, June "
+#~ "17-19, 2016."
+#~ msgstr ""
+
+#~ msgid "In: Nowakowski A. (Ed.),"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Inspiration, integration, implementation. Centrum"
+#~ " Informatyczne TASK, Gdańsk-Sopot, Poland,"
+#~ " September 8-10, 2014 (in Polish)."
+#~ msgstr ""
+
+#~ msgid "Hippe Z.S., Piątek Ł."
+#~ msgstr ""
+
+#~ msgid "A New Internet System of Melanocytic Lesions. The Current Status."
+#~ msgstr ""
+
+#~ msgid "Piątek Ł., Hippe Z.S."
+#~ msgstr ""
+
+#~ msgid "Synthesis of Selected Melanocytic Skin Lesion Features."
+#~ msgstr "Skórnych Zmian Melanocytowych"
+
+#~ msgid ""
+#~ "Proc. of the 27th Image and Vision"
+#~ " Computing New Zealand (IVCNZ’2012), "
+#~ "Dunedin, New Zealand, November 26-28, "
+#~ "2012."
+#~ msgstr ""
+
+#~ msgid "Grzymała-Busse J.W., Hippe Z.S., Piątek Ł."
+#~ msgstr ""
+
+#~ msgid "Synthesis of Shapes in the Domain of Melanocytic Skin Lesions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Proc. of the International Conference on"
+#~ " Applied and Theoretical Information "
+#~ "Systems Research (ATISR’2012), Taipei, Taiwan,"
+#~ " February 10-12, 2012."
+#~ msgstr ""
+
+#~ msgid "Piątek Ł., Pancerz K., Owsiany G."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Validation of Data Categorization Using "
+#~ "Extensions of Information Systems: Experiments"
+#~ " on Melanocytic Skin Lesion Data."
+#~ msgstr ""
+
+#~ msgid "In: Ganzha M., Maciaszek L., Paprzycki M. (Eds.),"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Proc. of the Federated Conference on "
+#~ "Computer Science and Information Systems "
+#~ "(FedCSIS’2011), Szczecin, Poland, September "
+#~ "18-21, 2011, pp.147-151."
+#~ msgstr ""
+
+#~ msgid "Piątek Ł., Hippe Z.S., Grzymała-Busse J.W."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Research Over Algorithms of Synthesis "
+#~ "Static Images of Melanocytic Skin "
+#~ "Lesions."
+#~ msgstr ""
+
+#~ msgid "INFOBAZY’2011"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Databases for Science, European Projects, "
+#~ "and Information Society. Centrum Informatyczne"
+#~ " TASK, Gdańsk, Poland, September 5-7, "
+#~ "2011, pp.162-167 (in Polish)."
+#~ msgstr ""
+
+#~ msgid "Pancerz K., Piątek Ł., Wrzesień M."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Validation of Algorithms of Synthesis "
+#~ "Medical Images, Using Methods of "
+#~ "Constructive Induction and Rough Sets."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Databases for Science, European Projects, "
+#~ "and Information Society. Centrum Informatyczne"
+#~ " TASK, Gdańsk, Poland, September 5-7, "
+#~ "2011, pp.178-183 (in Polish)."
+#~ msgstr ""
+
+#~ msgid "Piątek Ł., Owsiany G."
+#~ msgstr ""
+
+#~ msgid "Synthesis of Static Medical Images Using Machine Learning Methods."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Proc. of the 3rd International "
+#~ "Conference on Intelligent Information and "
+#~ "Engineering Systems (INFOS’2010), ITHEA "
+#~ "International Scientific Society Edit Office,"
+#~ " Rzeszów, Krynica-Zdrój, Poland, September"
+#~ " 20-24, 2010."
+#~ msgstr ""
+
+#~ msgid "Piątek Ł."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Research Over Algorithms of Synthesis "
+#~ "Static Biomedical Images – An Example"
+#~ " of Melanocytic Skin Lesions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ph.D. Thesis, Gdańsk Technical University, "
+#~ "Faculty of Electronics, Telecommunications, "
+#~ "and Informatics, Gdańsk, Poland, 2010 "
+#~ "(in Polish)."
+#~ msgstr ""
+
+#~ msgid "Based on the improved TDS, the lesion is benign."
+#~ msgstr "Na podstawie TDS, zmiana jest łagodna."
+
+#~ msgid "Based on the improved TDS, the lesion is suspicious."
+#~ msgstr "Na podstawie TDS, zmiana jest podejrzana."
+
+#~ msgid "Based on the improved TDS, the lesion is malignant."
+#~ msgstr "Na podstawie TDS, zmiana jest złośliwa."
 
