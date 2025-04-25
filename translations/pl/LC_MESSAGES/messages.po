@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-22 13:07+0200\n"
+"POT-Creation-Date: 2025-04-24 16:18+0200\n"
 "PO-Revision-Date: 2025-03-18 16:16+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
@@ -21,159 +21,210 @@ msgstr ""
 
 #: app.py:72
 msgid ""
-"Based on the Total Dermatoscopy Score, the lesion is a benign blue nevus."
+"Based on the Total Dermatoscopy Score (TDS), the lesion is a benign blue "
+"nevus."
 msgstr ""
-"Na podstawie Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest znamieniem "
-"błękitnym."
+"Na podstawie Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest "
+"znamieniem błękitnym."
 
 #: app.py:74
-msgid "Based on the Total Dermatoscopy Score, the lesion is benign."
-msgstr "Na podstawie Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest łagodna."
+msgid "Based on the Total Dermatoscopy Score (TDS), the lesion is benign."
+msgstr ""
+"Na podstawie Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest "
+"łagodna."
 
 #: app.py:76
-msgid "Based on the Total Dermatoscopy Score, the lesion is suspicious."
-msgstr "Na podstawie Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest podejrzana."
+msgid "Based on the Total Dermatoscopy Score (TDS), the lesion is suspicious."
+msgstr ""
+"Na podstawie Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest "
+"podejrzana."
 
 #: app.py:78
-msgid "Based on the Total Dermatoscopy Score, the lesion is malignant."
-msgstr "Na podstawie Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest złośliwa."
+msgid "Based on the Total Dermatoscopy Score (TDS), the lesion is malignant."
+msgstr ""
+"Na podstawie Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest "
+"złośliwa."
 
 #: app.py:106
 msgid ""
-"Based on the New Total Dermatoscopy Score, the lesion is a benign blue "
-"nevus."
+"Based on the New Total Dermatoscopy Score (TDS), the lesion is a benign "
+"blue nevus."
 msgstr ""
-"Na podstawie Nowego Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest znamieniem "
-"błękitnym."
+"Na podstawie Nowego Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana "
+"jest znamieniem błękitnym."
 
 #: app.py:108
-msgid "Based on the New Total Dermatoscopy Score, the lesion is benign."
-msgstr "Na podstawie Nowego Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest łagodna."
+msgid "Based on the New Total Dermatoscopy Score (TDS), the lesion is benign."
+msgstr ""
+"Na podstawie Nowego Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana "
+"jest łagodna."
 
 #: app.py:110
-msgid "Based on the New Total Dermatoscopy Score, the lesion is suspicious."
-msgstr "Na podstawie Nowego Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest podejrzana."
+msgid "Based on the New Total Dermatoscopy Score (TDS), the lesion is suspicious."
+msgstr ""
+"Na podstawie Nowego Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana "
+"jest podejrzana."
 
 #: app.py:112
-msgid "Based on the New Total Dermatoscopy Score, the lesion is malignant."
-msgstr "Na podstawie Nowego Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana jest złośliwa."
+msgid "Based on the New Total Dermatoscopy Score (TDS), the lesion is malignant."
+msgstr ""
+"Na podstawie Nowego Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana "
+"jest złośliwa."
 
 #: lesions_data.py:5
-msgid "Benign Nevus"
-msgstr "Znamię łagodne"
+msgid "Lentigo Maligna Melanoma"
+msgstr "Czerniak wychodzący z plamy soczewicowatej"
 
 #: lesions_data.py:6
-msgid "Common benign mole, usually brown and symmetrical."
-msgstr "Powszechne łagodne znamię, zazwyczaj brązowe i symetryczne."
+msgid "Appears in older adults, spreads to lymph nodes."
+msgstr "Pojawia się u osób starszych, daje przerzuty do węzłów."
 
 #: lesions_data.py:7
 msgid ""
-"Melanocytic nevi, or moles, are usually uniform in color, with regular "
-"borders and symmetry. While mostly harmless, any changes in size, shape, "
-"or color should be monitored."
+"Occurs mainly in older people, especially women. It begins as a flat "
+"brown or brown-black spot. It has a slow, many-year course and a "
+"relatively good prognosis. This type of melanoma most often appears on "
+"the face. It causes metastases to nearby lymph nodes."
 msgstr ""
-"Znamiona melanocytowe (nevi) zwykle mają jednolity kolor, regularne "
-"brzegi i zachowują symetrię. Choć w większości nieszkodliwe, wszelkie "
-"zmiany rozmiaru, kształtu lub koloru powinny być monitorowane."
+"Występuje głównie u starszych osób, szczególnie kobiet. Powstaje jako "
+"płaska brązowa lub brązowo-czarna plama. Ma powolny, wieloletni przebieg "
+"i dość dobrze rokuje. Ten rodzaj czerniaka najczęściej występuje na "
+"twarzy. Powoduje przerzuty do okolicznych węzłów chłonnych."
 
 #: lesions_data.py:12
-msgid "Seborrheic Keratosis"
-msgstr "Rogowacenie łojotokowe"
-
-#: lesions_data.py:13
-msgid "Warty, stuck-on appearance; non-cancerous."
-msgstr "Brodawkowaty, 'przyklejony' wygląd; zmiana niezłośliwa."
-
-#: lesions_data.py:14
-msgid ""
-"These lesions often appear waxy or wart-like, and may look alarming but "
-"are benign. Commonly seen in older adults and can vary in color from "
-"light tan to black."
-msgstr ""
-"Te zmiany często mają woskowatą lub brodawkowatą powierzchnię. Mimo "
-"niepokojącego wyglądu są łagodne. Występują głównie u osób starszych, "
-"mogąc przybierać kolory od jasnobrązowego do czarnego."
-
-#: lesions_data.py:19
 msgid "Superficial Spreading Melanoma"
 msgstr "Czerniak szerzący się powierzchownie"
 
-#: lesions_data.py:20
+#: lesions_data.py:13
 msgid "Most common type, spreads along the surface before going deeper."
 msgstr ""
 "Najczęstszy typ, rozprzestrzenia się powierzchniowo przed penetracją "
 "głębszych warstw."
 
+#: lesions_data.py:14
+msgid ""
+"Usually develops on the basis of a mole. Most often affects middle-aged "
+"individuals, although it can also occur in children. It usually begins "
+"with a slow superficial growth phase, then the tumor grows vertically, "
+"infiltrating the skin and subcutaneous tissue. At that point, it begins "
+"to metastasize. It often appears on the trunk (more often in men) or on "
+"the legs and mucous membranes (more often in women)."
+msgstr ""
+"Powstaje zazwyczaj na podłożu znamienia. Najczęściej dotyczy osób w "
+"średnim wieku, choć może występować również u dzieci. Zazwyczaj zaczyna "
+"się od powolnej fazy wzrostu powierzchownego, potem nowotwór rośnie "
+"pionowo naciekając skórę i tkankę podskórną. Wtedy zaczyna dawać "
+"przerzuty. Występuje często na tułowiu (częściej u mężczyzn) lub na "
+"nogach i błonach śluzowych (częściej u kobiet)."
+
+#: lesions_data.py:19
+msgid "Nodular Melanoma"
+msgstr "Postać guzkowa czerniaka"
+
+#: lesions_data.py:20
+msgid "Aggressive, fast-growing nodule, metastasizes quickly."
+msgstr "Agresywny, szybko rosnący guzek, daje przerzuty szybko."
+
 #: lesions_data.py:21
 msgid ""
-"Superficial spreading melanoma starts by growing along the top layer of "
-"the skin. Over time, it may begin to grow vertically into deeper layers. "
-"It often appears as a flat or slightly raised patch with irregular "
-"borders and varying colors."
+"Arises on the basis of a pigmented mole or on healthy skin. This type of "
+"melanoma progresses quickly and has a poor prognosis. Men are more "
+"frequently affected than women. The lesion most commonly appears on the "
+"head, neck, or trunk. It can be a colorless, brown, red, or black nodule,"
+" which grows vertically from the start and rapidly causes metastases."
 msgstr ""
-"Ten typ czerniaka początkowo rozrasta się w warstwie powierzchniowej "
-"skóry. Z czasem może wnikać głębiej. Typowo objawia się jako płaska lub "
-"lekko wypukła zmiana o nieregularnych brzegach i zróżnicowanej "
-"kolorystyce."
+"Powstaje na podłożu znamienia barwnikowego lub na skórze zdrowej. Ta "
+"postać czerniaka ma szybki przebieg i niekorzystne rokowanie. Częściej "
+"chorują mężczyźni niż kobiety. Zmiana najczęściej powstaje na głowie, "
+"szyi, tułowiu. Może to być bezbarwny, brunatny, czerwony lub czarny "
+"guzek, który od początku rośnie pionowo i szybko powoduje przerzuty."
 
 #: lesions_data.py:26
-msgid "Nodular Melanoma"
-msgstr "Czerniak guzkowy"
+msgid "Acrolenitiginous Melanoma"
+msgstr "Czerniak kończynowo-lentiginalny"
 
 #: lesions_data.py:27
-msgid "Aggressive, fast-growing melanoma that forms a bump or node."
-msgstr "Agresywna, szybko rosnąca postać tworząca wyczuwalny guzek."
+msgid "Rare type, appears on palms, soles, or under nails."
+msgstr "Rzadki typ, pojawia się na dłoniach, podeszwach lub pod paznokciami."
 
 #: lesions_data.py:28
 msgid ""
-"Nodular melanoma often appears as a dark bump that is firm to the touch "
-"and grows rapidly. Unlike superficial spreading melanoma, it tends to "
-"grow vertically much earlier, making early detection crucial."
+"A melanoma with relatively slow growth, occurring mainly in middle-aged "
+"individuals. It affects the hands, soles of the feet, or the nail matrix."
+" These are enlarging flat brown or black patches that cause metastases to"
+" lymph nodes."
 msgstr ""
-"Czerniak guzkowy często manifestuje się jako ciemny, twardy guzek szybko "
-"powiększający swój rozmiar. W przeciwieństwie do postaci powierzchownej, "
-"wcześnie rozpoczyna wzrost pionowy, co czyni wczesne wykrycie szczególnie"
-" istotnym."
+"Czerniak o dość powolnym wzroście, występuje głównie u osób w wieku "
+"średnim. Zajmuje dłonie, podeszwy, macierz paznokcia. Są to powiększające"
+" się płaskie, brązowe lub czarne plamy, powodujące przerzuty do węzłów "
+"chłonnych."
 
 #: lesions_data.py:33
-msgid "Lentigo Maligna Melanoma"
-msgstr "Czerniak lentigo maligna"
+msgid "Amelanotic Melanoma"
+msgstr "Czerniak amelanotyczny"
 
 #: lesions_data.py:34
-msgid "Appears on sun-damaged skin, usually in older adults."
-msgstr "Występuje na skórze uszkodzonej przez UV, głównie u osób starszych."
+msgid "Rare, skin-colored or pink lesion, often diagnosed late."
+msgstr "Rzadka, cielista lub różowa zmiana, często późno rozpoznawana."
 
 #: lesions_data.py:35
 msgid ""
-"Lentigo maligna melanoma typically forms on the face, scalp, or neck of "
-"older adults with significant sun exposure history. It begins as a flat, "
-"tan or brown patch (lentigo maligna) and may slowly darken or become "
-"raised over time."
+"This type of melanoma is very rare. The lesion arises on previously "
+"unchanged skin and has the color of normal skin or is pinkish. Because of"
+" this, it is often diagnosed very late, which further worsens the already"
+" poor prognosis."
 msgstr ""
-"Ten typ czerniaka rozwija się zwykle na twarzy, owłosionej skórze głowy "
-"lub szyi u osób z długą historią ekspozycji na słońce. Początkowo jako "
-"płaska, jasnobrązowa plama (lentigo maligna), z czasem może ciemnieć i "
-"uwypuklać się."
+"Ta postać czerniaka jest bardzo rzadka. Zmiana powstaje na skórze "
+"niezmienionej i ma kolor skóry prawidłowej lub różowawy. Z tego powodu "
+"bywa bardzo późno rozpoznawany, co dodatkowo pogarsza i tak niekorzystne "
+"rokowanie."
 
 #: lesions_data.py:40
-msgid "Acral Lentiginous Melanoma"
-msgstr "Czerniak akralny lentiginowy"
+msgid "Oral mucosal melanoma"
+msgstr "Czerniak błon śluzowych"
 
 #: lesions_data.py:41
-msgid "Rare type, appears on palms, soles, or under nails."
-msgstr "Rzadki typ lokalizujący się na dłoniach, podeszwach lub pod paznokciami."
+msgid "Dark, painless spot or nodule in the mouth, metastasizes early."
+msgstr "Ciemna, bezbolesna plamka lub guzek w ustach, szybko daje przerzuty."
 
 #: lesions_data.py:42
 msgid ""
-"Acral lentiginous melanoma is more common in people with darker skin "
-"tones and often shows up on the hands, feet, or beneath fingernails and "
-"toenails. It may look like a dark stripe or spot and is frequently "
-"misdiagnosed due to its unusual location."
+"In about 5 percent of cases, melanoma is located on the mucous membranes "
+"of the oral cavity. It is most often a dark spot or a soft, dark, well-"
+"vascularized nodule. Such a nodule is usually painless. The prognosis is "
+"poor, as the tumor grows vertically from the beginning and quickly "
+"metastasizes. Therefore, any dark lesion on the oral mucous membranes "
+"without a clear cause should raise suspicion of melanoma."
 msgstr ""
-"Czerniak akralny występuje częściej u osób z ciemną karnacją. Typowa "
-"lokalizacja obejmuje ręce, stopy oraz okolice podpaznokciowe. Często "
-"przybiera formę ciemnej smugi lub plamy, bywając błędnie diagnozowany z "
-"powodu nietypowej lokalizacji."
+"W około 5 procentach przypadków czerniak zlokalizowany jest na błonach "
+"śluzowych jamy ustnej. Jest to najczęściej ciemna plamka lub miękki, "
+"ciemny, dobrze unaczyniony guzek. Zazwyczaj taki guzek jest niebolesny. "
+"Rokowanie jest niekorzystne, gdyż złe nowotwór od początku rośnie pionowo"
+" i szybko daje przerzuty. Dlatego uważa się, że w przypadku każdej "
+"ciemnej zmiany na błonach śluzowych jamy ustnej, która nie ma "
+"jednoznacznej przyczyny należy brać pod uwagę rozpoznanie czerniaka."
+
+#: lesions_data.py:47
+msgid "Vulvovaginal melanoma"
+msgstr "Czerniak pochwy i sromu"
+
+#: lesions_data.py:48
+msgid "Rare, aggressive lesion on labia or lower vagina."
+msgstr "Rzadka, agresywna zmiana na sromie lub w dolnej części pochwy."
+
+#: lesions_data.py:49
+msgid ""
+"Melanomas in this location are rare. They mainly affect the labia minora "
+"and the lower third of the vagina. Most commonly, women over 50 are "
+"affected. Melanoma in this location usually develops from a pigmented "
+"mole. It is a spot or nodule with a tendency to bleed and associated "
+"itching. It grows and metastasizes quickly."
+msgstr ""
+"Czerniaki w tej lokalizacji są rzadkie. Dotyczą głównie warg sromowych "
+"mniejszych i dolnej 1/3 pochwy. Chorują najczęściej kobiety po 50 roku "
+"życia. Czerniak w tej lokalizacji najczęściej powstaje na podłożu "
+"znamienia barwnikowego. Jest to plama lub guzek z tendencją do krwawienia"
+" i towarzyszącym świądem. Rośnie i daje przerzuty szybko."
 
 #: templates/abcd_rule.html:6
 msgid "ABCD Rule for Melanoma Detection"
@@ -192,7 +243,6 @@ msgid "What is the ABCD Rule?"
 msgstr "Czym jest fromuła ABCD?"
 
 #: templates/abcd_rule.html:15
-#, fuzzy
 msgid ""
 "The ABCD rule is a guideline used to assess the risk of melanoma based on"
 " four key characteristics of a skin lesion: Asymmetry, Border "
@@ -337,9 +387,9 @@ msgid "Understanding Skin Lesions"
 msgstr "Zrozumieć zmiany Melanocytowe"
 
 #: templates/characteristics.html:8
-msgid "Read more about common skin lesions and learn how to recognize them."
+msgid "Read more about different skin lesions and learn how to recognize them."
 msgstr ""
-"Czytaj więcej o powszechnych zmianach skórnych i dowiedz się jak je "
+"Czytaj więcej o różnego rodzaju zmianach skórnych i dowiedz się jak je "
 "rozróżniać."
 
 #: templates/characteristics.html:13
@@ -348,26 +398,157 @@ msgstr "Czym są zmiany Melanocytowe?"
 
 #: templates/characteristics.html:15
 msgid ""
-"Melanoma is a type of skin cancer that occurs when pigment-producing "
-"cells—known as melanocytes—mutate and become cancerous. Melanoma is the "
-"most serious form of skin cancer and is the fifth most common cancer "
-"among both men and women. Even though invasive melanoma accounts for only"
-" about 1 percent of all skin cancers, it is responsible for the majority "
-"of deaths from skin cancer. Melanoma is dangerous because it is more "
-"likely to spread, or metastasize, than other skin cancers, such as basal "
-"cell carcinoma and squamous cell carcinoma."
+"Melanocytic nevi are also called benign melanocytic tumors because, \n"
+"      as a rule, most of them are benign and never become malignant. "
+"However, \n"
+"      approximately 30 percent of malignant melanomas, which are one of "
+"the most \n"
+"      dangerous skin cancers of today, arise from these lesions."
 msgstr ""
-"Czerniak to rodzaj raka skóry rozwijający się, gdy komórki pigmentowe "
-"(melanocyty) ulegają mutacji i przekształcają w komórki nowotworowe."
-"      Jest to najgroźniejsza postać raka skóry i piąty pod względem "
-"częstości nowotwór u kobiet i mężczyzn. Mimo że postać inwazyjna       "
-"stanowi zaledwie około 1 procent wszystkich nowotworów skóry, odpowiada "
-"za większość zgonów związanych z tymi schorzeniami.       "
-"Niebezpieczeństwo czerniaka wynika z jego większej skłonności do "
-"przerzutów w porównaniu z innymi nowotworami skóry,        takimi jak rak"
-" podstawnokomórkowy czy płaskonabłonkowy."
+"Znamiona melanocytowe nazywane są również łagodnymi nowotworami "
+"melanocytowymi, gdyż z reguły większość z nich ma charakter łagodny i "
+"nigdy nie złośliwieje. Niemniej jednak na podłożu tych zmian powstaje ok."
+" 30 procent czerniaków złośliwych, stanowiącego jeden z naj-groźniejszych"
+" nowotworów skóry dzisiejszych czasów."
 
-#: templates/characteristics.html:36 templates/index.html:9
+#: templates/characteristics.html:19
+msgid "Classification of Melanocytic Nevi"
+msgstr ""
+
+#: templates/characteristics.html:21
+msgid ""
+"Melanocytic nevi (the name comes from melanocytes, \n"
+"        i.e., cells that produce the skin pigment – melanin) are \n"
+"        divided into epidermal and dermal types."
+msgstr ""
+"Znamiona melanocytowe (nazwa pochodzi od melanocytu, tj. komórki "
+"produkującej barwnik skóry - melaninę) dzielą się na naskórkowe i skórne."
+
+#: templates/characteristics.html:30
+msgid "Epidermal"
+msgstr "Naskórkowe"
+
+#: templates/characteristics.html:33
+msgid "The first group includes so-called flat nevi and lentigo maligna, where:"
+msgstr ""
+" Do grupy pierwszej należą tzw. znamiona płaskie i plamy soczewicowate, "
+"przy czym: "
+
+#: templates/characteristics.html:34
+msgid "Flat nevi"
+msgstr "Znamiona płaskie"
+
+#: templates/characteristics.html:35
+msgid ""
+"Flat nevi are at the level of the skin, well-defined from the surrounding"
+" \n"
+"            tissue, do not cause any discomfort, and tend to enlarge with"
+" a person’s \n"
+"            growth. In the case of chronic irritation, they may become a "
+"starting point \n"
+"            for malignant skin cancer – melanoma. However, this is rare."
+msgstr ""
+"Znamiona płaskie znajdują się na poziomie skóry, są odgraniczone od "
+"otoczenia, nie powodują żadnych dolegliwości, jednocześnie powiększając "
+"się wraz z rozwojem człowieka. W przypadku przewlekłego drażnienia mogą "
+"być punktem wyjścia złośliwego nowotworu skóry - czerniaka. Zdarza się to"
+" jednak rzadko."
+
+#: templates/characteristics.html:40
+msgid "Lentigo maligna"
+msgstr "Plamy soczewicowate"
+
+#: templates/characteristics.html:41
+msgid ""
+"Lentigo maligna can be congenital or acquired. They look very similar to "
+"each other – small, \n"
+"            numerous brown spots of various shades. They resemble "
+"freckles but are slightly larger and more \n"
+"            defined. Congenital lentigo maligna appears in childhood, "
+"usually on the skin of the back and chest. \n"
+"            Acquired lentigo maligna can develop due to sun exposure (sun"
+" lentigo) or in older individuals \n"
+"            (senile lentigo). They can be single or numerous, typically "
+"located on the skin of exposed areas \n"
+"            (face, hands, forearms). They appear more frequently in the "
+"summer and darken during this time. \n"
+"            Sun lentigo may gradually disappear on its own, while senile "
+"lentigo tends to be a permanent change."
+msgstr ""
+"plamy soczewicowate bywają wrodzone i nabyte. Wyglądem są do siebie "
+"bardzo podobne - drobne, liczne plamki barwy brunatnej o różnych "
+"odcieniach. Przypominają piegi, ale są nieco większe i bardziej "
+"odgraniczone. Wrodzone plamy soczewicowate pojawiają się w dzieciństwie -"
+" na ogół na skórze pleców i klatki piersiowej. Z kolei plamy nabyte mogą "
+"pojawiać się pod wpływem promieni słonecznych (plamy soczewicowate "
+"słoneczne) lub u osób starszych (plamy soczewicowate starcze). Mogą one "
+"być pojedyncze lub liczne, zwykle zlokalizowane są na skórze odkrytych "
+"części ciała (twarz, ręce, przedramiona). Pojawiają się liczniej latem i "
+"o tej porze roku także ciemnieją. Plamy soczewicowate słoneczne mogą "
+"stopniowo samoistnie zanikać, natomiast starcze mają charakter zmian "
+"trwałych."
+
+#: templates/characteristics.html:48
+msgid ""
+"Malignant lentigo spots are very dangerous because they are often a "
+"starting point \n"
+"            for melanoma. They are dark and generally irregularly "
+"pigmented, sometimes slightly raised. \n"
+"            They occur on the face, more often in women and older "
+"individuals. They develop slowly, and if \n"
+"            they transform into melanoma, the course of the disease is "
+"relatively mild."
+msgstr ""
+"złośliwe plamy soczewicowate są bardzo niebiezpieczne, ze względu na "
+"bycie często punktem wyjścia czerniaka. Są one ciemne i na ogół "
+"nieregularnie zabarwione, niekiedy nieco uwypuklone. Występują na twarzy,"
+" częściej u kobiet i u osób w starszym wieku. Rozwijają się wolno, a w "
+"razie ich przekształcenia się w czerniaka przebieg choroby jest "
+"stosunkowo łagodny."
+
+#: templates/characteristics.html:58
+msgid "Dermal"
+msgstr "Skórne"
+
+#: templates/characteristics.html:61
+msgid "Blue nevi"
+msgstr "Znamiona błękitne"
+
+#: templates/characteristics.html:62
+msgid ""
+"Blue nevi are a type of dermal melanocytic nevus. The pigment cells \n"
+"            are located quite deep in the skin, usually on the face and "
+"extremities. The \n"
+"            nevi range in color from light blue to black. They are "
+"considered safe nevi, \n"
+"            meaning they rarely serve as a starting point for melanomas."
+msgstr ""
+"Znamiona błękitne należą do skórnych znamion melanocytowych. Komórki "
+"barwnikowe są tu umiejscowione dość głęboko w skórze, zwykle na twarzy i "
+"koń-czynach. Znamiona przybierają barwę od jasnoniebieskiej do czarnej. "
+"Należą do tzw. bez-piecznych znamion, tzn. rzadko są punktem wyjścia "
+"czerniaków."
+
+#: templates/characteristics.html:71
+msgid "Classification of melanocytic skin lesions"
+msgstr "Klasyfikacja skórnych zmian melanocytowych"
+
+#: templates/characteristics.html:73
+msgid ""
+"Melanocytic nevi can widely vary in clinical dermatoscopic and "
+"histological appearance.\n"
+"        Lesions are categorized based on many factors: placement, color "
+"patterns, shape, growth and many more.\n"
+"        It is important to have some understanding about how to recognize"
+" suspicious nevi.\n"
+"        Below you can find a list of most common types of skin lesions."
+msgstr ""
+"Znamiona melanocytowe mogą się znacznie różnić pod względem obrazu klinicznego, dermatoskopowego i histologicznego. "
+"Zmiany skórne klasyfikuje się na podstawie wielu czynników: umiejscowienia, wzoru zabarwienia, kształtu, rozrostu i wielu innych. "
+"Ważne jest, aby mieć jakąś wiedzę i świadomość związaną z rozpoznawaniem podejrzanych znamion. "
+"Poniżej znajduje się lista najczęściej występujących typów zmian skórnych."
+
+#: templates/characteristics.html:97 templates/index.html:9
 msgid "Learn More"
 msgstr "Czytaj więcej"
 
@@ -537,294 +718,267 @@ msgid "Scientific Publications"
 msgstr "Publikacje Naukowe"
 
 #: templates/publications.html:9
-msgid ""
-"Exploring machine learning, image synthesis, and dermatological analysis "
-"through data-driven research."
-msgstr ""
+msgid "Advancing melanoma understanding through applied research."
+msgstr "Poszerzanie wiedzy na temat czerniaka poprzez badania aplikacyjne."
 
 #: templates/publications.html:16
 msgid ""
-"These are selected official publications related to wideodermatology, "
-"biomedical image synthesis, and computational healthcare analytics. For a"
-" full list, visit the author’s ORCID profile."
+"The listed publications were authored or co-authored by researchers from "
+"the Department of Artificial Intelligence \n"
+"            at the University of Information Technology and Management in"
+" Rzeszów (UITM). Their research explores medical image \n"
+"            analysis—particularly of melanocytic skin lesions—covering "
+"image synthesis, feature selection, classification methods,\n"
+"             and the application of rough sets and machine learning to "
+"support early and accurate diagnosis."
+msgstr ""
+"Podane publikacje zostały stworzone lub współtworzone przy udziale "
+"pracowników Katedry Sztucznej Inteligencji Wyższej Szkoły Informatyki i "
+"Zarządzania w Rzeszowie (UITM). Ich badania dotyczą analizy obrazów "
+"medycznych—w szczególności zmian melanocytowych skóry—obejmując syntezę "
+"obrazów, selekcję cech, metody klasyfikacji oraz zastosowanie zbiorów "
+"przybliżonych i uczenia maszynowego w celu wspierania wczesnej i "
+"dokładnej diagnozy."
+
+#: templates/publications.html:20
+#, fuzzy
+msgid "List of related publications"
+msgstr "Publikacje Naukowe"
+
+#: templates/publications.html:26
+msgid "Hippe Z.S., Piątek Ł."
 msgstr ""
 
-#: templates/publications.html:23
-msgid "Piątek Ł., Fiedler P., Haueisen J."
+#: templates/publications.html:27
+msgid "A New Internet system of melanocytic lesions. The current status."
 msgstr ""
 
-#: templates/publications.html:24
+#: templates/publications.html:28
 msgid ""
-"Eye state classification from electroencephalography recordings using "
-"machine learning algorithms."
-msgstr ""
-"Klasyfikacja stanu oczu na podstawie zapisów elektroencefalograficznych "
-"przy użyciu algorytmów uczenia maszynowego."
-
-#: templates/publications.html:25
-msgid "Digital Medicine journal"
+"In: Nowakowski A. (Ed.), INFOBAZY’2014 – Inspiration, Integration, "
+"Implementation."
 msgstr ""
 
-#: templates/publications.html:25
-msgid "Issue: 2, Volume: 4, pp.84–95, 2018."
+#: templates/publications.html:29
+msgid "Centrum Informatyczne TASK, Gdańsk-Sopot, Poland, September 8–10, 2014."
 msgstr ""
 
-#: templates/publications.html:33 templates/publications.html:43
-msgid "Piątek Ł., Grzymała-Busse J.W."
+#: templates/publications.html:30 templates/publications.html:41
+#: templates/publications.html:52 templates/publications.html:65
+#: templates/publications.html:78 templates/publications.html:91
+#: templates/publications.html:102 templates/publications.html:114
+#: templates/publications.html:127 templates/publications.html:138
+#: templates/publications.html:149 templates/publications.html:160
+msgid "View on ORCID"
+msgstr "Zobacz na ORCID"
+
+#: templates/publications.html:37
+msgid "Piątek Ł., Hippe Z.S."
 msgstr ""
 
-#: templates/publications.html:34 templates/publications.html:44
+#: templates/publications.html:38
+#, fuzzy
+msgid "Synthesis of Selected Melanocytic Skin Lesion Features."
+msgstr "Skórnych Zmian Melanocytowych"
+
+#: templates/publications.html:39
 msgid ""
-"LEMRG – Decision Rule Generations Algorithm for Mining MicroRNA "
-"Expression Data."
+"Proc. of the 27th Image and Vision Computing New Zealand (IVCNZ’2012), "
+"Dunedin, New Zealand,\n"
+"                    November 26–28, 2012."
 msgstr ""
 
-#: templates/publications.html:35
-msgid "In: Shen B. (Eds.),"
+#: templates/publications.html:48
+msgid "Grzymała-Busse J.W., Hippe Z.S., Piątek Ł."
 msgstr ""
 
-#: templates/publications.html:35
-msgid "Healthcare and Big Data Management"
+#: templates/publications.html:49
+msgid "Synthesis of Shapes in the Domain of Melanocytic Skin Lesions."
 msgstr ""
 
-#: templates/publications.html:35
-msgid "Springer, Singapore, 2017."
-msgstr ""
-
-#: templates/publications.html:45
+#: templates/publications.html:50
 msgid ""
-"Proc. of the 1st Int. Conference of Digital Medicine & Medical 3D "
-"Printing, Nanjing, China, 2016."
+"Proc. of the International Conference on Applied and Theoretical "
+"Information Systems Research\n"
+"                    (ATISR’2012), Taipei, Taiwan, February 10–12, 2012."
 msgstr ""
 
-#: templates/publications.html:53
-msgid "Grzymała-Busse J.W., Piątek Ł."
+#: templates/publications.html:59
+msgid "Piątek Ł., Pancerz K., Owsiany G."
 msgstr ""
 
-#: templates/publications.html:54
+#: templates/publications.html:60
 msgid ""
-"LEMRG – Decision Rule Generations Algorithm for Large Datasets. The "
-"Preliminary Research."
+"Validation of Data Categorization Using Extensions of Information "
+"Systems: Experiments on\n"
+"                        Melanocytic Skin Lesion Data."
 msgstr ""
 
-#: templates/publications.html:55
-msgid "INFOBAZY’2014"
-msgstr ""
-
-#: templates/publications.html:55
-msgid "Gdańsk-Sopot, Poland."
-msgstr ""
-
-#: templates/publications.html:63
-msgid "Piątek Ł., Sierotowicz T., Mróz M."
-msgstr ""
-
-#: templates/publications.html:64
+#: templates/publications.html:62
 msgid ""
-"Deep Neural Network Model for Skin Lesion Segmentation in Clinical "
-"Imagery."
+"In: Ganzha M., Maciaszek L., Paprzycki M. (Eds.), Proc. of the Federated "
+"Conference on\n"
+"                    Computer Science and Information Systems "
+"(FedCSIS’2011), Szczecin, Poland, September 18–21, 2011,\n"
+"                    pp. 147–151."
 msgstr ""
 
-#: templates/publications.html:65
-msgid "Computational Dermatology Conference, 2020."
+#: templates/publications.html:72
+msgid "Piątek Ł., Hippe Z.S., Grzymała-Busse J.W."
 msgstr ""
 
 #: templates/publications.html:73
-msgid "Piątek Ł., Nowak R."
+msgid ""
+"Research over algorithms of synthesis static images of melanocytic skin "
+"lesions."
 msgstr ""
 
-#: templates/publications.html:74
-msgid "Synthetic Data for Medical Imaging: A Review of Methods and Applications."
+#: templates/publications.html:75 templates/publications.html:88
+msgid ""
+"In: Nowakowski A. (Ed.), INFOBAZY’2011 – Databases for Science, European "
+"Projects and\n"
+"                    Information Society."
 msgstr ""
 
-#: templates/publications.html:75
-msgid "Biomedical Imaging Symposium, 2021."
-msgstr ""
-
-#: templates/publications.html:83
-msgid "Piątek Ł., Kowalska M."
-msgstr ""
-
-#: templates/publications.html:84
-msgid "Generative Adversarial Networks in Skin Disease Image Synthesis."
+#: templates/publications.html:77
+msgid ""
+"Centrum Informatyczne TASK, Gdańsk, Poland, September 5–7, 2011, pp. "
+"162–167."
 msgstr ""
 
 #: templates/publications.html:85
-msgid "AI in Healthcare Conference, 2022."
+msgid "Pancerz K., Piątek Ł., Wrzesień M."
 msgstr ""
 
-#: templates/publications.html:93
-msgid "Piątek Ł., Wróbel J."
+#: templates/publications.html:86
+msgid ""
+"Validation of algorithms of synthesis medical images, using methods of "
+"constructive\n"
+"                        induction and rough sets."
 msgstr ""
 
-#: templates/publications.html:94
-msgid "Assessing Dermatological Conditions Using Augmented Reality Tools."
+#: templates/publications.html:90
+msgid ""
+"Centrum Informatyczne TASK, Gdańsk, Poland, September 5–7, 2011, pp. "
+"178–183."
 msgstr ""
 
-#: templates/publications.html:95
-msgid "eHealth Innovations Congress, 2023."
+#: templates/publications.html:98
+msgid "Piątek Ł., Owsiany G."
 msgstr ""
 
-#~ msgid "Publications subpage"
-#~ msgstr "Podstrona Publikacje"
+#: templates/publications.html:99
+msgid "Synthesis of Static Medical Images with using Machine Learning Methods."
+msgstr ""
 
-#~ msgid "Characteristics subpage"
-#~ msgstr "Podstrona Charakterystyka"
+#: templates/publications.html:100
+msgid ""
+"Proc. of the 3rd International Conference on Intelligent Information and "
+"Engineering Systems\n"
+"                    (INFOS’2010), Rzeszów, Krynica-Zdrój, Poland, "
+"September 20–24, 2010."
+msgstr ""
 
-#~ msgid "ABCD formula subpage"
-#~ msgstr "Podstrona formuły ABCD"
+#: templates/publications.html:109
+msgid "Piątek Ł."
+msgstr ""
 
-#~ msgid "Issue: 2, Volume: 4, pp.84-95, 2018."
-#~ msgstr ""
+#: templates/publications.html:110
+msgid ""
+"Research over algorithms of synthesis static biomedical images – an "
+"example of melanocytic\n"
+"                        skin lesions."
+msgstr ""
 
-#~ msgid "DOI:"
-#~ msgstr ""
+#: templates/publications.html:112
+msgid ""
+"Ph.D. Thesis, Gdańsk Technical University, Faculty of Electronics, "
+"Telecommunications and\n"
+"                    Informatics, Gdańsk, Poland, 2010."
+msgstr ""
 
-#~ msgid ""
-#~ "Advances in Experimental Medicine and "
-#~ "Biology, vol 1028, pp 105-37. Springer,"
-#~ " Singapore, 2017."
-#~ msgstr ""
+#: templates/publications.html:123
+msgid "W. Paja and M. Wrzesień"
+msgstr ""
 
-#~ msgid ""
-#~ "Proc. of the 1st International "
-#~ "Conference of Digital Medicine & Medical"
-#~ " 3D Printing, Nanjing, China, June "
-#~ "17-19, 2016."
-#~ msgstr ""
+#: templates/publications.html:124
+msgid "Melanoma important features selection using random forest approach."
+msgstr ""
 
-#~ msgid "In: Nowakowski A. (Ed.),"
-#~ msgstr ""
+#: templates/publications.html:125
+msgid ""
+"Proc. of the 6th International Conference on Human System Interactions "
+"(HSI), Sopot, Poland,\n"
+"                    2013, pp. 415–418."
+msgstr ""
 
-#~ msgid ""
-#~ "Inspiration, integration, implementation. Centrum"
-#~ " Informatyczne TASK, Gdańsk-Sopot, Poland,"
-#~ " September 8-10, 2014 (in Polish)."
-#~ msgstr ""
+#: templates/publications.html:134 templates/publications.html:156
+msgid "P. Cudek, W. Paja, M. Wrzesień"
+msgstr ""
 
-#~ msgid "Hippe Z.S., Piątek Ł."
-#~ msgstr ""
+#: templates/publications.html:135
+msgid "Image Recognition System for Diagnosis Support of Melanoma Skin Lesion."
+msgstr ""
 
-#~ msgid "A New Internet System of Melanocytic Lesions. The Current Status."
-#~ msgstr ""
+#: templates/publications.html:136
+msgid ""
+"In: Security and Intelligent Information Systems, Springer-Verlag Berlin "
+"Heidelberg 2012, pp. 217-225"
+msgstr ""
 
-#~ msgid "Piątek Ł., Hippe Z.S."
-#~ msgstr ""
+#: templates/publications.html:145
+msgid "W. Paja, K. Pancerz, T. Mroczek, J. Gomuła, M. Wrzesień"
+msgstr ""
 
-#~ msgid "Synthesis of Selected Melanocytic Skin Lesion Features."
-#~ msgstr "Skórnych Zmian Melanocytowych"
+#: templates/publications.html:146
+msgid ""
+"Melanoma Diagnosis and Classification Web Center System. The Non-Invasive"
+" Diagnosis Support Subsystem."
+msgstr ""
 
-#~ msgid ""
-#~ "Proc. of the 27th Image and Vision"
-#~ " Computing New Zealand (IVCNZ’2012), "
-#~ "Dunedin, New Zealand, November 26-28, "
-#~ "2012."
-#~ msgstr ""
+#: templates/publications.html:147
+msgid ""
+"In: P. Perner (Ed.) Advances in Data Mining, Springer-Verlag Berlin "
+"Heidelberg 2011, pp. 96-105."
+msgstr ""
 
-#~ msgid "Grzymała-Busse J.W., Hippe Z.S., Piątek Ł."
-#~ msgstr ""
+#: templates/publications.html:157
+msgid ""
+"Automatic System for Classification of Melanocytic Skin Lesions Based on "
+"Images Recognition."
+msgstr ""
 
-#~ msgid "Synthesis of Shapes in the Domain of Melanocytic Skin Lesions."
-#~ msgstr ""
+#: templates/publications.html:158
+msgid ""
+"In: Man-Machine Interactions 2, Advances in Intelligent and Soft "
+"Computing, Springer-Verlag Berlin Heidelberg 2011, pp. 189-196."
+msgstr ""
 
-#~ msgid ""
-#~ "Proc. of the International Conference on"
-#~ " Applied and Theoretical Information "
-#~ "Systems Research (ATISR’2012), Taipei, Taiwan,"
-#~ " February 10-12, 2012."
-#~ msgstr ""
+#: templates/publications.html:169
+msgid "Mroczek T., Piątek Ł."
+msgstr ""
 
-#~ msgid "Piątek Ł., Pancerz K., Owsiany G."
-#~ msgstr ""
+#: templates/publications.html:170
+msgid "Exploring Relationships in Melanocytic Data Sets."
+msgstr ""
 
-#~ msgid ""
-#~ "Validation of Data Categorization Using "
-#~ "Extensions of Information Systems: Experiments"
-#~ " on Melanocytic Skin Lesion Data."
-#~ msgstr ""
+#: templates/publications.html:171
+msgid "Procedia Computer Science, 2024"
+msgstr ""
 
-#~ msgid "In: Ganzha M., Maciaszek L., Paprzycki M. (Eds.),"
-#~ msgstr ""
+#: templates/publications.html:172 templates/publications.html:182
+msgid "View the article"
+msgstr ""
 
-#~ msgid ""
-#~ "Proc. of the Federated Conference on "
-#~ "Computer Science and Information Systems "
-#~ "(FedCSIS’2011), Szczecin, Poland, September "
-#~ "18-21, 2011, pp.147-151."
-#~ msgstr ""
+#: templates/publications.html:179
+msgid "Piątek Ł., Mroczek T."
+msgstr ""
 
-#~ msgid "Piątek Ł., Hippe Z.S., Grzymała-Busse J.W."
-#~ msgstr ""
+#: templates/publications.html:180
+msgid "Analysis and classification of melanocytic skin lesion images."
+msgstr ""
 
-#~ msgid ""
-#~ "Research Over Algorithms of Synthesis "
-#~ "Static Images of Melanocytic Skin "
-#~ "Lesions."
-#~ msgstr ""
-
-#~ msgid "INFOBAZY’2011"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Databases for Science, European Projects, "
-#~ "and Information Society. Centrum Informatyczne"
-#~ " TASK, Gdańsk, Poland, September 5-7, "
-#~ "2011, pp.162-167 (in Polish)."
-#~ msgstr ""
-
-#~ msgid "Pancerz K., Piątek Ł., Wrzesień M."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Validation of Algorithms of Synthesis "
-#~ "Medical Images, Using Methods of "
-#~ "Constructive Induction and Rough Sets."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Databases for Science, European Projects, "
-#~ "and Information Society. Centrum Informatyczne"
-#~ " TASK, Gdańsk, Poland, September 5-7, "
-#~ "2011, pp.178-183 (in Polish)."
-#~ msgstr ""
-
-#~ msgid "Piątek Ł., Owsiany G."
-#~ msgstr ""
-
-#~ msgid "Synthesis of Static Medical Images Using Machine Learning Methods."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Proc. of the 3rd International "
-#~ "Conference on Intelligent Information and "
-#~ "Engineering Systems (INFOS’2010), ITHEA "
-#~ "International Scientific Society Edit Office,"
-#~ " Rzeszów, Krynica-Zdrój, Poland, September"
-#~ " 20-24, 2010."
-#~ msgstr ""
-
-#~ msgid "Piątek Ł."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Research Over Algorithms of Synthesis "
-#~ "Static Biomedical Images – An Example"
-#~ " of Melanocytic Skin Lesions."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Ph.D. Thesis, Gdańsk Technical University, "
-#~ "Faculty of Electronics, Telecommunications, "
-#~ "and Informatics, Gdańsk, Poland, 2010 "
-#~ "(in Polish)."
-#~ msgstr ""
-
-#~ msgid "Based on the improved TDS, the lesion is benign."
-#~ msgstr "Na podstawie TDS, zmiana jest łagodna."
-
-#~ msgid "Based on the improved TDS, the lesion is suspicious."
-#~ msgstr "Na podstawie TDS, zmiana jest podejrzana."
-
-#~ msgid "Based on the improved TDS, the lesion is malignant."
-#~ msgstr "Na podstawie TDS, zmiana jest złośliwa."
+#: templates/publications.html:181
+msgid "Procedia Computer Science, 2022"
+msgstr ""
 

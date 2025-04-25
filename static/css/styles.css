@@ -312,12 +312,15 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 12px;
   }
   
   .square-thumb {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
   }
   
   .section-title {
@@ -331,7 +334,10 @@ footer {
     max-width: 720px;
     font-size: 1.125rem;
     line-height: 1.7;
-  }
+    padding: 0 1rem 1rem 1rem;
+    margin: 1.5rem auto 1rem;
+    
+}
 
   .styled-publications {
     counter-reset: pub-counter;
@@ -389,7 +395,7 @@ footer {
 
 .publications-hero {
     height: 40vh;
-    background: url("../images/publications-hero.jpeg") center/cover;
+    background: url("../images/publications-hero.png") center 35% /cover;
 }
 
 .publications-hero::before {
@@ -399,7 +405,7 @@ footer {
     left: 0;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.55), transparent);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
     z-index: 0;
     pointer-events: none;
 }
@@ -441,15 +447,9 @@ html {
 
 .section-title {
     font-size: 2rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 1.5rem;
-}
-
-.section-description {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    margin-bottom: 2rem;
+    font-weight: 700;
+    color: #2d3e50;
+    margin-bottom: 1.2rem;
 }
 
 img.img-fluid {
@@ -457,7 +457,7 @@ img.img-fluid {
     object-fit: cover;
     width: 150px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .row.mt-4 {
@@ -505,4 +505,68 @@ img.img-fluid {
     max-width: 600px;
     color: #f0f0f0;
     margin-top: 1rem;
+}
+
+.classification-section {
+    max-width: 850px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.classification-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.classification-header {
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--primary-blue);
+    text-align: center;
+}
+
+.classification-header.secondary {
+    background-color: #4f6277;
+}
+
+.classification-body {
+    padding: 1.5rem;
+}
+
+.classification-body p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.classification-body strong {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--primary-blue);
+    margin-top: 1rem;
+}
+
+.card {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-blue);
 }
