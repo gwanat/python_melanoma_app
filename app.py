@@ -103,13 +103,13 @@ def diagnostics():
 
 
         if new_tds <= 4.85  and blue_dominant:
-            new_tds_message = _("Based on the New Total Dermatoscopy Score (TDS), the lesion is a benign blue nevus.")
+            new_tds_message = _("Based on the improved version of Total Dermatoscopy Score (TDS), the lesion is a benign blue nevus.")
         elif new_tds <= 4.85:
-            new_tds_message = _("Based on the New Total Dermatoscopy Score (TDS), the lesion is benign.")
+            new_tds_message = _("Based on the improved version of Total Dermatoscopy Score (TDS), the lesion is benign.")
         elif 4.85 < new_tds < 5.45:
-            new_tds_message = _("Based on the New Total Dermatoscopy Score (TDS), the lesion is suspicious.")
+            new_tds_message = _("Based on the improved version of Total Dermatoscopy Score (TDS), the lesion is suspicious.")
         else:
-            new_tds_message = _("Based on the New Total Dermatoscopy Score (TDS), the lesion is malignant.")
+            new_tds_message = _("Based on the improved version of Total Dermatoscopy Score (TDS), the lesion is malignant.")
 
         return render_template(
             "diagnostics.html",

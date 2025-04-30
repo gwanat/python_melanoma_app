@@ -52,6 +52,7 @@ header {
 main {
     flex-grow: 1;
     padding-bottom: 20px;
+    padding-top: 36px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -60,7 +61,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 20px;
+    padding: 80px;
 }
 
 .hero-section {
@@ -98,7 +99,7 @@ main {
 }
 
 .form-container {
-    width: 80%;
+    width: 70%;
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -301,6 +302,7 @@ footer {
 }
 
 .characteristics-hero .lead {
+    padding-left: 10px;
     font-size: 1.2rem;
     max-width: 600px;
 }
@@ -323,13 +325,13 @@ footer {
     box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
   }
   
-  .section-title {
-    font-size: 2.25rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    color: #333;
-  }
-  
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2d3e50;
+    margin-bottom: 1.2rem;
+}
+
   .section-description {
     max-width: 720px;
     font-size: 1.125rem;
@@ -411,6 +413,7 @@ footer {
 }
 
 .publications-hero .lead {
+    padding-left: 10px;
     font-size: 1.2rem;
     max-width: 600px;
 }
@@ -443,13 +446,6 @@ html {
 #scrollTopBtn img {
     width: 24px;
     height: 24px;
-}
-
-.section-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #2d3e50;
-    margin-bottom: 1.2rem;
 }
 
 img.img-fluid {
@@ -500,7 +496,8 @@ img.img-fluid {
 }
 
 .abcd-hero-text .lead {
-    font-size: 1.25rem;
+    padding-left: 10px;
+    font-size: 1.2rem;
     font-weight: 400;
     max-width: 600px;
     color: #f0f0f0;
@@ -565,8 +562,112 @@ img.img-fluid {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
+.modal-title,
 .card-title {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--primary-blue);
+}
+
+.carousel-desc{
+    font-size: 1rem;
+    color: #4b4a4a;
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+}
+
+.company-card {
+    border: 1px solid rgba(45, 62, 80, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.company-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(45, 62, 80, 0.1);
+}
+
+.category-header {
+    border-left: 4px solid var(--primary-blue);
+    padding-left: 1rem;
+}
+
+.badge.bg-primary {
+    background-color: var(--primary-blue) !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.company-modal .carousel-item img {
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.tech-specs {
+    columns: 2;
+    column-gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .tech-specs {
+        columns: 1;
+    }
+}
+
+.industry-hero {
+    height: 50vh;
+    background: url('../images/abcd-hero.webp') center 35%/cover no-repeat;
+}
+
+.industry-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(45, 62, 80, 0.85), transparent);
+    z-index: 0;
+}
+
+.risk-factor-list {
+    list-style: none;
+    padding-left: 1.5rem;
+    counter-reset: risk-counter;
+}
+
+.risk-factor-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.risk-factor-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+    line-height: 1;
+    top: 0.15em;
+}
+
+.risk-factor-intro {
+    font-size: 1.1rem;
+    color: #4f6277;
+    margin-bottom: 1.5rem;
+}
+
+.risk-note {
+    background: rgba(45, 62, 80, 0.03);
+    border-left: 3px solid var(--primary-blue);
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+}
+
+.risk-note strong {
+    color: var(--primary-blue);
+    display: block;
+    margin-bottom: 0.5rem;
 }

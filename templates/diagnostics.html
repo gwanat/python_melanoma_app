@@ -5,7 +5,13 @@
 {% block content %}
 <main class="main-diagnostics">
     <div class="form-container">
-        <h1 class="form-header">{{ _('Melanoma Diagnostics') }}</h1>
+        <h1 class="form-header section-title" style="text-align: center;">{{ _('Melanoma Diagnostics') }}</h1>
+        <p class="section-description text-muted mx-auto" style="text-align: center;">
+            {{ _('This tool provides an initial diagnostic suggestion based on the Stolz ABCD rule 
+            of dermatoscopy. It is not a replacement for professional medical evaluation. 
+            If you are unsure about how to complete any part of the form, click the information 
+            icon next to each section to learn more or visit the ABCD Rule subpage.') }}
+        </p>
         <form method="POST" action="/diagnostics">
             <div class="form-sections">
                 <div class="section">
