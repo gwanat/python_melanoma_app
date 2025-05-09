@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-24 16:18+0200\n"
+"POT-Creation-Date: 2025-05-09 13:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,20 +37,26 @@ msgstr ""
 
 #: app.py:106
 msgid ""
-"Based on the New Total Dermatoscopy Score (TDS), the lesion is a benign "
-"blue nevus."
+"Based on the improved version of Total Dermatoscopy Score (TDS), the "
+"lesion is a benign blue nevus."
 msgstr ""
 
 #: app.py:108
-msgid "Based on the New Total Dermatoscopy Score (TDS), the lesion is benign."
+msgid ""
+"Based on the improved version of Total Dermatoscopy Score (TDS), the "
+"lesion is benign."
 msgstr ""
 
 #: app.py:110
-msgid "Based on the New Total Dermatoscopy Score (TDS), the lesion is suspicious."
+msgid ""
+"Based on the improved version of Total Dermatoscopy Score (TDS), the "
+"lesion is suspicious."
 msgstr ""
 
 #: app.py:112
-msgid "Based on the New Total Dermatoscopy Score (TDS), the lesion is malignant."
+msgid ""
+"Based on the improved version of Total Dermatoscopy Score (TDS), the "
+"lesion is malignant."
 msgstr ""
 
 #: lesions_data.py:5
@@ -319,119 +325,122 @@ msgstr ""
 msgid "Skin Lesion Characteristics"
 msgstr ""
 
-#: templates/characteristics.html:7
+#: templates/characteristics.html:8
 msgid "Understanding Skin Lesions"
 msgstr ""
 
-#: templates/characteristics.html:8
+#: templates/characteristics.html:9
 msgid "Read more about different skin lesions and learn how to recognize them."
 msgstr ""
 
-#: templates/characteristics.html:13
+#: templates/characteristics.html:14
 msgid "What Are Melanocytic Lesions?"
 msgstr ""
 
-#: templates/characteristics.html:15
+#: templates/characteristics.html:16
 msgid ""
-"Melanocytic nevi are also called benign melanocytic tumors because, \n"
-"      as a rule, most of them are benign and never become malignant. "
-"However, \n"
-"      approximately 30 percent of malignant melanomas, which are one of "
-"the most \n"
-"      dangerous skin cancers of today, arise from these lesions."
+"Melanocytic nevi are also called benign melanocytic tumors because,\n"
+"        as a rule, most of them are benign and never become malignant. "
+"However,\n"
+"        approximately 30 percent of malignant melanomas, which are one of"
+" the most\n"
+"        dangerous skin cancers of today, arise from these lesions."
 msgstr ""
 
-#: templates/characteristics.html:19
+#: templates/characteristics.html:20
 msgid "Classification of Melanocytic Nevi"
 msgstr ""
 
-#: templates/characteristics.html:21
+#: templates/characteristics.html:22
 msgid ""
-"Melanocytic nevi (the name comes from melanocytes, \n"
-"        i.e., cells that produce the skin pigment – melanin) are \n"
+"Melanocytic nevi (the name comes from melanocytes,\n"
+"        i.e., cells that produce the skin pigment – melanin) are\n"
 "        divided into epidermal and dermal types."
 msgstr ""
 
-#: templates/characteristics.html:30
+#: templates/characteristics.html:31
 msgid "Epidermal"
 msgstr ""
 
-#: templates/characteristics.html:33
+#: templates/characteristics.html:34
 msgid "The first group includes so-called flat nevi and lentigo maligna, where:"
 msgstr ""
 
-#: templates/characteristics.html:34
+#: templates/characteristics.html:35
 msgid "Flat nevi"
 msgstr ""
 
-#: templates/characteristics.html:35
+#: templates/characteristics.html:36
 msgid ""
 "Flat nevi are at the level of the skin, well-defined from the surrounding"
-" \n"
-"            tissue, do not cause any discomfort, and tend to enlarge with"
-" a person’s \n"
-"            growth. In the case of chronic irritation, they may become a "
-"starting point \n"
-"            for malignant skin cancer – melanoma. However, this is rare."
-msgstr ""
-
-#: templates/characteristics.html:40
-msgid "Lentigo maligna"
+"\n"
+"                tissue, do not cause any discomfort, and tend to enlarge "
+"with a person’s\n"
+"                growth. In the case of chronic irritation, they may "
+"become a starting point\n"
+"                for malignant skin cancer – melanoma. However, this is "
+"rare."
 msgstr ""
 
 #: templates/characteristics.html:41
+msgid "Lentigo maligna"
+msgstr ""
+
+#: templates/characteristics.html:42
 msgid ""
 "Lentigo maligna can be congenital or acquired. They look very similar to "
-"each other – small, \n"
-"            numerous brown spots of various shades. They resemble "
-"freckles but are slightly larger and more \n"
-"            defined. Congenital lentigo maligna appears in childhood, "
-"usually on the skin of the back and chest. \n"
-"            Acquired lentigo maligna can develop due to sun exposure (sun"
-" lentigo) or in older individuals \n"
-"            (senile lentigo). They can be single or numerous, typically "
-"located on the skin of exposed areas \n"
-"            (face, hands, forearms). They appear more frequently in the "
-"summer and darken during this time. \n"
-"            Sun lentigo may gradually disappear on its own, while senile "
-"lentigo tends to be a permanent change."
+"each other – small,\n"
+"                numerous brown spots of various shades. They resemble "
+"freckles but are slightly larger and more\n"
+"                defined. Congenital lentigo maligna appears in childhood,"
+" usually on the skin of the back and chest.\n"
+"                Acquired lentigo maligna can develop due to sun exposure "
+"(sun lentigo) or in older individuals\n"
+"                (senile lentigo). They can be single or numerous, "
+"typically located on the skin of exposed areas\n"
+"                (face, hands, forearms). They appear more frequently in "
+"the summer and darken during this time.\n"
+"                Sun lentigo may gradually disappear on its own, while "
+"senile lentigo tends to be a permanent\n"
+"                change."
 msgstr ""
 
-#: templates/characteristics.html:48
+#: templates/characteristics.html:50
 msgid ""
 "Malignant lentigo spots are very dangerous because they are often a "
-"starting point \n"
-"            for melanoma. They are dark and generally irregularly "
-"pigmented, sometimes slightly raised. \n"
-"            They occur on the face, more often in women and older "
-"individuals. They develop slowly, and if \n"
-"            they transform into melanoma, the course of the disease is "
-"relatively mild."
+"starting point\n"
+"                for melanoma. They are dark and generally irregularly "
+"pigmented, sometimes slightly raised.\n"
+"                They occur on the face, more often in women and older "
+"individuals. They develop slowly, and if\n"
+"                they transform into melanoma, the course of the disease "
+"is relatively mild."
 msgstr ""
 
-#: templates/characteristics.html:58
+#: templates/characteristics.html:60
 msgid "Dermal"
 msgstr ""
 
-#: templates/characteristics.html:61
+#: templates/characteristics.html:63
 msgid "Blue nevi"
 msgstr ""
 
-#: templates/characteristics.html:62
+#: templates/characteristics.html:64
 msgid ""
-"Blue nevi are a type of dermal melanocytic nevus. The pigment cells \n"
-"            are located quite deep in the skin, usually on the face and "
-"extremities. The \n"
-"            nevi range in color from light blue to black. They are "
-"considered safe nevi, \n"
-"            meaning they rarely serve as a starting point for melanomas."
-msgstr ""
-
-#: templates/characteristics.html:71
-msgid "Classification of melanocytic skin lesions"
+"Blue nevi are a type of dermal melanocytic nevus. The pigment cells\n"
+"                are located quite deep in the skin, usually on the face "
+"and extremities. The\n"
+"                nevi range in color from light blue to black. They are "
+"considered safe nevi,\n"
+"                meaning they rarely serve as a starting point for "
+"melanomas."
 msgstr ""
 
 #: templates/characteristics.html:73
+msgid "Classification of melanocytic skin lesions"
+msgstr ""
+
+#: templates/characteristics.html:75
 msgid ""
 "Melanocytic nevi can widely vary in clinical dermatoscopic and "
 "histological appearance.\n"
@@ -442,8 +451,79 @@ msgid ""
 "        Below you can find a list of most common types of skin lesions."
 msgstr ""
 
-#: templates/characteristics.html:97 templates/index.html:9
+#: templates/characteristics.html:98 templates/index.html:9
 msgid "Learn More"
+msgstr ""
+
+#: templates/characteristics.html:142
+msgid "Melanoma Risk Factors"
+msgstr ""
+
+#: templates/characteristics.html:145
+msgid "Key factors increasing melanoma development risk:"
+msgstr ""
+
+#: templates/characteristics.html:148
+msgid ""
+"Excessive UV exposure causing sunburns (especially during "
+"childhood/adolescence)"
+msgstr ""
+
+#: templates/characteristics.html:149
+msgid "Lifetime cumulative sun exposure"
+msgstr ""
+
+#: templates/characteristics.html:150
+msgid "Prolonged sun exposure between 10AM-2PM"
+msgstr ""
+
+#: templates/characteristics.html:151
+msgid "Recreational/intermittent sun exposure"
+msgstr ""
+
+#: templates/characteristics.html:152
+msgid "Inadequate sun protection use"
+msgstr ""
+
+#: templates/characteristics.html:153
+msgid "Frequent use of tanning beds/lamps"
+msgstr ""
+
+#: templates/characteristics.html:154
+msgid ""
+"Fair complexion (blonde/red hair, blue eyes), especially with chronic sun"
+" exposure"
+msgstr ""
+
+#: templates/characteristics.html:155
+msgid "Numerous melanocytic nevi"
+msgstr ""
+
+#: templates/characteristics.html:156
+msgid "Previous melanoma diagnosis"
+msgstr ""
+
+#: templates/characteristics.html:157
+msgid "Family history of melanoma"
+msgstr ""
+
+#: templates/characteristics.html:158
+msgid "Immunosuppression (from disease or medications)"
+msgstr ""
+
+#: templates/characteristics.html:159
+msgid "Chronic irritation or damage of pigmented lesions"
+msgstr ""
+
+#: templates/characteristics.html:163
+msgid "Remember:"
+msgstr ""
+
+#: templates/characteristics.html:164
+msgid ""
+"Regular self-exams and professional dermatoscopic evaluations are crucial"
+" for early\n"
+"                    detection."
 msgstr ""
 
 #: templates/diagnostics.html:3
@@ -454,32 +534,44 @@ msgstr ""
 msgid "Melanoma Diagnostics"
 msgstr ""
 
-#: templates/diagnostics.html:13
-msgid "Asymmetry (A)"
+#: templates/diagnostics.html:10
+msgid ""
+"This tool provides an initial diagnostic suggestion based on the Stolz "
+"ABCD rule \n"
+"            of dermatoscopy. It is not a replacement for professional "
+"medical evaluation. \n"
+"            If you are unsure about how to complete any part of the form,"
+" click the information \n"
+"            icon next to each section to learn more or visit the ABCD "
+"Rule subpage."
 msgstr ""
 
 #: templates/diagnostics.html:19
-msgid " Measures whether the shape of the lesion is uneven."
-msgstr ""
-
-#: templates/diagnostics.html:23
-msgid "0 (Symmetrical)"
-msgstr ""
-
-#: templates/diagnostics.html:24
-msgid "1 (One-Axial Asymmetry)"
+msgid "Asymmetry (A)"
 msgstr ""
 
 #: templates/diagnostics.html:25
+msgid " Measures whether the shape of the lesion is uneven."
+msgstr ""
+
+#: templates/diagnostics.html:29
+msgid "0 (Symmetrical)"
+msgstr ""
+
+#: templates/diagnostics.html:30
+msgid "1 (One-Axial Asymmetry)"
+msgstr ""
+
+#: templates/diagnostics.html:31
 msgid "2 (Two-Axial Asymmetry)"
 msgstr ""
 
-#: templates/diagnostics.html:35
+#: templates/diagnostics.html:41
 msgid "More about the Asymmetry factor"
 msgstr ""
 
-#: templates/diagnostics.html:41 templates/diagnostics.html:78
-#: templates/diagnostics.html:145 templates/diagnostics.html:207
+#: templates/diagnostics.html:47 templates/diagnostics.html:84
+#: templates/diagnostics.html:151 templates/diagnostics.html:213
 msgid ""
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n"
 "                                        Proin sit amet magna id mauris "
@@ -495,99 +587,99 @@ msgid ""
 "                                        augue scelerisque rutrum. "
 msgstr ""
 
-#: templates/diagnostics.html:56
+#: templates/diagnostics.html:62
 msgid "Border (B)"
 msgstr ""
 
-#: templates/diagnostics.html:61
+#: templates/diagnostics.html:67
 msgid " Measures irregularity of the lesion divided into eight sections."
 msgstr ""
 
-#: templates/diagnostics.html:73
+#: templates/diagnostics.html:79
 msgid "More about the Border factor"
 msgstr ""
 
-#: templates/diagnostics.html:93
+#: templates/diagnostics.html:99
 msgid "Color (C)"
 msgstr ""
 
-#: templates/diagnostics.html:98
+#: templates/diagnostics.html:104
 msgid " Measures presence of multiple colors within the lesion."
 msgstr ""
 
-#: templates/diagnostics.html:104
+#: templates/diagnostics.html:110
 msgid "Light Brown"
 msgstr ""
 
-#: templates/diagnostics.html:109
+#: templates/diagnostics.html:115
 msgid "Dark Brown"
 msgstr ""
 
-#: templates/diagnostics.html:114
+#: templates/diagnostics.html:120
 msgid "Black"
 msgstr ""
 
-#: templates/diagnostics.html:118
+#: templates/diagnostics.html:124
 msgid "Red"
 msgstr ""
 
-#: templates/diagnostics.html:122
+#: templates/diagnostics.html:128
 msgid "White"
 msgstr ""
 
-#: templates/diagnostics.html:126
+#: templates/diagnostics.html:132
 msgid "Blue/Grey"
 msgstr ""
 
-#: templates/diagnostics.html:130
+#: templates/diagnostics.html:136
 msgid "Blue covers over half?"
 msgstr ""
 
-#: templates/diagnostics.html:140
+#: templates/diagnostics.html:146
 msgid "More about the Color factor"
 msgstr ""
 
-#: templates/diagnostics.html:160
+#: templates/diagnostics.html:166
 msgid "Diversity of Structures (D)"
 msgstr ""
 
-#: templates/diagnostics.html:166
+#: templates/diagnostics.html:172
 msgid " Measures variety of patterns and structures within the lesion."
 msgstr ""
 
-#: templates/diagnostics.html:172
+#: templates/diagnostics.html:178
 msgid "Pigment Networks"
 msgstr ""
 
-#: templates/diagnostics.html:177
+#: templates/diagnostics.html:183
 msgid "Pigment Dots"
 msgstr ""
 
-#: templates/diagnostics.html:182
+#: templates/diagnostics.html:188
 msgid "Pigment Globules"
 msgstr ""
 
-#: templates/diagnostics.html:187
+#: templates/diagnostics.html:193
 msgid "Branched Streaks"
 msgstr ""
 
-#: templates/diagnostics.html:192
+#: templates/diagnostics.html:198
 msgid "Structureless Areas"
 msgstr ""
 
-#: templates/diagnostics.html:202
+#: templates/diagnostics.html:208
 msgid "More about the Diversity of Structures factor"
 msgstr ""
 
-#: templates/diagnostics.html:221
+#: templates/diagnostics.html:227
 msgid "Submit"
 msgstr ""
 
-#: templates/diagnostics.html:227
+#: templates/diagnostics.html:233
 msgid "Total Dermatoscopy Score:"
 msgstr ""
 
-#: templates/diagnostics.html:229
+#: templates/diagnostics.html:235
 msgid "New Total Dermatoscopy Score:"
 msgstr ""
 
@@ -603,8 +695,101 @@ msgstr ""
 msgid "Start Diagnosis"
 msgstr ""
 
-#: templates/industry.html:6
-msgid "Industry subpage"
+#: templates/industry.html:2
+msgid "Industry Partners"
+msgstr ""
+
+#: templates/industry.html:7
+msgid "Field of Dermatoscopy"
+msgstr ""
+
+#: templates/industry.html:8
+msgid ""
+"Discover companies which apply diagnostics with AI and advanced imaging "
+"technology"
+msgstr ""
+
+#: templates/industry.html:15
+msgid "Companies connected with videodermatoscopy "
+msgstr ""
+
+#: templates/industry.html:17
+msgid ""
+"Below we are presenting companies supporting skin lesions diagnostics "
+"with\n"
+"            a use of Artificial Intelligence or advanced "
+"videodermatoscopy hardware"
+msgstr ""
+
+#: templates/industry.html:24
+msgid "Startups"
+msgstr ""
+
+#: templates/industry.html:25
+msgid "Software"
+msgstr ""
+
+#: templates/industry.html:35
+msgid "AI skin cancer recognition"
+msgstr ""
+
+#: templates/industry.html:37
+msgid ""
+"System of specialized algorithms for the automatic recognition of skin "
+"cancer for\n"
+"                    epiluminescence microscopy (ELM) images with the "
+"potential to be used in doctor’s offices and other\n"
+"                    health care units for screening for early melanoma. "
+"Thanks to Artificial Intelligence and Machine\n"
+"                    Learning (Deep Learning) algorithms, it recognizes "
+"melanocytic nevi on the basis of photos taken\n"
+"                    with a videodermoscope."
+msgstr ""
+
+#: templates/industry.html:49
+msgid "Hardware"
+msgstr ""
+
+#: templates/industry.html:59
+msgid "Imaging Solutions"
+msgstr ""
+
+#: templates/industry.html:61
+msgid ""
+"FotoFinder specializes in high-end hardware for dermatological imaging,\n"
+"                    particularly in videodermatoscopy and total body "
+"photography. Their systems\n"
+"                    combine advanced optics with polarized lighting to "
+"capture highly detailed skin images."
+msgstr ""
+
+#: templates/industry.html:73
+msgid "Multifunctional Platform Studio"
+msgstr ""
+
+#: templates/industry.html:75
+msgid ""
+"The multifunctional platform enables the diagnosis of moles, nails, \n"
+"                            and the scalp. It allows for the creation of "
+"automatic trichograms essential \n"
+"                            for planning hair transplants, and also "
+"provides “before and after” facial images. \n"
+"                            The system is ideal for comparing changes in "
+"moles and monitoring progress in hair \n"
+"                            loss treatment as well as the effects of "
+"beauty and anti-aging therapies."
+msgstr ""
+
+#: templates/industry.html:91
+msgid "Handyscope DermLite"
+msgstr ""
+
+#: templates/industry.html:93
+msgid ""
+"The handyscope DermLite is a portable device that works with almost any "
+"smartphone.\n"
+"                            Leviacam, on the other hand, is a portable "
+"camera that easily connects to a computer or laptop."
 msgstr ""
 
 #: templates/publications.html:7
@@ -612,7 +797,9 @@ msgid "Scientific Publications"
 msgstr ""
 
 #: templates/publications.html:9
-msgid "Advancing melanoma understanding through applied research."
+msgid ""
+"Read through publications concerning diagnosis and processing of "
+"melanocytic lesions images"
 msgstr ""
 
 #: templates/publications.html:16

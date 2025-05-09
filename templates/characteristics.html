@@ -148,15 +148,15 @@
                 <li>{{ _('Excessive UV exposure causing sunburns (especially during childhood/adolescence)') }}</li>
                 <li>{{ _('Lifetime cumulative sun exposure') }}</li>
                 <li>{{ _('Prolonged sun exposure between 10AM-2PM') }}</li>
-                <li>{{ _('Recreational/intermittent sun exposure (especially "weekend warriors")') }}</li>
+                <li>{{ _('Recreational/intermittent sun exposure') }}</li>
                 <li>{{ _('Inadequate sun protection use') }}</li>
                 <li>{{ _('Frequent use of tanning beds/lamps') }}</li>
-                <li>{{ _('Fair complexion (blonde/red hair, blue eyes) with chronic sun exposure') }}</li>
+                <li>{{ _('Fair complexion (blonde/red hair, blue eyes), especially with chronic sun exposure') }}</li>
                 <li>{{ _('Numerous melanocytic nevi') }}</li>
                 <li>{{ _('Previous melanoma diagnosis') }}</li>
                 <li>{{ _('Family history of melanoma') }}</li>
                 <li>{{ _('Immunosuppression (from disease or medications)') }}</li>
-                <li>{{ _('Chronic irritation of pigmented lesions') }}</li>
+                <li>{{ _('Chronic irritation or damage of pigmented lesions') }}</li>
             </ul>
 
             <div class="risk-note mt-4">
@@ -167,4 +167,10 @@
         </div>
     </div>
 </section>
+
+<section class="mt-5 text-center" style="margin-bottom: 2rem;">
+    <h3 class="section-title">{{ _('Do you want to analyze a lesion?') }}</h3>
+    <a href="{{ url_for('diagnostics') }}" class="btn btn-secondary">{{ _('Diagnostics') }}</a>
+</section>
+
 {% endblock %}
