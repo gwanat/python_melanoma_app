@@ -1,9 +1,103 @@
 {% extends "base.html" %}
+{% block title %}{{ _('Industry Partners') }}{% endblock %}
 
 {% block content %}
-
-<div class="text-center">
-    <h1>{{ _('Industry subpage') }}</h1>
+<div class="hero-section industry-hero">
+    <div class="hero-content">
+        <h1 class="hero-title">{{ _('Field of Dermatoscopy') }}</h1>
+        <p class="lead">{{ _('Discover companies which apply diagnostics with AI and advanced imaging technology') }}
+        </p>
+    </div>
 </div>
+
+<section class="container my-5">
+    <div class="text-center mb-5">
+        <h1 class="section-title">{{ _('Companies connected with videodermatoscopy ') }}</h1>
+        <p class="section-description text-muted mx-auto">
+            {{ _('Below we are presenting companies supporting skin lesions diagnostics with
+            a use of Artificial Intelligence or advanced videodermatoscopy hardware') }}
+        </p>
+    </div>
+
+    <div class="mb-5 company-wrapper mx-auto">
+        <div class="category-header mb-4">
+            <span class="badge bg-primary">{{ _('Startups') }}</span>
+            <span class="badge bg-primary">{{ _('Software') }}</span>
+            <h2 class="section-title mt-2">AI4Skin</h2>
+        </div>
+
+        <div class="company-card card h-100 w-80">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/companies/ai4skin-main.png') }}" alt="AI4Skin Platform"
+                    class="img-fluid">
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">{{ _('AI skin cancer recognition') }}</h3>
+                <p class="card-text text-muted" style="margin-bottom: 1rem;">
+                    {{ _('System of specialized algorithms for the automatic recognition of skin cancer for
+                    epiluminescence microscopy (ELM) images with the potential to be used in doctor’s offices and other
+                    health care units for screening for early melanoma. Thanks to Artificial Intelligence and Machine
+                    Learning (Deep Learning) algorithms, it recognizes melanocytic nevi on the basis of photos taken
+                    with a videodermoscope.') }}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-5 company-wrapper mx-auto">
+        <div class="category-header mb-4">
+            <span class="badge bg-primary">{{ _('Hardware') }}</span>
+            <h2 class="section-title mt-2">FotoFinder</h2>
+        </div>
+
+        <div class="company-card card h-100">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/companies/fotofinder-main.png') }}"
+                    alt="FotoFinder System" class="img-fluid">
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">{{ _('Imaging Solutions') }}</h3>
+                <p class="card-text text-muted" style="margin-bottom: 3rem;">
+                    {{ _('FotoFinder specializes in high-end hardware for dermatological imaging,
+                    particularly in videodermatoscopy and total body photography. Their systems
+                    combine advanced optics with polarized lighting to capture highly detailed skin images.') }}
+                </p>
+
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 text-center">
+                        <img src="{{ url_for('static', filename='images/companies/fotofinder-studio.png') }}"
+                             alt="FotoFinder Studio" class="img-fluid rounded shadow-sm"
+                             style="max-height: 400px; width: auto;">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="card-subtitle" style="margin-bottom: 0.8rem;">{{ _('Multifunctional Platform Studio') }}</h5>
+                        <p class="text-muted">
+                            {{ _('The multifunctional platform enables the diagnosis of moles, nails, 
+                            and the scalp. It allows for the creation of automatic trichograms essential 
+                            for planning hair transplants, and also provides “before and after” facial images. 
+                            The system is ideal for comparing changes in moles and monitoring progress in hair 
+                            loss treatment as well as the effects of beauty and anti-aging therapies.') }}
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 text-center">
+                        <img src="{{ url_for('static', filename='images/companies/fotofinder-dermoskop.png') }}"
+                             alt="FotoFinder Studio" class="img-fluid rounded shadow-sm"
+                             style="max-height: 400px; width: 25rem;">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="card-subtitle" style="margin-bottom: 0.8rem;">{{ _('Handyscope DermLite') }}</h5>
+                        <p class="text-muted">
+                            {{ _('The handyscope DermLite is a portable device that works with almost any smartphone.
+                            Leviacam, on the other hand, is a portable camera that easily connects to a computer or laptop.') }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 {% endblock %}

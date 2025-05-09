@@ -66,11 +66,9 @@ main {
 
 .hero-section {
     width: 100vw;
-    height: 70vh;
     margin-left: calc(-50vw + 50%);
     position: relative;
     /* overflow: hidden; */
-    background: url('../images/plecy.png') center/cover;
     clip-path: inset(0); 
 }
 
@@ -96,6 +94,11 @@ main {
     padding: 0.8rem 2rem;
     border-radius: 16px;
     font-weight: 500;
+}
+
+.index-hero {
+    height: 70vh;
+    background: url('../images/index-hero.png') center/cover;
 }
 
 .form-container {
@@ -276,12 +279,6 @@ footer {
 .characteristics-hero {
     height: 40vh;
     background: url('../images/characteristics-hero.jpg') center 30% /cover no-repeat;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 5%;
-    color: white;
 }
 
 .characteristics-hero::before {
@@ -294,11 +291,6 @@ footer {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.55), transparent);
     z-index: 0;
     pointer-events: none;
-}
-
-.characteristics-hero {
-    font-size: 3rem;
-    font-weight: 600;
 }
 
 .characteristics-hero .lead {
@@ -397,7 +389,7 @@ footer {
 
 .publications-hero {
     height: 40vh;
-    background: url("../images/publications-hero.png") center 35% /cover;
+    background: url("../images/publications-hero.png") center 35% /cover no-repeat;
 }
 
 .publications-hero::before {
@@ -467,15 +459,13 @@ img.img-fluid {
 
 .abcd-hero {
     height: 40vh;
-    background: url('../images/abcd-hero.webp') center 60%/ cover no-repeat;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 5%;
-    color: white;
-    font-size: 3rem;
-    font-weight: 600;
+    background: url('../images/abcd-hero.jpg') center 55%/ cover no-repeat;
+}
+
+.abcd-hero .lead {
+    padding-left: 10px;
+    font-size: 1.2rem;
+    max-width: 600px;
 }
 
 .abcd-hero::before {
@@ -488,20 +478,6 @@ img.img-fluid {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.55), transparent);
     z-index: 0;
     pointer-events: none;
-}
-
-.abcd-hero-text {
-    position: relative;
-    z-index: 1;
-}
-
-.abcd-hero-text .lead {
-    padding-left: 10px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    max-width: 600px;
-    color: #f0f0f0;
-    margin-top: 1rem;
 }
 
 .classification-section {
@@ -563,7 +539,8 @@ img.img-fluid {
 }
 
 .modal-title,
-.card-title {
+.card-title,
+.card-subtitle {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--primary-blue);
@@ -579,16 +556,20 @@ img.img-fluid {
 .company-card {
     border: 1px solid rgba(45, 62, 80, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.company-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(45, 62, 80, 0.1);
+.card-body {
+    padding: 2rem;
+    margin-top: 1rem;
 }
 
 .category-header {
     border-left: 4px solid var(--primary-blue);
     padding-left: 1rem;
+    margin-left: 0;
+    text-align: left;
 }
 
 .badge.bg-primary {
@@ -598,25 +579,15 @@ img.img-fluid {
     padding: 0.5rem 1rem;
 }
 
-.company-modal .carousel-item img {
-    max-height: 400px;
-    object-fit: contain;
-}
-
-.tech-specs {
-    columns: 2;
-    column-gap: 2rem;
-}
-
-@media (max-width: 768px) {
-    .tech-specs {
-        columns: 1;
-    }
-}
-
 .industry-hero {
-    height: 50vh;
-    background: url('../images/abcd-hero.webp') center 35%/cover no-repeat;
+    height: 40vh;
+    background: url('../images/publications-hero.png') center 35%/cover no-repeat;
+}
+
+.industry-hero .lead {
+    padding-left: 10px;
+    font-size: 1.2rem;
+    max-width: 600px;
 }
 
 .industry-hero::before {
@@ -624,10 +595,11 @@ img.img-fluid {
     position: absolute;
     top: 0;
     left: 0;
-    width: 45%;
+    width: 50%;
     height: 100%;
-    background: linear-gradient(to right, rgba(45, 62, 80, 0.85), transparent);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
     z-index: 0;
+    pointer-events: none;
 }
 
 .risk-factor-list {
@@ -670,4 +642,27 @@ img.img-fluid {
     color: var(--primary-blue);
     display: block;
     margin-bottom: 0.5rem;
+}
+
+.image-container {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    border-radius: 12px 12px 0 0;
+}
+
+.image-container img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.company-wrapper {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 15px;
 }
