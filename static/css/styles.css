@@ -51,7 +51,6 @@ header {
 
 main {
     flex-grow: 1;
-    padding-bottom: 20px;
     padding-top: 36px;
     font-family: 'Inter', sans-serif;
 }
@@ -182,24 +181,24 @@ footer {
     display: none;
 }
 
-.btn-grad {background-image: linear-gradient(to right, #16222A 0%, #334851 51%, #16222A 100%);}
 .btn-grad {
-   margin: 10px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.8s;
-   background-size: 200% auto;
-   color: white;            
-   box-shadow: 0 0 20px 7px rgba(143, 145, 153, 0.2);
-   border-radius: 10px;
-   display: inline-block;
- }
-
- .btn-grad:hover {
-   background-position: right center;
-   color: #fff;
-   text-decoration: none;
- } 
+    background-image: linear-gradient(to right, #1d2a38 0%, #2d3e50 51%, #1d2a38 100%);
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.8s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px 7px rgba(143, 145, 153, 0.2);
+    border-radius: 10px;
+    display: inline-block;
+}
+ 
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
 
 .nav-item.dropdown {
     position: relative;
@@ -665,4 +664,73 @@ img.img-fluid {
     max-width: 60rem;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.footer {
+    background: var(--primary-blue);
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: auto;
+}
+
+.footer-heading {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    font-size: 1.25rem;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+    text-decoration: none;
+    padding: 0.15rem 0;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: white !important;
+    transform: translateX(5px);
+}
+
+.university-logo {
+    width: 11rem;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.border-top {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.university-info {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.75);
+    margin-left: 2rem;
+}
+.col-md-6 .university-info {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.row.justify-content-center {
+    align-items: start;
+}
+
+.text-center .university-info {
+    margin-left: 0;
+    max-width: 400px;
+    margin: 1rem auto;
+}
+
+.footer-link {
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.footer-link:hover {
+    transform: translateX(3px);
 }

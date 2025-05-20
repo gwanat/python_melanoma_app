@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="{{ current_locale }}">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
-        <title>{% block title %} {{ _('Melanoma Analysis') }} {% endblock %}</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+    <title>{% block title %} {{ _('Melanoma Analysis') }} {% endblock %}</title>
+</head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url_for('index') }}">{{ _('Melanoma Analysis') }}</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
@@ -24,43 +26,53 @@
                             <a class="nav-link text-dark" href="{{ url_for('index') }}">{{ _('Home') }}</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown"
+                                data-bs-toggle="dropdown">
                                 {{ _('Diagnostics') }}
-                                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
-                                    <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                                    <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
                                 </svg>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end bg-light text-center">
-                                <a class="dropdown-item text-secondary" href="{{ url_for('abcd_rule') }}">{{ _('About ABCD Rule') }}</a>
-                                <a class="dropdown-item text-secondary" href="{{ url_for('diagnostics') }}">{{ _('Diagnostics') }}</a>
+                                <a class="dropdown-item text-secondary" href="{{ url_for('abcd_rule') }}">{{ _('About
+                                    ABCD Rule') }}</a>
+                                <a class="dropdown-item text-secondary" href="{{ url_for('diagnostics') }}">{{
+                                    _('Diagnostics') }}</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown"
+                                data-bs-toggle="dropdown">
                                 {{ _('About Melanoma') }}
-                                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
-                                    <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                                    <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
                                 </svg>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end bg-light text-center">
-                                <a class="dropdown-item text-secondary" href="{{ url_for('characteristics') }}">{{ _('Characteristics') }}</a>
-                                <a class="dropdown-item text-secondary" href="{{ url_for('publications') }}">{{ _('Publications') }}</a>
-                                <a class="dropdown-item text-secondary" href="{{ url_for('industry') }}">{{ _('Industry') }}</a>
+                                <a class="dropdown-item text-secondary" href="{{ url_for('characteristics') }}">{{
+                                    _('Characteristics') }}</a>
+                                <a class="dropdown-item text-secondary" href="{{ url_for('publications') }}">{{
+                                    _('Publications') }}</a>
+                                <a class="dropdown-item text-secondary" href="{{ url_for('industry') }}">{{
+                                    _('Industry') }}</a>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="ms-3 d-flex align-items-center">
-                    <a href="{{ url_for('setlang') }}?lang=pl" class="text-decoration-none me-2" title="{{ _('Polski') }}">
-                        <img src="{{ url_for('static', filename='images/poland.png') }}" 
-                             alt="{{ _('Polski') }}" 
-                             class="lang-flag">
+                    <a href="{{ url_for('setlang') }}?lang=pl" class="text-decoration-none me-2"
+                        title="{{ _('Polski') }}">
+                        <img src="{{ url_for('static', filename='images/poland.png') }}" alt="{{ _('Polski') }}"
+                            class="lang-flag">
                     </a>
 
                     <a href="{{ url_for('setlang') }}?lang=en" class="text-decoration-none" title="{{ _('English') }}">
-                        <img src="{{ url_for('static', filename='images/union-jack.png') }}" 
-                             alt="{{ _('English') }}" 
-                             class="lang-flag">
+                        <img src="{{ url_for('static', filename='images/union-jack.png') }}" alt="{{ _('English') }}"
+                            class="lang-flag">
                     </a>
                 </div>
             </div>
@@ -71,19 +83,65 @@
         {% block content %}{% endblock %}
     </main>
 
-    <footer class="footer text-muted">
-        <div class="container">
-            <p class="text-start mb-2">
-                {{ _('Department of Artificial Intelligence') }} <br />
-                {{ _('University of Information Technology and Management') }} <br />
-                {{ _('Sucharskiego St. 2') }} <br />
-                {{ _('35-225 Rzeszow, PL') }}
-            </p>
-            <div class="text-center">
-                <small>&copy; 2024 - {{ _('MelanomaWebApp') }}</small>
+    <footer class="footer">
+        <div class="container py-4">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3 text-start">
+                    <h5 class="footer-heading">{{ _('Location') }}</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            {{ _('Sucharskiego St. 2') }}<br>
+                            {{ _('35-225 Rzeszow, PL') }}<br>
+                            {{ _('University of Information Technology and Management') }}
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://wsiz.edu.pl" target="_blank" class="footer-link">
+                                {{ _('University Website') }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <div class="d-flex flex-column align-items-center">
+                        <a href="https://wsiz.edu.pl" target="_blank">
+                            {% set lang = get_locale() %}
+                            {% if lang == 'pl' %}
+                            <img src="{{ url_for('static', filename='images/university-logo-pl.png') }}"
+                                alt="University Logo" class="university-logo">
+                            {% else %}
+                            <img src="{{ url_for('static', filename='images/university-logo.png') }}"
+                                alt="University Logo" class="university-logo">
+                            {% endif %}
+
+                        </a>
+                        <p class="university-info">
+                            {{ _('This website was created in a collaboration') }}<br>
+                            {{ _('with the Department of Artificial Intelligence of') }}<br>
+                            {{ _('University of Information Technology and Management.') }}
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-end">
+                    <h5 class="footer-heading">{{ _('Content') }}</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="{{ url_for('characteristics') }}" class="footer-link">{{ _('Characteristics')
+                                }}</a></li>
+                        <li><a href="{{ url_for('diagnostics') }}" class="footer-link">{{ _('Diagnostics') }}</a></li>
+                        <li><a href="{{ url_for('abcd_rule') }}" class="footer-link">{{ _('ABCD Rule') }}</a></li>
+                        <li><a href="{{ url_for('publications') }}" class="footer-link">{{ _('Research Papers') }}</a>
+                        </li>
+                        <li><a href="{{ url_for('industry') }}" class="footer-link">{{ _('Industry') }}</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-top pt-3 mt-4 text-center">
+                <small>&copy; 2024 {{ _('MelanomaWebApp') }} - {{ _('Academic Research Project') }}</small>
             </div>
         </div>
-    </footer>    
+    </footer>
 
     <button id="scrollTopBtn" title="Go to top">
         <img src="{{ url_for('static', filename='images/arrow-up-icon.png') }}" alt="Scroll to top" />
@@ -91,22 +149,23 @@
 
     <script>
         const scrollTopBtn = document.getElementById("scrollTopBtn");
-    
+
         window.onscroll = function () {
-            scrollTopBtn.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) 
-                ? "block" 
+            scrollTopBtn.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200)
+                ? "block"
                 : "none";
         };
-    
+
         scrollTopBtn.addEventListener("click", () => {
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
             });
         });
-    </script>    
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
