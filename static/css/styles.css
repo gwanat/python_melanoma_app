@@ -51,7 +51,6 @@ header {
 
 main {
     flex-grow: 1;
-    padding-bottom: 20px;
     padding-top: 36px;
     font-family: 'Inter', sans-serif;
 }
@@ -102,7 +101,7 @@ main {
 }
 
 .form-container {
-    width: 70%;
+    max-width: 1100px;
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -182,24 +181,24 @@ footer {
     display: none;
 }
 
-.btn-grad {background-image: linear-gradient(to right, #16222A 0%, #334851 51%, #16222A 100%);}
 .btn-grad {
-   margin: 10px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.8s;
-   background-size: 200% auto;
-   color: white;            
-   box-shadow: 0 0 20px 7px rgba(143, 145, 153, 0.2);
-   border-radius: 10px;
-   display: inline-block;
- }
-
- .btn-grad:hover {
-   background-position: right center;
-   color: #fff;
-   text-decoration: none;
- } 
+    background-image: linear-gradient(to right, #1d2a38 0%, #2d3e50 51%, #1d2a38 100%);
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.8s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px 7px rgba(143, 145, 153, 0.2);
+    border-radius: 10px;
+    display: inline-block;
+}
+ 
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
 
 .nav-item.dropdown {
     position: relative;
@@ -278,19 +277,7 @@ footer {
 
 .characteristics-hero {
     height: 40vh;
-    background: url('../images/characteristics-hero.jpg') center 30% /cover no-repeat;
-}
-
-.characteristics-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.55), transparent);
-    z-index: 0;
-    pointer-events: none;
+    background: url('../images/characteristics-hero.png') center 30% /cover no-repeat;
 }
 
 .characteristics-hero .lead {
@@ -392,18 +379,6 @@ footer {
     background: url("../images/publications-hero.png") center 35% /cover no-repeat;
 }
 
-.publications-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
-    z-index: 0;
-    pointer-events: none;
-}
-
 .publications-hero .lead {
     padding-left: 10px;
     font-size: 1.2rem;
@@ -459,25 +434,13 @@ img.img-fluid {
 
 .abcd-hero {
     height: 40vh;
-    background: url('../images/abcd-hero.jpg') center 55%/ cover no-repeat;
+    background: url('../images/abcd-hero.png') center 55%/ cover no-repeat;
 }
 
 .abcd-hero .lead {
     padding-left: 10px;
     font-size: 1.2rem;
     max-width: 600px;
-}
-
-.abcd-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.55), transparent);
-    z-index: 0;
-    pointer-events: none;
 }
 
 .classification-section {
@@ -546,6 +509,15 @@ img.img-fluid {
     color: var(--primary-blue);
 }
 
+.modal-description{
+    max-width: 720px;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    padding: 0 1rem 1rem 1rem;
+    margin: 1.5rem auto 1rem;
+    text-align: center;
+}
+
 .carousel-desc{
     font-size: 1rem;
     color: #4b4a4a;
@@ -581,25 +553,13 @@ img.img-fluid {
 
 .industry-hero {
     height: 40vh;
-    background: url('../images/publications-hero.png') center 35%/cover no-repeat;
+    background: url('../images/industry-hero2.png') center 25%/cover no-repeat;
 }
 
 .industry-hero .lead {
     padding-left: 10px;
     font-size: 1.2rem;
     max-width: 600px;
-}
-
-.industry-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
-    z-index: 0;
-    pointer-events: none;
 }
 
 .risk-factor-list {
@@ -665,4 +625,86 @@ img.img-fluid {
     max-width: 60rem;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.footer {
+    background: var(--primary-blue);
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: auto;
+}
+
+.footer-heading {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    font-size: 1.25rem;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+    text-decoration: none;
+    padding: 0.15rem 0;
+    display: inline-block;
+    transition: all 0.3s ease;
+    filter: brightness(0) invert(1);
+}
+
+.footer-link:hover {
+    color: white !important;
+    transform: translateX(3px);
+}
+
+.university-logo {
+    width: 20rem;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.border-top {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.row.justify-content-center {
+    align-items: start;
+}
+
+.classification-body .image-caption {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-style: italic;
+    text-align: center;
+}
+
+.footer .row {
+    margin: 0;
+}
+
+.footer .col-md-6 {
+    padding: 1rem;
+}
+
+.footer .university-info {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    max-width: 400px;
+    margin: 0;
+}
+
+@media (max-width: 767.98px) {
+    .footer .col-md-6 {
+        text-align: center;
+    }
+
+    .footer .row > .col-md-6 {
+        margin-bottom: 2rem;
+    }
+
+    .footer-heading {
+        margin-top: 1rem;
+    }
 }

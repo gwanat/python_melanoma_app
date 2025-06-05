@@ -1,73 +1,270 @@
 {% extends "base.html" %}
+{% block title %}{{ _('ABCD Rule for Melanoma Detection') }}{% endblock %}
 
 {% block content %}
-<div class="hero-section abcd-hero">
+
+<section class="hero-section abcd-hero">
     <div class="hero-content">
-        <h1 class="hero-title">{{ _('ABCD Rule for Melanoma Detection') }}</h1>
-        <p class="lead">{{ _('Early detection can save lives. Learn how to assess suspicious moles using the ABCD rule.') }}</p>
+        <h1 class="hero-title">{{ _('ABCD Rule') }}</h1>
+        <p class="lead">{{ _('Learn how dermatologists assess skin lesions using ABCD Rule.') }}</p>
     </div>
-</div>
-<div class="container mt-4">
+</section>
 
-    <section>
-        <h2 class="section-title">{{ _('What is the ABCD Rule?') }}</h2>
-        <p class="section-description">
-            {{ _('The ABCD rule is a guideline used to assess the risk of melanoma based on four key characteristics of a skin lesion: Asymmetry, Border irregularity, Color variation, and Diversity of structure. These characteristics help doctors evaluate if a mole or lesion might be cancerous.') }}
-        </p>
-    </section>
+<section class="container my-5 text-center">
+    <h2 class="section-title">{{ _('Strategies for Evaluating Melanocytic Lesions') }}</h2>
+    <p class="section-description text-muted mx-auto">
+        {{ _('The most frequently cited strategies for evaluating melanocytic skin lesions in the literature include: the Argenziano strategy (the so-called 7-point checklist), the Menzies strategy, and the Stolz strategy based on the ABCD rule, which serves as the basis for our preliminary diagnostic form for melanocytic lesions.') }}
+    </p>
+</section>
 
-    <section class="mt-4">
-        <h2 class="section-title">{{ _('Understanding Each Factor') }}</h2>
-        
-        <div class="row align-items-center mt-4">
-            <div class="col-md-6">
-                <h3>{{ _('A: Asymmetry') }}</h3>
-                <p>{{ _('If one half of the mole doesn’t match the other half, it may indicate a problem. Cancerous moles are often asymmetric.') }}</p>
+<!-- Overview -->
+<section class="classification-section">
+    <div class="classification-card">
+        <div class="classification-header text-white">
+            {{ _('Stolz Strategy') }}
+        </div>
+        <div class="classification-body">
+            <p>
+                {{ _('This strategy, a modification of the Braun-Falco approach, uses the ABCD rule to assess melanocytic lesions. Each letter corresponds to one of the key features of the lesion:') }}
+            </p>
+            <ul>
+                <li><strong>A - {{ _('Asymmetry') }}</strong>{{ _('assessment of the degree of asymmetry in shape and structure of the lesion') }}</li>
+                <li><strong>B - {{ _('Border') }}</strong>{{ _('characteristics of the border - whether it is regular or irregular') }}</li>
+                <li><strong>C - {{ _('Color') }}</strong>{{ _('number of occurring colors out of six permissible ones') }}</li>
+                <li><strong>D - {{ _('Diversity of structures') }}</strong>{{ _('number of different structures within the lesion out of five possible') }}</li>
+            </ul>
+            <p>
+                {{ _('The Stolz strategy forms the basis for our preliminary diagnostic form for melanocytic lesions.') }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ABCD Factors -->
+<section class="classification-section">
+    <!-- ASYMMETRY -->
+    <div class="classification-card">
+        <div class="classification-header secondary text-white">
+            {{ _('A - Asymmetry') }}
+        </div>
+        <div class="classification-body">
+            <p>
+                {{ _('Asymmetry involves determining the symmetry of the lesion by identifying the number of double axes of symmetry lying in the plane of the lesion.') }}
+            </p>
+
+            <strong>{{ _('Assessment of lesion asymmetry') }}</strong>
+            <p>{{ _('Initially, a double axis of symmetry is sought. If a first double axis is found, a second axis perpendicular to the first is sought.') }}</p>
+
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='images/abcd/asym_axes_0.png') }}" class="img-fluid"
+                        alt="{{ _('Lesion') }}">
+                    <p class="image-caption">{{ _('Lesion') }}</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='images/abcd/asym_axes_1.png') }}" class="img-fluid"
+                        alt="{{ _('One axis of symmetry') }}">
+                    <p class="image-caption">{{ _('One axis of symmetry') }}</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='images/abcd/asym_axes_2.png') }}" class="img-fluid"
+                        alt="{{ _('Two perpendicular axes') }}">
+                    <p class="image-caption">{{ _('Two perpendicular axes') }}</p>
+                </div>
             </div>
-            <div class="col-md-6">
-                <img src="{{ url_for('static', filename='images/a_asymmetrical.png') }}" alt="Asymmetry Example" class="img-fluid rounded">
+            <p>
+                {{ _('If the lesion has two mutually perpendicular axes of symmetry, the asymmetry score is 0 – the lesion is symmetric. If there is symmetry along only one axis, the asymmetry score is 1 – asymmetric with respect to one axis. If no axis divides the lesion into two approximately equal parts, the asymmetry score is 2 – asymmetric with respect to both axes.') }}
+            </p>
+            <div class="row text-center mt-4">
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='images/abcd/asym_0.png') }}" class="img-fluid"
+                        alt="{{ _('Value 0') }}">
+                    <p class="image-caption">{{ _('Value 0') }}</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='images/abcd/asym_1.png') }}" class="img-fluid"
+                        alt="{{ _('Value 1') }}">
+                    <p class="image-caption">{{ _('Value 1') }}</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='images/abcd/asym_2.png') }}" class="img-fluid"
+                        alt="{{ _('Value 2') }}">
+                    <p class="image-caption">{{ _('Value 2') }}</p>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="row align-items-center mt-4">
-            <div class="col-md-6">
-                <h3>{{ _('B: Border Irregularity') }}</h3>
-                <p>{{ _('Moles with jagged, irregular borders are more likely to be malignant.') }}</p>
+    <!-- BORDER -->
+    <div class="classification-card">
+        <div class="classification-header secondary text-white">
+            {{ _('B - Border') }}
+        </div>
+        <div class="classification-body">
+            <p>
+                {{ _('Border is related to the presence of a sharp, abrupt ending of pigment pattern at the periphery of the lesion or a gradual, indistinct cutoff.') }}
+            </p>
+            <strong>{{ _('Lesion border analysis') }}</strong>
+            <p>
+                {{ _('Determining the border character involves analyzing the pigment distribution at the junction between the lesion and healthy skin. To conduct an accurate evaluation, the lesion is divided into eight approximately equal parts formed by two pairs of perpendicular axes intersecting at one point. Then the sharpness of the transition between the lesion and healthy skin is assessed in each part. The transition can be sharp (1 point) or blurred (0 points). The final Border score ranges from 0 to 8. Division into parts is shown below:') }}
+            </p>
+            <div class="text-center mb-3">
+                <img src="{{ url_for('static', filename='images/abcd/border_segments.png') }}"
+                    style="max-width: 100%; height: auto; border-radius: 6px;" alt="{{ _('Division into 8 segments') }}">
+                <p class="image-caption mt-1">{{ _('Division into 8 segments') }}</p>
             </div>
-            <div class="col-md-6">
-                <img src="{{ url_for('static', filename='images/b_uneven.png') }}" alt="Border Irregularity Example" class="img-fluid rounded">
+
+            <p>
+                {{ _('During studies on the ABCD rule conducted by researchers Z.S. Hippe and Ł. Piątek, new properties of the Border symptom were observed. For B=2, 28 unique configurations are possible, obtained through symmetry operations with respect to an 8-fold axis perpendicular to the image plane.') }}
+            </p>
+            <div class="text-center mb-3">
+                <img src="{{ url_for('static', filename='images/abcd/border_configurations.png') }}"
+                    style="max-width: 100%; height: auto;" alt="{{ _('28 border configurations') }}">
+                <p class="image-caption mt-1">{{ _('28 border configurations') }}</p>
+            </div>
+            <p>
+                {{ _('For the full range of Border values (0 to 8), there are a total of 256 possible configurations of sharp and blurred border segments.') }}
+            </p>
+            <strong class="mb-3">{{ _('Example border combinations') }}</strong>
+            <div class="d-flex gap-3 flex-wrap justify-content-center">
+                <div class="text-center">
+                    <img src="{{ url_for('static', filename='images/abcd/border_case_1.png') }}"
+                        style="max-width: 250px; height: auto; border-radius: 6px;" alt="{{ _('Case 1') }}">
+                    <p class="image-caption mt-1">{{ _('Case 1') }}</p>
+                </div>
+                <div class="text-center">
+                    <img src="{{ url_for('static', filename='images/abcd/border_case_2.png') }}"
+                        style="max-width: 250px; height: auto; border-radius: 6px;" alt="{{ _('Case 2') }}">
+                    <p class="image-caption mt-1">{{ _('Case 2') }}</p>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="row align-items-center mt-4">
-            <div class="col-md-6">
-                <h3>{{ _('C: Color Variation') }}</h3>
-                <p>{{ _('Moles with multiple colors, especially shades of brown, black, or even red and blue, can be signs of melanoma.') }}</p>
-            </div>
-            <div class="col-md-6">
-                <img src="{{ url_for('static', filename='images/c_multi.png') }}" alt="Color Variation Example" class="img-fluid rounded">
-            </div>
+    <!-- COLOR -->
+    <div class="classification-card">
+        <div class="classification-header secondary text-white">
+            {{ _('C - Color') }}
         </div>
+        <div class="classification-body">
+            <p>
+                {{ _('Color refers to the number of distinct hues visible within the lesion.') }}
+            </p>
+            <strong>{{ _('Distinction of lesion color') }}</strong>
+            <p>
+                {{ _('This symptom is characterized as multi-valued. It describes the presence or absence of allowed ABCD rule colors on the lesion surface. The evaluation involves identifying any number of colors from the set of 6 permitted ones (white, blue, dark brown, light brown, black, and red). An additional criterion is the presence of blue color covering more than half of the lesion. Symptom defining the colours occurring in the lesion therefore takes on a value from 1 to 6. A greater variety in this symptom typically correlates with increased clinical suspicion.') }}
+            </p>
 
-        <div class="row align-items-center mt-4">
-            <div class="col-md-6">
-                <h3>{{ _('D: Diameter') }}</h3>
-                <p>{{ _('Moles that are larger than 6mm in diameter (about the size of a pencil eraser) should be examined by a doctor.') }}</p>
-            </div>
-            <div class="col-md-6">
-                <img src="{{ url_for('static', filename='images/d_diverse.png') }}" alt="Diameter Example" class="img-fluid rounded">
-            </div>
+            <img src="{{ url_for('static', filename='images/abcd/color_case.png') }}"
+                style="display: block; margin: 0 auto; max-width: 250px; height: auto; border-radius: 6px;" class="mb-2"
+                alt="{{ _('Colors') }}">
+            <p class="image-caption">{{ _('Colors in the ABCD rule') }}</p>
         </div>
-    </section>
+    </div>
 
-    <section class="mt-5">
-        <h2 class="section-title">{{ _('Important Notes') }}</h2>
-        <p>{{ _('Remember that the ABCD rule is a guideline, not a definitive diagnostic tool. If you notice suspicious changes in a mole, seek professional medical advice for a thorough examination.') }}</p>
-    </section>
+    <!-- DIVERSITY OF STRUCTURES -->
+    <div class="classification-card">
+        <div class="classification-header secondary text-white">
+            {{ _('D - Diversity of structures') }}
+        </div>
+        <div class="classification-body">
+            <p>
+                {{ _('Diversity of structures refers to the range of patterns seen within the lesion under dermatoscopic examination.') }}
+            </p>
+            <strong>{{ _('Assessment of structural diversity') }}</strong>
+            <p>
+                {{ _('The last symptom is multi-valued aswell. It describes structures permitted by the ABCD rule on lesion surfaces. Evaluation involves identifying the presence of five main elements: pigment globules, pigment dots, structureless areas, branched streaks, and pigment network. The assessment of the diversity of the mole structures therefore results in assigning a value from 1 to 5 to the symptom of Diversity of structure. Significant diversity of these elements increases the probability that the lesion is a melanoma.') }}
+            </p>
 
-    <section class="mt-5 text-center">
-        <h3>{{ _('Do you want to analyze a lesion?') }}</h3>
-        <a href="{{ url_for('diagnostics') }}" class="btn btn-secondary">{{ _('Start Diagnostics') }}</a>
-    </section>
-</div>
+            <img src="{{ url_for('static', filename='images/abcd/div_of_str.png') }}"
+                style="display: block; margin: 0 auto; max-width: 250px; height: auto; border-radius: 6px;" class="mb-2"
+                alt="{{ _('Lesion structures') }}">
+            <p class="image-caption">{{ _('Structure examples') }}</p>
+        </div>
+    </div>
+</section>
+
+<!-- TDS SCORE -->
+<section class="classification-section">
+    <div class="classification-card">
+        <div class="classification-header text-white">
+            {{ _('TDS Parameter - Total Dermatoscopy Score') }}
+        </div>
+        <div class="classification-body">
+            <p>
+                {{ _('The previously described elements of the ABCD rule are used to calculate the Total Dermatoscopy Score (TDS).') }}
+            </p>
+            <p>
+                {{ _('The TDS value helps identify the nature of the lesion. Based on the score, the lesion can be classified into one of four categories:') }}
+            </p>
+            <ul>
+                <li>{{ _('Benign lesion') }}</li>
+                <li>{{ _('Blue nevi') }}</li>
+                <li>{{ _('Suspicious lesion') }}</li>
+                <li>{{ _('Malignant lesion (melanoma)') }}</li>
+            </ul>
+            <div class="text-center my-4">
+                <img src="{{ url_for('static', filename='images/abcd/tds_table.png') }}"
+                    alt="{{ _('Classification table') }}" class="img-fluid rounded" style="width: 55%; height:auto;">
+                <p class="image-caption mt-1">{{ _('Lesion classification based on TDS') }}</p>
+            </div>
+
+            <p class="mt-4"><strong>{{ _('Classic TDS formula according to Braun-Falco:') }}</strong></p>
+            <pre
+                class="bg-light p-3 rounded">TDS = 1.3 * Asymmetry + 0.1 * Border + 0.5 * Color + 0.5 * Diversity of structures</pre>
+
+            <p class="mt-3"><strong>{{ _('Example TDS assessment') }}</strong></p>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <p>
+                        {{ _('According to Stolz\'s strategy, the example lesion has no axis of symmetry, one sharp border segment, two colors (dark and light brown), and two structures.') }}
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{{ url_for('static', filename='images/abcd/tds_case.png') }}"
+                        alt="{{ _('TDS example') }}" class=" img img-fluid" style="max-width: 100%; height:auto;">
+                    <p class="image-caption mt-1">{{ _('TDS calculation example') }}</p>
+                </div>
+                <p>
+                    {{ _('Therefore:') }}</p>
+                <pre class="bg-light p-3 rounded">TDS = 1.3 * 2 + 0.1 * 1 + 0.5 * 2 + 0.5 * 2 = 4.7</pre>
+                <p>
+                    {{ _('According to the classification, the lesion should be considered suspicious and potentially dangerous.') }}
+                </p>
+            </div>
+
+            <h5 class="mt-4"><strong>{{ _('Improved TDS formula') }}</strong></h5>
+            <p>
+                {{ _('As a result of research, scientists developed a more precise TDS formula, assigning individual weights to each color and structure.') }}
+            </p>
+            <pre class="bg-light p-3 rounded">new_TDS = 0.8 * Asymmetry + 0.11 * Border
++ 0.5 * Color_black + 0.8 * Color_blue
++ 0.5 * Color_dark_brown + 0.6 * Color_light_brown
++ 0.5 * Color_red + 0.5 * Color_white
++ 0.5 * Diversity_pigment_dots + 0.6 * Diversity_pigment_globules
++ 0.5 * Diversity_pigment_network + 0.6 * Diversity_structureless_areas
++ 0.6 * Diversity_branched_streaks
+            </pre>
+        </div>
+    </div>
+</section>
+<section class="container my-5 text-center">
+    <h2 class="section-title">{{ _('Summary') }}</h2>
+    <p class="section-description text-muted mx-auto">
+        {{ _('Among the three most popular methods for evaluating skin melanocytic lesions,
+        available literature highlights the particular effectiveness of the Braun-Falco and Stolz strategies.
+        This strategy is now widely used by physicians both in Western Europe and in Poland.
+        It has also been found that less experienced clinicians achieve higher diagnostic accuracy
+        when applying the ABCD rule during examinations.') }}
+    </p>
+    <p class="section-description text-muted mx-auto">
+        {{ _('The ABCD-based form available on our website offers
+        results based on both the basic TDS and its extended version.') }}<br>
+        {{ _('Visit the diagnostics page and analyze your lesion.') }}
+    </p>
+
+    <div class="btn-container">
+        <a href="{{ url_for('diagnostics') }}" class="btn btn-secondary">{{ _('Diagnostics') }}</a>
+    </div>
+</section>
 {% endblock %}

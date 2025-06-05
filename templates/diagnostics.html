@@ -32,31 +32,22 @@
                     </select>
                 </div>
 
-                <div class="modal fade" id="asymmetryModal" tabindex="-1" aria-labelledby="asymmetryModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="asymmetryModalLabel">{{ _('More about the Asymmetry factor')
-                                        }}</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>{{ _('Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        Proin sit amet magna id mauris luctus cursus. Proin in ante pharetra, 
-                                        venenatis nisi feugiat, accumsan neque. Fusce rutrum arcu tellus, 
-                                        sit amet rutrum est fringilla id. Maecenas in nisl nec nisl vestibulum 
-                                        aliquet. Morbi a metus mauris. Donec vel odio eu orci condimentum pulvinar. 
-                                        Etiam porta odio et sagittis tincidunt. Etiam pulvinar nibh mauris, at faucibus 
-                                        augue scelerisque rutrum. ') }}</p>
-                                </div>
+                <div class="modal fade" id="asymmetryModal" tabindex="-1" aria-labelledby="asymmetryModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">{{ _('More about the Asymmetry factor') }}</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-0">
+                                <p class="modal-description">{{ _('Divide the lesion in half (twice, perpendicular axes). Score 1 point for each axis where halves don\'t match.') }}</p>
+                                <img src="{{ url_for('static', filename='images/diagnostics_A_kolaz.png') }}"
+                                    alt="{{ _('Example of asymmetrical lesion') }}" class="img-fluid w-100"
+                                    style="max-height: 80vh; object-fit: contain;">
                             </div>
                         </div>
                     </div>
                 </div>
-
 
                 <div class="section">
                     <label for="border"><strong>{{ _('Border (B)') }}</strong></label>
@@ -70,30 +61,24 @@
                     <input type="number" id="border" name="border" class="form-control" min="0" max="8" required>
                 </div>
 
-                <div class="modal fade" id="borderModal" tabindex="-1" aria-labelledby="borderModalLabel"
-                    aria-hidden="true">
+                <div class="modal fade" id="borderModal" tabindex="-1" aria-labelledby="borderModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="borderModalLabel">{{ _('More about the Border factor') }}</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                                    <h5 class="modal-title">{{ _('More about the Border factor') }}</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <p>{{ _('Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        Proin sit amet magna id mauris luctus cursus. Proin in ante pharetra, 
-                                        venenatis nisi feugiat, accumsan neque. Fusce rutrum arcu tellus, 
-                                        sit amet rutrum est fringilla id. Maecenas in nisl nec nisl vestibulum 
-                                        aliquet. Morbi a metus mauris. Donec vel odio eu orci condimentum pulvinar. 
-                                        Etiam porta odio et sagittis tincidunt. Etiam pulvinar nibh mauris, at faucibus 
-                                        augue scelerisque rutrum. ') }}</p>
+                                <div class="modal-body p-0">
+                                    <p class="modal-description">{{ _('Divide the lesion into 8 sections. Count how many have an abrupt (sharp, uneven) border.') }}</p>
+                                    <img src="{{ url_for('static', filename='images/diagnostics_B_kolaz.png') }}"
+                                        alt="{{ _('Example of asymmetrical lesion') }}" class="img-fluid w-100"
+                                        style="max-height: 80vh; object-fit: contain;">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
 
                 <div class="section">
                     <label><strong>{{ _('Color (C)') }}</strong></label>
@@ -140,27 +125,22 @@
                 <div class="modal fade" id="colorsModal" tabindex="-1" aria-labelledby="colorsModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="colorsModalLabel">{{ _('More about the Color factor') }}</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                                    <h5 class="modal-title">{{ _('More about the Color factor') }}</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <p>{{ _('Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        Proin sit amet magna id mauris luctus cursus. Proin in ante pharetra, 
-                                        venenatis nisi feugiat, accumsan neque. Fusce rutrum arcu tellus, 
-                                        sit amet rutrum est fringilla id. Maecenas in nisl nec nisl vestibulum 
-                                        aliquet. Morbi a metus mauris. Donec vel odio eu orci condimentum pulvinar. 
-                                        Etiam porta odio et sagittis tincidunt. Etiam pulvinar nibh mauris, at faucibus 
-                                        augue scelerisque rutrum. ') }}</p>
+                                <div class="modal-body p-0">
+                                    <p class="modal-description">{{ _('Count the number of distinct colors present.') }}</p>
+                                    <img src="{{ url_for('static', filename='images/diagnostics_C_kolaz.png') }}"
+                                        alt="{{ _('Example of asymmetrical lesion') }}" class="img-fluid w-100"
+                                        style="max-height: 80vh; object-fit: contain;">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
 
                 <div class="section">
                     <label><strong>{{ _('Diversity of Structures (D)') }}</strong></label>
@@ -202,21 +182,17 @@
                 <div class="modal fade" id="structuresModal" tabindex="-1" aria-labelledby="structuresModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="structuresModalLabel">{{ _('More about the Diversity of Structures factor') }}</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                                    <h5 class="modal-title">{{ _('More about the Diversity of Structures factor') }}</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <p>{{ _('Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        Proin sit amet magna id mauris luctus cursus. Proin in ante pharetra, 
-                                        venenatis nisi feugiat, accumsan neque. Fusce rutrum arcu tellus, 
-                                        sit amet rutrum est fringilla id. Maecenas in nisl nec nisl vestibulum 
-                                        aliquet. Morbi a metus mauris. Donec vel odio eu orci condimentum pulvinar. 
-                                        Etiam porta odio et sagittis tincidunt. Etiam pulvinar nibh mauris, at faucibus 
-                                        augue scelerisque rutrum. ') }}</p>
+                                <div class="modal-body p-0">
+                                    <p class="modal-description">{{ _('Count how many different dermoscopic structures are visible.') }}</p>
+                                    <img src="{{ url_for('static', filename='images/diagnostics_D_kolaz.png') }}"
+                                        alt="{{ _('Example of asymmetrical lesion') }}" class="img-fluid w-100"
+                                        style="max-height: 80vh; object-fit: contain;">
                                 </div>
                             </div>
                         </div>
