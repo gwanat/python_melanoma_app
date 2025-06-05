@@ -6,110 +6,90 @@
 <section class="hero-section abcd-hero">
     <div class="hero-content">
         <h1 class="hero-title">{{ _('ABCD Rule') }}</h1>
-        <p class="lead">{{ _('Learn how dermatologists assess skin lesions using this proven method.') }}</p>
+        <p class="lead">{{ _('Learn how dermatologists assess skin lesions using ABCD Rule.') }}</p>
     </div>
 </section>
 
 <section class="container my-5 text-center">
-    <h2 class="section-title">{{ _('Strategie oceny znamion melanocytowych') }}</h2>
+    <h2 class="section-title">{{ _('Strategies for Evaluating Melanocytic Lesions') }}</h2>
     <p class="section-description text-muted mx-auto">
-        {{ _('Do strategii oceny znamion melanocytowych skóry najczęściej cytowanych w literaturze należą: strategia Argenziano (tzw. skala 7-punktowa), strategia Menzies\'a oraz strategia Stolz\'a, oparta na zastosowaniu tzw. reguły ABCD, która to jest bazą naszego formularza do wstępnej diagnostyki znamion melanocytowych.') }}</p>
+        {{ _('The most frequently cited strategies for evaluating melanocytic skin lesions in the literature include: the Argenziano strategy (the so-called 7-point checklist), the Menzies strategy, and the Stolz strategy based on the ABCD rule, which serves as the basis for our preliminary diagnostic form for melanocytic lesions.') }}
+    </p>
 </section>
 
-<!-- SECTION 1: Overview of Strategies -->
+<!-- Overview -->
 <section class="classification-section">
     <div class="classification-card">
         <div class="classification-header text-white">
-            {{ _('Strategia Stolz’a') }}
+            {{ _('Stolz Strategy') }}
         </div>
         <div class="classification-body">
             <p>
-                {{ _('Strategia ta, będąca modyfikacją podejścia Braun-Falco, wykorzystuje regułę ABCD do oceny znamion melanocytowych. Każda litera odpowiada jednej z kluczowych cech znamienia:') }}
+                {{ _('This strategy, a modification of the Braun-Falco approach, uses the ABCD rule to assess melanocytic lesions. Each letter corresponds to one of the key features of the lesion:') }}
             </p>
             <ul>
-                <li><strong>A – {{ _('Asymetria') }}</strong>{{ _('ocena stopnia asymetrii kształtu i struktury znamienia') }}</li>
-                <li><strong>B – {{ _('Brzeg') }}</strong>{{ _('charakterystyka brzegu – czy jest regularny czy nieregularny') }}</li>
-                <li><strong>C – {{ _('Kolor') }}</strong>{{ _('liczba występujących kolorów spośród dopuszczalnych sześciu') }}</li>
-                <li><strong>D – {{ _('Różnorodność struktur') }}</strong>{{ _('liczba różnych struktur w obrębie znamienia spośród pięciu możliwych') }}</li>
+                <li><strong>A - {{ _('Asymmetry') }}</strong>{{ _('assessment of the degree of asymmetry in shape and structure of the lesion') }}</li>
+                <li><strong>B - {{ _('Border') }}</strong>{{ _('characteristics of the border - whether it is regular or irregular') }}</li>
+                <li><strong>C - {{ _('Color') }}</strong>{{ _('number of occurring colors out of six permissible ones') }}</li>
+                <li><strong>D - {{ _('Diversity of structures') }}</strong>{{ _('number of different structures within the lesion out of five possible') }}</li>
             </ul>
             <p>
-                {{ _('Strategia Stolz’a stanowi podstawę naszego formularza do wstępnej diagnostyki znamion melanocytowych.') }}
+                {{ _('The Stolz strategy forms the basis for our preliminary diagnostic form for melanocytic lesions.') }}
             </p>
         </div>
     </div>
 </section>
 
-<!-- SECTION 2: Detailed ABCD Factors -->
+<!-- ABCD Factors -->
 <section class="classification-section">
     <!-- ASYMMETRY -->
     <div class="classification-card">
         <div class="classification-header secondary text-white">
-            {{ _('A - Asymetria') }}
+            {{ _('A - Asymmetry') }}
         </div>
         <div class="classification-body">
-            <h3>{{ _('Procedura oceny asymetrii') }}</h3>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <p>{{ _('Asymetria polega na wyznaczeniu liczby dwukrotnych osi symetrii:') }}</p>
-                    <ol>
-                        <li>{{ _('Poszukiwanie pierwszej osi dwukrotnej') }}</li>
-                        <li>{{ _('Poszukiwanie drugiej osi prostopadłej') }}</li>
-                    </ol>
-                    <img src="{{ url_for('static', filename='images/abcd/asym_axes.png') }}" 
-                         class="" 
-                         alt="{{ _('Wyznaczanie osi symetrii') }}">
-                    <p class="text-muted small">{{ _('Ryc. 1: Przykład wyznaczania osi symetrii') }}</p>
+            <p>
+                {{ _('Asymmetry involves determining the symmetry of the lesion by identifying the number of double axes of symmetry lying in the plane of the lesion.') }}
+            </p>
+
+            <strong>{{ _('Assessment of lesion asymmetry') }}</strong>
+            <p>{{ _('Initially, a double axis of symmetry is sought. If a first double axis is found, a second axis perpendicular to the first is sought.') }}</p>
+
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='images/abcd/asym_axes_0.png') }}" class="img-fluid"
+                        alt="{{ _('Lesion') }}">
+                    <p class="image-caption">{{ _('Lesion') }}</p>
                 </div>
-                <div class="col-md-6">
-                    <h4>{{ _('Kryteria punktacji') }}</h4>
-                    <div class="scoring-table table-responsive">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>{{ _('Liczba osi') }}</th>
-                                    <th>{{ _('Opis') }}</th>
-                                    <th>{{ _('Punkty') }}</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>2</td>
-                                    <td>{{ _('Dwie prostopadłe osie symetrii') }}</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>{{ _('Tylko jedna oś symetrii') }}</td>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <td>0</td>
-                                    <td>{{ _('Brak osi symetrii') }}</td>
-                                    <td>2</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="example-gallery row mt-3">
-                        <div class="col-4">
-                            <img src="{{ url_for('static', filename='images/abcd/asym_0.png') }}" 
-                                 class="img-fluid" 
-                                 alt="{{ _('Symetryczne znamię (0 pkt)') }}">
-                            <p class="text-center small">{{ _('Wartość 0') }}</p>
-                        </div>
-                        <div class="col-4">
-                            <img src="{{ url_for('static', filename='images/abcd/asym_1.png') }}" 
-                                 class="img-fluid" 
-                                 alt="{{ _('Asymetria 1 pkt') }}">
-                            <p class="text-center small">{{ _('Wartość 1') }}</p>
-                        </div>
-                        <div class="col-4">
-                            <img src="{{ url_for('static', filename='images/abcd/asym_2.png') }}" 
-                                 class="img-fluid" 
-                                 alt="{{ _('Asymetria 2 pkt') }}">
-                            <p class="text-center small">{{ _('Wartość 2') }}</p>
-                        </div>
-                    </div>
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='images/abcd/asym_axes_1.png') }}" class="img-fluid"
+                        alt="{{ _('One axis of symmetry') }}">
+                    <p class="image-caption">{{ _('One axis of symmetry') }}</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='images/abcd/asym_axes_2.png') }}" class="img-fluid"
+                        alt="{{ _('Two perpendicular axes') }}">
+                    <p class="image-caption">{{ _('Two perpendicular axes') }}</p>
+                </div>
+            </div>
+            <p>
+                {{ _('If the lesion has two mutually perpendicular axes of symmetry, the asymmetry score is 0 – the lesion is symmetric. If there is symmetry along only one axis, the asymmetry score is 1 – asymmetric with respect to one axis. If no axis divides the lesion into two approximately equal parts, the asymmetry score is 2 – asymmetric with respect to both axes.') }}
+            </p>
+            <div class="row text-center mt-4">
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='images/abcd/asym_0.png') }}" class="img-fluid"
+                        alt="{{ _('Value 0') }}">
+                    <p class="image-caption">{{ _('Value 0') }}</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='images/abcd/asym_1.png') }}" class="img-fluid"
+                        alt="{{ _('Value 1') }}">
+                    <p class="image-caption">{{ _('Value 1') }}</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='images/abcd/asym_2.png') }}" class="img-fluid"
+                        alt="{{ _('Value 2') }}">
+                    <p class="image-caption">{{ _('Value 2') }}</p>
                 </div>
             </div>
         </div>
@@ -118,52 +98,44 @@
     <!-- BORDER -->
     <div class="classification-card">
         <div class="classification-header secondary text-white">
-            {{ _('B - Brzeg') }}
+            {{ _('B - Border') }}
         </div>
         <div class="classification-body">
-            <h3>{{ _('Analiza oktalna brzegu') }}</h3>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <p>{{ _('Procedura oceny:') }}</p>
-                    <ul>
-                        <li>{{ _('Podział znamienia na 8 części dwoma parami prostopadłych osi') }}</li>
-                        <li>{{ _('Ocena ostrości przejścia w każdej części:') }}
-                            <ul>
-                                <li>{{ _('Ostre przejście: 1 pkt') }}</li>
-                                <li>{{ _('Rozmyte: 0 pkt') }}</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <img src="{{ url_for('static', filename='images/abcd/border_division.jpg') }}" 
-                         class="img-fluid bordered" 
-                         alt="{{ _('Podział na 8 segmentów') }}">
-                    <p class="text-muted small">{{ _('Ryc. 2: Schemat podziału brzegu') }}</p>
+            <p>
+                {{ _('Border is related to the presence of a sharp, abrupt ending of pigment pattern at the periphery of the lesion or a gradual, indistinct cutoff.') }}
+            </p>
+            <strong>{{ _('Lesion border analysis') }}</strong>
+            <p>
+                {{ _('Determining the border character involves analyzing the pigment distribution at the junction between the lesion and healthy skin. To conduct an accurate evaluation, the lesion is divided into eight approximately equal parts formed by two pairs of perpendicular axes intersecting at one point. Then the sharpness of the transition between the lesion and healthy skin is assessed in each part. The transition can be sharp (1 point) or blurred (0 points). The final Border score ranges from 0 to 8. Division into parts is shown below:') }}
+            </p>
+            <div class="text-center mb-3">
+                <img src="{{ url_for('static', filename='images/abcd/border_segments.png') }}"
+                    style="max-width: 100%; height: auto; border-radius: 6px;" alt="{{ _('Division into 8 segments') }}">
+                <p class="image-caption mt-1">{{ _('Division into 8 segments') }}</p>
+            </div>
+
+            <p>
+                {{ _('During studies on the ABCD rule conducted by researchers Z.S. Hippe and Ł. Piątek, new properties of the Border symptom were observed. For B=2, 28 unique configurations are possible, obtained through symmetry operations with respect to an 8-fold axis perpendicular to the image plane.') }}
+            </p>
+            <div class="text-center mb-3">
+                <img src="{{ url_for('static', filename='images/abcd/border_configurations.png') }}"
+                    style="max-width: 100%; height: auto;" alt="{{ _('28 border configurations') }}">
+                <p class="image-caption mt-1">{{ _('28 border configurations') }}</p>
+            </div>
+            <p>
+                {{ _('For the full range of Border values (0 to 8), there are a total of 256 possible configurations of sharp and blurred border segments.') }}
+            </p>
+            <strong class="mb-3">{{ _('Example border combinations') }}</strong>
+            <div class="d-flex gap-3 flex-wrap justify-content-center">
+                <div class="text-center">
+                    <img src="{{ url_for('static', filename='images/abcd/border_case_1.png') }}"
+                        style="max-width: 250px; height: auto; border-radius: 6px;" alt="{{ _('Case 1') }}">
+                    <p class="image-caption mt-1">{{ _('Case 1') }}</p>
                 </div>
-                <div class="col-md-6">
-                    <h4>{{ _('Badania własne WSIiZ') }}</h4>
-                    <p>{{ _('Wyniki prac Hippe i Piątka:') }}</p>
-                    <ul>
-                        <li>{{ _('Dla B=2 istnieje 28 możliwych konfiguracji brzegu') }}</li>
-                        <li>{{ _('256 kombinacji dla B=0-8') }}</li>
-                    </ul>
-                    <div class="row g-2">
-                        <div class="col-12">
-                            <img src="{{ url_for('static', filename='images/abcd/border_28cases.jpg') }}" 
-                                 class="img-fluid" 
-                                 alt="{{ _('28 konfiguracji brzegu') }}">
-                            <p class="text-muted small">{{ _('Ryc. 3: Przykładowe konfiguracje dla B=2') }}</p>
-                        </div>
-                        <div class="col-6">
-                            <img src="{{ url_for('static', filename='images/abcd/border_combination1.jpg') }}" 
-                                 class="img-fluid" 
-                                 alt="{{ _('Kombinacja 1') }}">
-                        </div>
-                        <div class="col-6">
-                            <img src="{{ url_for('static', filename='images/abcd/border_combination2.jpg') }}" 
-                                 class="img-fluid" 
-                                 alt="{{ _('Kombinacja 2') }}">
-                        </div>
-                    </div>
+                <div class="text-center">
+                    <img src="{{ url_for('static', filename='images/abcd/border_case_2.png') }}"
+                        style="max-width: 250px; height: auto; border-radius: 6px;" alt="{{ _('Case 2') }}">
+                    <p class="image-caption mt-1">{{ _('Case 2') }}</p>
                 </div>
             </div>
         </div>
@@ -172,143 +144,127 @@
     <!-- COLOR -->
     <div class="classification-card">
         <div class="classification-header secondary text-white">
-            {{ _('C - Kolor') }}
+            {{ _('C - Color') }}
         </div>
         <div class="classification-body">
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <h3>{{ _('Dopuszczalne kolory') }}</h3>
-                    <p>{{ _('Zbiór 6 kolorów:') }}</p>
-                    <ul>
-                        <li>{{ _('Biały') }}</li>
-                        <li>{{ _('Błękitny') }}</li>
-                        <li>{{ _('Ciemnobrązowy') }}</li>
-                        <li>{{ _('Jasnobrązowy') }}</li>
-                        <li>{{ _('Czarny') }}</li>
-                        <li>{{ _('Czerwony') }}</li>
-                    </ul>
-                    <img src="{{ url_for('static', filename='images/abcd/color_chart.jpg') }}" 
-                         class="img-fluid" 
-                         alt="{{ _('Paleta kolorów') }}">
-                    <p class="text-muted small">{{ _('Ryc. 4: Dopuszczalne kolory w regule ABCD') }}</p>
-                </div>
-                <div class="col-md-6">
-                    <h4>{{ _('Ograniczenia metody') }}</h4>
-                    <div class="alert alert-warning">
-                        <p>{{ _('Badania własne wykazały:') }}</p>
-                        <ul>
-                            <li>{{ _('Brak różnicowania wpływu poszczególnych kolorów') }}</li>
-                            <li>{{ _('Liczy się jedynie ich liczba, nie rodzaj') }}</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <p>
+                {{ _('Color refers to the number of distinct hues visible within the lesion.') }}
+            </p>
+            <strong>{{ _('Distinction of lesion color') }}</strong>
+            <p>
+                {{ _('This symptom is characterized as multi-valued. It describes the presence or absence of allowed ABCD rule colors on the lesion surface. The evaluation involves identifying any number of colors from the set of 6 permitted ones (white, blue, dark brown, light brown, black, and red). An additional criterion is the presence of blue color covering more than half of the lesion. Symptom defining the colours occurring in the lesion therefore takes on a value from 1 to 6. A greater variety in this symptom typically correlates with increased clinical suspicion.') }}
+            </p>
+
+            <img src="{{ url_for('static', filename='images/abcd/color_case.png') }}"
+                style="display: block; margin: 0 auto; max-width: 250px; height: auto; border-radius: 6px;" class="mb-2"
+                alt="{{ _('Colors') }}">
+            <p class="image-caption">{{ _('Colors in the ABCD rule') }}</p>
         </div>
     </div>
 
     <!-- DIVERSITY OF STRUCTURES -->
     <div class="classification-card">
         <div class="classification-header secondary text-white">
-            {{ _('D - Różnorodność struktur') }}
+            {{ _('D - Diversity of structures') }}
         </div>
         <div class="classification-body">
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <h3>{{ _('Elementy strukturalne') }}</h3>
-                    <p>{{ _('5 głównych struktur:') }}</p>
-                    <ol>
-                        <li>{{ _('Ciałka barwnikowe') }}</li>
-                        <li>{{ _('Kropki barwnikowe') }}</li>
-                        <li>{{ _('Pola bezstrukturalne') }}</li>
-                        <li>{{ _('Rozgałęzienia pasmowate') }}</li>
-                        <li>{{ _('Sieć barwnikowa') }}</li>
-                    </ol>
-                    <img src="{{ url_for('static', filename='images/abcd/structures.jpg') }}" 
-                         class="img-fluid" 
-                         alt="{{ _('Struktury znamienia') }}">
-                    <p class="text-muted small">{{ _('Ryc. 5: Przykłady struktur') }}</p>
-                </div>
-                <div class="col-md-6">
-                    <h4>{{ _('Uwagi diagnostyczne') }}</h4>
-                    <div class="alert alert-warning">
-                        <ul>
-                            <li>{{ _('Metoda nie różnicuje znaczenia poszczególnych struktur') }}</li>
-                            <li>{{ _('Decyduje jedynie ich liczba') }}</li>
-                        </ul>
-                    </div>
-                    <h4 class="mt-4">{{ _('Związek z czerniakiem') }}</h4>
-                    <p>{{ _('Znaczące zróżnicowanie (>3 struktury) zwiększa prawdopodobieństwo czerniaka.') }}</p>
-                </div>
-            </div>
+            <p>
+                {{ _('Diversity of structures refers to the range of patterns seen within the lesion under dermatoscopic examination.') }}
+            </p>
+            <strong>{{ _('Assessment of structural diversity') }}</strong>
+            <p>
+                {{ _('The last symptom is multi-valued aswell. It describes structures permitted by the ABCD rule on lesion surfaces. Evaluation involves identifying the presence of five main elements: pigment globules, pigment dots, structureless areas, branched streaks, and pigment network. The assessment of the diversity of the mole structures therefore results in assigning a value from 1 to 5 to the symptom of Diversity of structure. Significant diversity of these elements increases the probability that the lesion is a melanoma.') }}
+            </p>
+
+            <img src="{{ url_for('static', filename='images/abcd/div_of_str.png') }}"
+                style="display: block; margin: 0 auto; max-width: 250px; height: auto; border-radius: 6px;" class="mb-2"
+                alt="{{ _('Lesion structures') }}">
+            <p class="image-caption">{{ _('Structure examples') }}</p>
         </div>
     </div>
 </section>
 
-<!-- SECTION 3: TDS Calculation -->
-<section class="container my-5">
+<!-- TDS SCORE -->
+<section class="classification-section">
     <div class="classification-card">
-        <div class="classification-header bg-secondary text-white">
-            {{ _('Parametr TDS') }}
+        <div class="classification-header text-white">
+            {{ _('TDS Parameter - Total Dermatoscopy Score') }}
         </div>
         <div class="classification-body">
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <h3>{{ _('Wzór Braun-Falco/Stolz’a') }}</h3>
-                    <div class="formula-box p-4 bg-light">
-                        <code>TDS = 1.3×A + 0.1×B + 0.5×C + 0.5×D</code>
-                    </div>
-                    <h4 class="mt-4">{{ _('Interpretacja wyniku') }}</h4>
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr><th>TDS</th><th>{{ _('Klasyfikacja') }}</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>&lt;4.75</td><td>{{ _('Łagodne') }}</td></tr>
-                            <tr><td>4.75–5.45</td><td>{{ _('Podejrzane') }}</td></tr>
-                            <tr><td>&gt;5.45</td><td>{{ _('Złośliwe') }}</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-md-6">
-                    <h3>{{ _('Przykład kliniczny') }}</h3>
-                    <p>{{ _('Parametry znamienia:') }}</p>
-                    <ul>
-                        <li>{{ _('A=2 (asymetria)') }}</li>
-                        <li>{{ _('B=1 (brzeg)') }}</li>
-                        <li>{{ _('C=2 (kolory: ciemno/jasnobrązowy)') }}</li>
-                        <li>{{ _('D=2 (struktury)') }}</li>
-                    </ul>
-                    <div class="calculation-box p-3 bg-light">
-                        <code>TDS = 1.3×2 + 0.1×1 + 0.5×2 + 0.5×2 = 4.7</code>
-                    </div>
-                    <p class="mt-3">{{ _('Klasyfikacja: <strong>znamię podejrzane</strong>') | safe }}</p>
-                    <img src="{{ url_for('static', filename='images/abcd/tds_example.jpg') }}" 
-                         class="img-fluid" 
-                         alt="{{ _('Przykładowe znamię') }}">
-                    <p class="text-muted small">{{ _('Ryc. 6: Znamie o TDS=4.7') }}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- SECTION 4: Clinical Validation -->
-<section class="container my-5">
-    <div class="classification-card">
-        <div class="classification-header bg-dark text-white">
-            {{ _('Walidacja kliniczna') }}
-        </div>
-        <div class="classification-body">
-            <h3>{{ _('Zalety reguły ABCD') }}</h3>
+            <p>
+                {{ _('The previously described elements of the ABCD rule are used to calculate the Total Dermatoscopy Score (TDS).') }}
+            </p>
+            <p>
+                {{ _('The TDS value helps identify the nature of the lesion. Based on the score, the lesion can be classified into one of four categories:') }}
+            </p>
             <ul>
-                <li>{{ _('Powszechnie stosowana w Europie Zachodniej i Polsce') }}</li>
-                <li>{{ _('Lepsza skuteczność u mniej doświadczonych klinicystów') }}</li>
-                <li>{{ _('Standaryzacja procesu diagnostycznego') }}</li>
+                <li>{{ _('Benign lesion') }}</li>
+                <li>{{ _('Blue nevi') }}</li>
+                <li>{{ _('Suspicious lesion') }}</li>
+                <li>{{ _('Malignant lesion (melanoma)') }}</li>
             </ul>
-            <h3 class="mt-4">{{ _('Porównanie ze strategią 7-punktową') }}</h3>
-            <p>{{ _('Badania wykazują wyższą skuteczność reguły ABCD w wykrywaniu wczesnych stadiów czerniaka.') }}</p>
+            <div class="text-center my-4">
+                <img src="{{ url_for('static', filename='images/abcd/tds_table.png') }}"
+                    alt="{{ _('Classification table') }}" class="img-fluid rounded" style="width: 55%; height:auto;">
+                <p class="image-caption mt-1">{{ _('Lesion classification based on TDS') }}</p>
+            </div>
+
+            <p class="mt-4"><strong>{{ _('Classic TDS formula according to Braun-Falco:') }}</strong></p>
+            <pre
+                class="bg-light p-3 rounded">TDS = 1.3 * Asymmetry + 0.1 * Border + 0.5 * Color + 0.5 * Diversity of structures</pre>
+
+            <p class="mt-3"><strong>{{ _('Example TDS assessment') }}</strong></p>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <p>
+                        {{ _('According to Stolz\'s strategy, the example lesion has no axis of symmetry, one sharp border segment, two colors (dark and light brown), and two structures.') }}
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{{ url_for('static', filename='images/abcd/tds_case.png') }}"
+                        alt="{{ _('TDS example') }}" class=" img img-fluid" style="max-width: 100%; height:auto;">
+                    <p class="image-caption mt-1">{{ _('TDS calculation example') }}</p>
+                </div>
+                <p>
+                    {{ _('Therefore:') }}</p>
+                <pre class="bg-light p-3 rounded">TDS = 1.3 * 2 + 0.1 * 1 + 0.5 * 2 + 0.5 * 2 = 4.7</pre>
+                <p>
+                    {{ _('According to the classification, the lesion should be considered suspicious and potentially dangerous.') }}
+                </p>
+            </div>
+
+            <h5 class="mt-4"><strong>{{ _('Improved TDS formula') }}</strong></h5>
+            <p>
+                {{ _('As a result of research, scientists developed a more precise TDS formula, assigning individual weights to each color and structure.') }}
+            </p>
+            <pre class="bg-light p-3 rounded">new_TDS = 0.8 * Asymmetry + 0.11 * Border
++ 0.5 * Color_black + 0.8 * Color_blue
++ 0.5 * Color_dark_brown + 0.6 * Color_light_brown
++ 0.5 * Color_red + 0.5 * Color_white
++ 0.5 * Diversity_pigment_dots + 0.6 * Diversity_pigment_globules
++ 0.5 * Diversity_pigment_network + 0.6 * Diversity_structureless_areas
++ 0.6 * Diversity_branched_streaks
+            </pre>
         </div>
     </div>
 </section>
+<section class="container my-5 text-center">
+    <h2 class="section-title">{{ _('Summary') }}</h2>
+    <p class="section-description text-muted mx-auto">
+        {{ _('Among the three most popular methods for evaluating skin melanocytic lesions,
+        available literature highlights the particular effectiveness of the Braun-Falco and Stolz strategies.
+        This strategy is now widely used by physicians both in Western Europe and in Poland.
+        It has also been found that less experienced clinicians achieve higher diagnostic accuracy
+        when applying the ABCD rule during examinations.') }}
+    </p>
+    <p class="section-description text-muted mx-auto">
+        {{ _('The ABCD-based form available on our website offers
+        results based on both the basic TDS and its extended version.') }}<br>
+        {{ _('Visit the diagnostics page and analyze your lesion.') }}
+    </p>
 
+    <div class="btn-container">
+        <a href="{{ url_for('diagnostics') }}" class="btn btn-secondary">{{ _('Diagnostics') }}</a>
+    </div>
+</section>
 {% endblock %}

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-09 13:43+0200\n"
+"POT-Creation-Date: 2025-06-04 18:39+0200\n"
 "PO-Revision-Date: 2025-03-18 16:16+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: app.py:72
 msgid ""
@@ -232,160 +232,550 @@ msgstr ""
 "znamienia barwnikowego. Jest to plama lub guzek z tendencją do krwawienia"
 " i towarzyszącym świądem. Rośnie i daje przerzuty szybko."
 
-#: templates/abcd_rule.html:6
+#: templates/abcd_rule.html:2
 msgid "ABCD Rule for Melanoma Detection"
 msgstr "Formuła ABCD dla Wykrywania Czerniaka"
 
-#: templates/abcd_rule.html:7
-msgid ""
-"Early detection can save lives. Learn how to assess suspicious moles "
-"using the ABCD rule."
+#: templates/abcd_rule.html:8 templates/base.html:129
+msgid "ABCD Rule"
+msgstr "O formule ABCD"
+
+#: templates/abcd_rule.html:9
+msgid "Learn how dermatologists assess skin lesions using ABCD Rule."
 msgstr ""
-"Wczesna diagnoza może uratować życie. Dowiedz się jak rozróżniać "
-"podejrzane zmiany korzystając z formuły ABCD."
+"Dowiedz się jak dermatolodzy rozróżniają zmiany skórne używając formuły "
+"ABCD."
 
-#: templates/abcd_rule.html:13
-msgid "What is the ABCD Rule?"
-msgstr "Czym jest fromuła ABCD?"
+#: templates/abcd_rule.html:14
+msgid "Strategies for Evaluating Melanocytic Lesions"
+msgstr "Strategie oceny znamion melanocytowych"
 
-#: templates/abcd_rule.html:15
+#: templates/abcd_rule.html:16
 msgid ""
-"The ABCD rule is a guideline used to assess the risk of melanoma based on"
-" four key characteristics of a skin lesion: Asymmetry, Border "
-"irregularity, Color variation, and Diversity of structure. These "
-"characteristics help doctors evaluate if a mole or lesion might be "
-"cancerous."
+"The most frequently cited strategies for evaluating melanocytic skin "
+"lesions in the literature include: the Argenziano strategy (the so-called"
+" 7-point checklist), the Menzies strategy, and the Stolz strategy based "
+"on the ABCD rule, which serves as the basis for our preliminary "
+"diagnostic form for melanocytic lesions."
 msgstr ""
-"Zasada ABCD to wytyczna stosowana do oceny ryzyka wystąpienia czerniaka "
-"na podstawieczterech kluczowych cech zmiany skórnej: asymetrii, "
-"nieregularności obrzeża, zmienności koloru i struktury. Cechy te pomagają"
-" lekarzom ocenić, czy znamię lub zmiana może być nowotworowa. "
-
-#: templates/abcd_rule.html:20
-msgid "Understanding Each Factor"
-msgstr "Zrozumienie każdego z czynników"
+"Do strategii oceny znamion melanocytowych skóry najczęściej cytowanych w "
+"literaturze należą: strategiaArgenziano (tzw. skala 7-punktowa), "
+"strategia Menzies'a oraz strategia Stolz'a, oparta na zastosowaniu "
+"tzw.reguły ABCD, która to jest bazą naszego formularza do wstępnej "
+"diagnostyki znamion melanocytowych."
 
 #: templates/abcd_rule.html:24
-msgid "A: Asymmetry"
-msgstr "A: Asymetria"
+msgid "Stolz Strategy"
+msgstr "Strategia Stolz'a"
 
-#: templates/abcd_rule.html:25
+#: templates/abcd_rule.html:28
 msgid ""
-"If one half of the mole doesn’t match the other half, it may indicate a "
-"problem. Cancerous moles are often asymmetric."
+"This strategy, a modification of the Braun-Falco approach, uses the ABCD "
+"rule to assess melanocytic lesions. Each letter corresponds to one of the"
+" key features of the lesion:"
 msgstr ""
+"Strategia ta, będąca modyfikacją podejścia Braun-Falco, wykorzystuje "
+"regułę ABCD do oceny znamionmelanocytowych. Każda litera odpowiada jednej"
+" z kluczowych cech znamienia:"
+
+#: templates/abcd_rule.html:31
+msgid "Asymmetry"
+msgstr "Asymetria"
+
+#: templates/abcd_rule.html:31
+msgid "assessment of the degree of asymmetry in shape and structure of the lesion"
+msgstr "ocena stopnia asymetrii kształtu i struktury znamienia"
+
+#: templates/abcd_rule.html:32
+msgid "Border"
+msgstr "Brzeg"
+
+#: templates/abcd_rule.html:32
+msgid "characteristics of the border - whether it is regular or irregular"
+msgstr "charakterystyka brzegu - czy jest regularny czy nieregularny"
+
+#: templates/abcd_rule.html:33
+msgid "Color"
+msgstr "Kolor"
+
+#: templates/abcd_rule.html:33
+msgid "number of occurring colors out of six permissible ones"
+msgstr "liczba występujących kolorów spośród dopuszczalnych sześciu"
 
 #: templates/abcd_rule.html:34
-msgid "B: Border Irregularity"
-msgstr ""
+msgid "Diversity of structures"
+msgstr "Różnorodność struktury"
 
-#: templates/abcd_rule.html:35
-msgid "Moles with jagged, irregular borders are more likely to be malignant."
-msgstr ""
+#: templates/abcd_rule.html:34
+msgid "number of different structures within the lesion out of five possible"
+msgstr "liczba różnych struktur w obrębie znamienia spośród pięciu możliwych"
 
-#: templates/abcd_rule.html:44
-msgid "C: Color Variation"
-msgstr ""
-
-#: templates/abcd_rule.html:45
+#: templates/abcd_rule.html:37
 msgid ""
-"Moles with multiple colors, especially shades of brown, black, or even "
-"red and blue, can be signs of melanoma."
+"The Stolz strategy forms the basis for our preliminary diagnostic form "
+"for melanocytic lesions."
 msgstr ""
+"Strategia Stolz'a stanowi podstawę naszego formularza do wstępnej "
+"diagnostyki znamionmelanocytowych."
 
-#: templates/abcd_rule.html:54
-msgid "D: Diameter"
+#: templates/abcd_rule.html:48
+msgid "A - Asymmetry"
+msgstr "A - Asymetria"
+
+#: templates/abcd_rule.html:52
+msgid ""
+"Asymmetry involves determining the symmetry of the lesion by identifying "
+"the number of double axes of symmetry lying in the plane of the lesion."
 msgstr ""
+"Asymetria polega na wyznaczeniu symetrii znamienia, poprzez znalezienie "
+"informacji o liczbie dwukrotnych osi symetrii, leżących w płaszczyźnie "
+"znamienia. "
 
 #: templates/abcd_rule.html:55
+msgid "Assessment of lesion asymmetry"
+msgstr "Ocena asymetrii znamion"
+
+#: templates/abcd_rule.html:56
 msgid ""
-"Moles that are larger than 6mm in diameter (about the size of a pencil "
-"eraser) should be examined by a doctor."
+"Initially, a double axis of symmetry is sought. If a first double axis is"
+" found, a second axis perpendicular to the first is sought."
 msgstr ""
+"Początkowo poszukuje się dwukrotnej osi symetrii. W przypadku znalezienia"
+" pierwszej dwukrotnej osisymetrii, poszukuje się drugiej osi, "
+"prostopadłej do osi pierwszej."
 
-#: templates/abcd_rule.html:64
-msgid "Important Notes"
-msgstr ""
+#: templates/abcd_rule.html:61 templates/abcd_rule.html:62
+msgid "Lesion"
+msgstr "Znamię"
 
-#: templates/abcd_rule.html:65
+#: templates/abcd_rule.html:66 templates/abcd_rule.html:67
+msgid "One axis of symmetry"
+msgstr "Jedna oś symetrii"
+
+#: templates/abcd_rule.html:71 templates/abcd_rule.html:72
+msgid "Two perpendicular axes"
+msgstr "Dwie prostopadłe osie"
+
+#: templates/abcd_rule.html:76
 msgid ""
-"Remember that the ABCD rule is a guideline, not a definitive diagnostic "
-"tool. If you notice suspicious changes in a mole, seek professional "
-"medical advice for a thorough examination."
+"If the lesion has two mutually perpendicular axes of symmetry, the "
+"asymmetry score is 0 – the lesion is symmetric. If there is symmetry "
+"along only one axis, the asymmetry score is 1 – asymmetric with respect "
+"to one axis. If no axis divides the lesion into two approximately equal "
+"parts, the asymmetry score is 2 – asymmetric with respect to both axes."
 msgstr ""
+"Jeżeli znamię posiada dwie, wzajemnie prostopadłe osie symetrii wartość "
+"wyniku oceny asymetriiznamienia wynosi 0 - znamię jest symetryczne. W "
+"przypadku wystąpienia asymetrii względem jednej osisymptom asymetrii "
+"przyjmuje wartość 1 - znamię asymetryczne względem jednej osi symetrii. "
+"Natomiast brakjakiejkolwiek osi symetrii, dzielącej obraz znamienia na "
+"dwie symetryczne (w przybliżeniu) części(znamię asymetryczne względem "
+"dwóch-osi symetrii) powoduje przypisanie symptomowi symptomowi wartości "
+"2."
 
-#: templates/abcd_rule.html:69
-msgid "Do you want to analyze a lesion?"
+#: templates/abcd_rule.html:81 templates/abcd_rule.html:82
+msgid "Value 0"
+msgstr "Wartość 0"
+
+#: templates/abcd_rule.html:86 templates/abcd_rule.html:87
+msgid "Value 1"
+msgstr "Wartość 1"
+
+#: templates/abcd_rule.html:91 templates/abcd_rule.html:92
+msgid "Value 2"
+msgstr "Wartość 2"
+
+#: templates/abcd_rule.html:101
+msgid "B - Border"
+msgstr "B - Brzeg"
+
+#: templates/abcd_rule.html:105
+msgid ""
+"Border is related to the presence of a sharp, abrupt ending of pigment "
+"pattern at the periphery of the lesion or a gradual, indistinct cutoff."
 msgstr ""
+"Brzeg jest związany z obecnością ostrego, nagłego zakończenia pigmentu na"
+" obwodzie zmiany lub stopniowego, niewyraźnego odcięcia”"
 
-#: templates/abcd_rule.html:70
-#, fuzzy
-msgid "Start Diagnostics"
-msgstr "Zacznij diagnostykę"
+#: templates/abcd_rule.html:107
+msgid "Lesion border analysis"
+msgstr "Analiza brzegu znamienia"
 
-#: templates/base.html:10 templates/base.html:17
-msgid "Melanoma Analysis"
-msgstr "Analiza Melanomy"
+#: templates/abcd_rule.html:109
+msgid ""
+"Determining the border character involves analyzing the pigment "
+"distribution at the junction between the lesion and healthy skin. To "
+"conduct an accurate evaluation, the lesion is divided into eight "
+"approximately equal parts formed by two pairs of perpendicular axes "
+"intersecting at one point. Then the sharpness of the transition between "
+"the lesion and healthy skin is assessed in each part. The transition can "
+"be sharp (1 point) or blurred (0 points). The final Border score ranges "
+"from 0 to 8. Division into parts is shown below:"
+msgstr ""
+"Określenie charakteru brzegu znamienia polega na analizie układu "
+"barwnika, zlokalizowanego w obszarze połączenia znamienia oraz zdrowej "
+"skóry. W celu przeprowadzenia dokładnej oceny, znamię dzieli się na osiem"
+" równych (w przybliżeniu) części, utworzonych przez dwie pary "
+"prostopadłych osi, przecinających się w jednym punkcie. Następnie ocenia "
+"się ostrość przejścia pomiędzy znamieniem a zdrową skórą w każdej części "
+"znamienia. Przejście to może być ostre (1 punkt) lub rozmyte (0 punktów)."
+" Ostateczna wartość symptomu Border mieści się w zakresie od 0 do 8. "
+"Podział na części zademonstrowany poniżej:"
 
-#: templates/base.html:24
-msgid "Home"
-msgstr "Strona główna"
+#: templates/abcd_rule.html:113 templates/abcd_rule.html:114
+msgid "Division into 8 segments"
+msgstr "Podział na 8 segmentów"
 
-#: templates/base.html:28 templates/base.html:35
+#: templates/abcd_rule.html:118
+msgid ""
+"During studies on the ABCD rule conducted by researchers Z.S. Hippe and "
+"Ł. Piątek, new properties of the Border symptom were observed. For B=2, "
+"28 unique configurations are possible, obtained through symmetry "
+"operations with respect to an 8-fold axis perpendicular to the image "
+"plane."
+msgstr ""
+"Podczas badań nad regułą ABCD przeprowadzanych przez badaczy Z.S. Hippe i"
+" Ł. Piątka zaobserwowano nowe własności symptomu Brzegu. Dla wartości B=2"
+" możliwych jest 28 unikalnych konfiguracji, uzyskanych w wyniku "
+"zastosowania operacji symetrii względem 8-krotnej osi symetrii, "
+"prostopadłej do płaszczyzny obrazu."
+
+#: templates/abcd_rule.html:122 templates/abcd_rule.html:123
+msgid "28 border configurations"
+msgstr "28 konfiguracji brzegu"
+
+#: templates/abcd_rule.html:126
+msgid ""
+"For the full range of Border values (0 to 8), there are a total of 256 "
+"possible configurations of sharp and blurred border segments."
+msgstr ""
+"Dla pełnego zakresu wartości symptomu Border (od 0 do 8) istnieje łącznie"
+" 256 możliwych konfiguracji rozkładu ostrych i rozmytych fragmentów "
+"brzegu."
+
+#: templates/abcd_rule.html:128
+msgid "Example border combinations"
+msgstr "Przykładowe kombinacje brzegów"
+
+#: templates/abcd_rule.html:132 templates/abcd_rule.html:133
+msgid "Case 1"
+msgstr "Przypadek 1"
+
+#: templates/abcd_rule.html:137 templates/abcd_rule.html:138
+msgid "Case 2"
+msgstr "Przypadek 2"
+
+#: templates/abcd_rule.html:147
+msgid "C - Color"
+msgstr "C - Kolor"
+
+#: templates/abcd_rule.html:151
+msgid "Color refers to the number of distinct hues visible within the lesion."
+msgstr "Kolor odnosi się do ilości różnych odcieni widocznych w obrębie zmiany."
+
+#: templates/abcd_rule.html:153
+msgid "Distinction of lesion color"
+msgstr "Rozróżnienie koloru zmiany"
+
+#: templates/abcd_rule.html:155
+msgid ""
+"This symptom is characterized as multi-valued. It describes the presence "
+"or absence of allowed ABCD rule colors on the lesion surface. The "
+"evaluation involves identifying any number of colors from the set of 6 "
+"permitted ones (white, blue, dark brown, light brown, black, and red). An"
+" additional criterion is the presence of blue color covering more than "
+"half of the lesion. Symptom defining the colours occurring in the lesion "
+"therefore takes on a value from 1 to 6. A greater variety in this symptom"
+" typically correlates with increased clinical suspicion."
+msgstr ""
+"Symptom ten ma charakter wielowartościowy. Opisuje obecność lub brak "
+"wystąpienia dopuszczonych regułą ABCD kolorów powierzchni znamion. Ocena "
+"zabarwienia znamienia polega na stwierdzeniu dowolnej liczby kolorów, ze "
+"zbioru 6-ciu kolorów dopuszczonych (białego, błękitnego, ciemno "
+"brązowego, jasno brązowego, czarnego oraz czerwonego). Dodatkowym "
+"kryterium w symptomie jest obecność koloru niebieskiego na ponad połowie "
+"znamienia. Symptom określający kolory występujące w znamieniu przyjmuje "
+"zatem wartość z przedziału od 1 do 6."
+
+#: templates/abcd_rule.html:160
+msgid "Colors"
+msgstr "Kolory"
+
+#: templates/abcd_rule.html:161
+msgid "Colors in the ABCD rule"
+msgstr "Kolory w formule ABCD"
+
+#: templates/abcd_rule.html:168
+msgid "D - Diversity of structures"
+msgstr "D - Różnorodność struktury"
+
+#: templates/abcd_rule.html:172
+msgid ""
+"Diversity of structures refers to the range of patterns seen within the "
+"lesion under dermatoscopic examination."
+msgstr ""
+"Różnorodność struktur odnosi się do zakresu struktur widocznychw obrębie "
+"zmiany poddawanej badaniu dermatoskopowemu."
+
+#: templates/abcd_rule.html:174
+msgid "Assessment of structural diversity"
+msgstr "Ocena różnorodności strukturalnej"
+
+#: templates/abcd_rule.html:176
+msgid ""
+"The last symptom is multi-valued aswell. It describes structures "
+"permitted by the ABCD rule on lesion surfaces. Evaluation involves "
+"identifying the presence of five main elements: pigment globules, pigment"
+" dots, structureless areas, branched streaks, and pigment network. The "
+"assessment of the diversity of the mole structures therefore results in "
+"assigning a value from 1 to 5 to the symptom of Diversity of structure. "
+"Significant diversity of these elements increases the probability that "
+"the lesion is a melanoma."
+msgstr ""
+"Ostatni symptom omawianych znamion - Diversity of structures - również "
+"tak jak kolor ma charakter wielowartościowy. Opisuje dopuszczone regułą "
+"ABCD struktury zróżnicowania powierzchni znamion. Ocena wystąpienia "
+"elementów strukturalnych, polega na określeniu obecności 5-ciu głównych "
+"elementów, tj.: ciałek barwnikowych, kropek barwnikowych, pól "
+"bezstrukturalnych, rozgałęzień pasmowatych oraz sieci barwnikowej. Ocena "
+"zróżnicowania struktur znamienia powoduje zatem przypisanie symptomowi "
+"Diversity of structure wartości z zakresu od 1 do 5. Znaczące "
+"zróżnicowanie elementów strukturalnych zwiększa prawdopodobieństwo, że "
+"oceniane znamię jest czerniakiem. "
+
+#: templates/abcd_rule.html:181
+msgid "Lesion structures"
+msgstr "Struktury znamienia"
+
+#: templates/abcd_rule.html:182
+msgid "Structure examples"
+msgstr "Przykłady struktur"
+
+#: templates/abcd_rule.html:191
+msgid "TDS Parameter - Total Dermatoscopy Score"
+msgstr "Parametr TDS - Całkowity Wskaźnik Dermatoskopowy"
+
+#: templates/abcd_rule.html:195
+msgid ""
+"The previously described elements of the ABCD rule are used to calculate "
+"the Total Dermatoscopy Score (TDS)."
+msgstr ""
+"Opisane wcześniej elementy reguły ABCD służą do wyznaczenia całkowitej "
+"oceny dermatoskopowej TDS (ang. Total Dermatoscopy Score)."
+
+#: templates/abcd_rule.html:198
+msgid ""
+"The TDS value helps identify the nature of the lesion. Based on the "
+"score, the lesion can be classified into one of four categories:"
+msgstr ""
+"Wartość parametru TDS umożliwia identyfikację charakteru znamienia. Na "
+"podstawie uzyskanej punktacji znamię można zaklasyfikować do jednej z "
+"czterech kategorii:"
+
+#: templates/abcd_rule.html:201
+msgid "Benign lesion"
+msgstr "Znamię łagodne"
+
+#: templates/abcd_rule.html:202 templates/characteristics.html:63
+msgid "Blue nevi"
+msgstr "Znamiona błękitne"
+
+#: templates/abcd_rule.html:203
+msgid "Suspicious lesion"
+msgstr "Znamię podejrzane"
+
+#: templates/abcd_rule.html:204
+msgid "Malignant lesion (melanoma)"
+msgstr "Znamię złośliwe (czerniak)"
+
+#: templates/abcd_rule.html:208
+msgid "Classification table"
+msgstr "Tabela klasyfikacji"
+
+#: templates/abcd_rule.html:209
+msgid "Lesion classification based on TDS"
+msgstr "Tabela klasyfikacji znamion na podstawie TDS"
+
+#: templates/abcd_rule.html:212
+msgid "Classic TDS formula according to Braun-Falco:"
+msgstr "Wzór na klasyczny TDS wg Braun-Falco:"
+
+#: templates/abcd_rule.html:216
+msgid "Example TDS assessment"
+msgstr "Przykład oceny TDS"
+
+#: templates/abcd_rule.html:220
+msgid ""
+"According to Stolz's strategy, the example lesion has no axis of "
+"symmetry, one sharp border segment, two colors (dark and light brown), "
+"and two structures."
+msgstr ""
+"Według strategii Stolz'a, przykładowe znamię nie posiada żadnej osi "
+"symetrii, ma jeden ostry fragment brzegu, dwa kolory (ciemno i jasno "
+"brązowy) oraz dwie struktury. "
+
+#: templates/abcd_rule.html:225
+msgid "TDS example"
+msgstr "TDS przykład"
+
+#: templates/abcd_rule.html:226
+msgid "TDS calculation example"
+msgstr "Przykład obliczania TDS"
+
+#: templates/abcd_rule.html:229
+msgid "Therefore:"
+msgstr "Zatem:"
+
+#: templates/abcd_rule.html:232
+msgid ""
+"According to the classification, the lesion should be considered "
+"suspicious and potentially dangerous."
+msgstr ""
+"Zgodnie z klasyfikacją, znamię należy uznać za podejrzane i potencjalnie "
+"niebezpieczne. "
+
+#: templates/abcd_rule.html:236
+msgid "Improved TDS formula"
+msgstr "Usprawniony wzór TDS"
+
+#: templates/abcd_rule.html:238
+msgid ""
+"As a result of research, scientists developed a more precise TDS formula,"
+" assigning individual weights to each color and structure."
+msgstr ""
+"W wyniku badań naukowcy opracowali bardziej precyzyjny wzór TDS, w którym"
+" każdemu kolorowi oraz strukturze przypisano indywidualną wagę."
+
+#: templates/abcd_rule.html:252
+msgid "Summary"
+msgstr "Podsumowanie"
+
+#: templates/abcd_rule.html:254
+msgid ""
+"Among the three most popular methods for evaluating skin melanocytic "
+"lesions,\n"
+"        available literature highlights the particular effectiveness of "
+"the Braun-Falco and Stolz strategies.\n"
+"        This strategy is now widely used by physicians both in Western "
+"Europe and in Poland.\n"
+"        It has also been found that less experienced clinicians achieve "
+"higher diagnostic accuracy\n"
+"        when applying the ABCD rule during examinations."
+msgstr ""
+"Spośród trzech najpopularniejszych metod oceny znamion melanocytowych skóry, "
+"dostępna literatura wskazuje na szczególną skuteczność strategii Braun-Falco i Stolz'a. "
+"Strategia ta jest obecnie powszechnie stosowana przez lekarzy, zarówno w Europie Zachodniej, jak "
+"również w Polsce. Stwierdzono także, że mniej doświadczeni klinicyści uzyskują lepszą poprawność "
+"diagnoz, jeżeli stosują podczas badań regułę ABCD."
+
+#: templates/abcd_rule.html:261
+msgid ""
+"The ABCD-based form available on our website offers\n"
+"        results based on both the basic TDS and its extended version."
+msgstr ""
+"Formularz oparty na strategii ABCD dostępny na naszej stronie oferuje "
+"zarówno wynik na podstawie bazowego TDS jak i jego rozwiniętej wersji."
+
+#: templates/abcd_rule.html:263
+msgid "Visit the diagnostics page and analyze your lesion."
+msgstr "Odwiedź podstronę diagnostyka i przeanalizuj swoję znamię."
+
+#: templates/abcd_rule.html:267 templates/base.html:31 templates/base.html:42
+#: templates/base.html:128 templates/characteristics.html:173
 msgid "Diagnostics"
 msgstr "Diagnostyka"
 
-#: templates/base.html:34
-msgid "About ABCD Rule"
-msgstr "O formule ABCD"
+#: templates/base.html:11 templates/base.html:18
+msgid "Melanoma Analysis"
+msgstr "Analiza Melanomy"
 
-#: templates/base.html:40
+#: templates/base.html:26
+msgid "Home"
+msgstr "Strona główna"
+
+#: templates/base.html:39
+msgid ""
+"About\n"
+"                                    ABCD Rule"
+msgstr "O zasadzie ABCD"
+
+#: templates/base.html:48
 msgid "About Melanoma"
 msgstr "O Melanomie"
 
-#: templates/base.html:46
+#: templates/base.html:57 templates/base.html:127
 msgid "Characteristics"
 msgstr "Charakterystyka"
 
-#: templates/base.html:47
+#: templates/base.html:59
 msgid "Publications"
 msgstr "Publikacje"
 
-#: templates/base.html:48
+#: templates/base.html:61 templates/base.html:131
 msgid "Industry"
 msgstr "Branża"
 
-#: templates/base.html:54 templates/base.html:56
+#: templates/base.html:68 templates/base.html:69
 msgid "Polski"
 msgstr "Polski"
 
-#: templates/base.html:60 templates/base.html:62
+#: templates/base.html:73 templates/base.html:74
 msgid "English"
 msgstr "English"
 
-#: templates/base.html:77
-msgid "Department of Artificial Intelligence"
-msgstr "Katedra Sztucznej Inteligencji"
+#: templates/base.html:102
+msgid "This website was created in a collaboration"
+msgstr "Ta strona powstałą we współpracy"
 
-#: templates/base.html:78
-msgid "University of Information Technology and Management"
-msgstr "Wyższa Szkoła Informatyki i Zarządzania"
+#: templates/base.html:103
+#, fuzzy
+msgid "with the Department of Artificial Intelligence of"
+msgstr "z Katedrą Sztucznej Inteligencji"
 
-#: templates/base.html:79
+#: templates/base.html:104
+#, fuzzy
+msgid "University of Information Technology and Management."
+msgstr "Wyższej Szkoły Informatyki i Zarządzania"
+
+#: templates/base.html:111
+msgid "Location"
+msgstr "Lokalizacja"
+
+#: templates/base.html:113
 msgid "Sucharskiego St. 2"
 msgstr "ul. Sucharskiego 2"
 
-#: templates/base.html:80
+#: templates/base.html:114
 msgid "35-225 Rzeszow, PL"
 msgstr "35-225 Rzeszów, PL"
 
-#: templates/base.html:83
+#: templates/base.html:115
+msgid "University of Information Technology and Management"
+msgstr "Wyższa Szkoła Informatyki i Zarządzania"
+
+#: templates/base.html:118
+msgid "University Website"
+msgstr "Strona uczelni"
+
+#: templates/base.html:125
+msgid "Content"
+msgstr "Treść"
+
+#: templates/base.html:130
+msgid "Research Papers"
+msgstr "Publikacje naukowe"
+
+#: templates/base.html:139
 msgid "MelanomaWebApp"
 msgstr "MelanomaWebApp"
 
+#: templates/base.html:139
+msgid "Academic Research Project"
+msgstr "Akademicki Projekt Badawczy"
+
 #: templates/characteristics.html:2
 msgid "Skin Lesion Characteristics"
-msgstr "Charakterystyka"
+msgstr "Charakterystyka zmian skórnych"
 
 #: templates/characteristics.html:8
 msgid "Understanding Skin Lesions"
@@ -517,10 +907,6 @@ msgstr ""
 msgid "Dermal"
 msgstr "Skórne"
 
-#: templates/characteristics.html:63
-msgid "Blue nevi"
-msgstr "Znamiona błękitne"
-
 #: templates/characteristics.html:64
 msgid ""
 "Blue nevi are a type of dermal melanocytic nevus. The pigment cells\n"
@@ -642,6 +1028,10 @@ msgstr ""
 "Regularne samobadanie i profesjonalna diagnostyka są kluczem do wczesnego"
 " wykrycia."
 
+#: templates/characteristics.html:172
+msgid "Do you want to analyze a lesion?"
+msgstr "Czy chciałbyś przeanalizować znamię?"
+
 #: templates/diagnostics.html:3
 msgid "Diagnostics - Melanoma Analysis"
 msgstr "Diagnostyka - Analiza zmiany skórnej"
@@ -687,120 +1077,108 @@ msgstr "1 (Jednoosiowa Asymetria)"
 msgid "2 (Two-Axial Asymmetry)"
 msgstr "2 (Dwuosiowa Asymetria)"
 
-#: templates/diagnostics.html:41
+#: templates/diagnostics.html:39
 msgid "More about the Asymmetry factor"
 msgstr "Więcej o czynniku Asymetrii"
 
-#: templates/diagnostics.html:47 templates/diagnostics.html:84
-#: templates/diagnostics.html:151 templates/diagnostics.html:213
-msgid ""
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n"
-"                                        Proin sit amet magna id mauris "
-"luctus cursus. Proin in ante pharetra, \n"
-"                                        venenatis nisi feugiat, accumsan "
-"neque. Fusce rutrum arcu tellus, \n"
-"                                        sit amet rutrum est fringilla id."
-" Maecenas in nisl nec nisl vestibulum \n"
-"                                        aliquet. Morbi a metus mauris. "
-"Donec vel odio eu orci condimentum pulvinar. \n"
-"                                        Etiam porta odio et sagittis "
-"tincidunt. Etiam pulvinar nibh mauris, at faucibus \n"
-"                                        augue scelerisque rutrum. "
-msgstr ""
+#: templates/diagnostics.html:44 templates/diagnostics.html:73
+#: templates/diagnostics.html:134 templates/diagnostics.html:190
+msgid "Example of asymmetrical lesion"
+msgstr "Przykład znamienia asymetrycznego"
 
-#: templates/diagnostics.html:62
+#: templates/diagnostics.html:52
 msgid "Border (B)"
 msgstr "Brzeg (B)"
 
-#: templates/diagnostics.html:67
+#: templates/diagnostics.html:57
 msgid " Measures irregularity of the lesion divided into eight sections."
 msgstr " Uwzględnia nieregularność zmiany podzielonej na 8 sekcji."
 
-#: templates/diagnostics.html:79
+#: templates/diagnostics.html:68
 msgid "More about the Border factor"
 msgstr "Więcej o czynniku Brzegu"
 
-#: templates/diagnostics.html:99
+#: templates/diagnostics.html:82
 msgid "Color (C)"
 msgstr "Kolor (C)"
 
-#: templates/diagnostics.html:104
+#: templates/diagnostics.html:87
 msgid " Measures presence of multiple colors within the lesion."
 msgstr " Uwzględnia obecność różnych kolorów w obrębie zmiany."
 
-#: templates/diagnostics.html:110
+#: templates/diagnostics.html:93
 msgid "Light Brown"
 msgstr "Jasny brąz"
 
-#: templates/diagnostics.html:115
+#: templates/diagnostics.html:98
 msgid "Dark Brown"
 msgstr "Ciemny brąz"
 
-#: templates/diagnostics.html:120
+#: templates/diagnostics.html:103
 msgid "Black"
 msgstr "Czarny"
 
-#: templates/diagnostics.html:124
+#: templates/diagnostics.html:107
 msgid "Red"
 msgstr "Czerwony"
 
-#: templates/diagnostics.html:128
+#: templates/diagnostics.html:111
 msgid "White"
 msgstr "Biały"
 
-#: templates/diagnostics.html:132
+#: templates/diagnostics.html:115
 msgid "Blue/Grey"
 msgstr "Niebieski/Szary"
 
-#: templates/diagnostics.html:136
+#: templates/diagnostics.html:119
 msgid "Blue covers over half?"
 msgstr "Niebieski pokrywa ponad połowę?"
 
-#: templates/diagnostics.html:146
+#: templates/diagnostics.html:129
 msgid "More about the Color factor"
 msgstr "Więcej o czynniku Koloru"
 
-#: templates/diagnostics.html:166
+#: templates/diagnostics.html:143
 msgid "Diversity of Structures (D)"
 msgstr "Różnorodność struktury (D)"
 
-#: templates/diagnostics.html:172
+#: templates/diagnostics.html:149
 msgid " Measures variety of patterns and structures within the lesion."
 msgstr " Uwzględnia różnorodność wzorców i struktur w obrębie zmiany."
 
-#: templates/diagnostics.html:178
+#: templates/diagnostics.html:155
 msgid "Pigment Networks"
 msgstr "Sieć barwnikowa"
 
-#: templates/diagnostics.html:183
+#: templates/diagnostics.html:160
 msgid "Pigment Dots"
 msgstr "Kropki barwnikowe"
 
-#: templates/diagnostics.html:188
+#: templates/diagnostics.html:165
 msgid "Pigment Globules"
 msgstr "Ciałka barwnikowe"
 
-#: templates/diagnostics.html:193
+#: templates/diagnostics.html:170
 msgid "Branched Streaks"
 msgstr "Rozgałęzienia pasmowate"
 
-#: templates/diagnostics.html:198
+#: templates/diagnostics.html:175
 msgid "Structureless Areas"
 msgstr "Pole bezstrukturalne"
 
-#: templates/diagnostics.html:208
+#: templates/diagnostics.html:185
 msgid "More about the Diversity of Structures factor"
 msgstr "Więcej o czynniku Różnorodności struktury"
 
-#: templates/diagnostics.html:227
+#: templates/diagnostics.html:199
 msgid "Submit"
 msgstr "Zatwierdź"
 
-#: templates/diagnostics.html:233
+#: templates/diagnostics.html:205
 msgid "Total Dermatoscopy Score:"
 msgstr "Całkowity Wskaźnik Dermatoskopowy:"
 
-#: templates/diagnostics.html:235
+#: templates/diagnostics.html:207
 msgid "New Total Dermatoscopy Score:"
 msgstr "Nowy Całkowity Wskaźnik Dermatoskopowy:"
 
@@ -966,9 +1344,9 @@ msgstr ""
 "Podane publikacje zostały stworzone lub współtworzone przy udziale "
 "pracowników Katedry Sztucznej Inteligencji Wyższej Szkoły Informatyki i "
 "Zarządzania w Rzeszowie (UITM). Ich badania dotyczą analizy obrazów "
-"medycznych — w szczególności zmian melanocytowych skóry — obejmując syntezę "
-"obrazów, selekcję cech, metody klasyfikacji oraz zastosowanie zbiorów "
-"przybliżonych i uczenia maszynowego w celu wspierania wczesnej i "
+"medycznych — w szczególności zmian melanocytowych skóry — obejmując "
+"syntezę obrazów, selekcję cech, metody klasyfikacji oraz zastosowanie "
+"zbiorów przybliżonych i uczenia maszynowego w celu wspierania wczesnej i "
 "dokładnej diagnozy."
 
 #: templates/publications.html:20
@@ -1211,4 +1589,7 @@ msgstr ""
 #: templates/publications.html:181
 msgid "Procedia Computer Science, 2022"
 msgstr ""
+
+#~ msgid "Blue nevus"
+#~ msgstr "Znamię błękitne"
 

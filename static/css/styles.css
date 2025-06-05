@@ -101,7 +101,7 @@ main {
 }
 
 .form-container {
-    width: 70%;
+    max-width: 1100px;
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -509,6 +509,15 @@ img.img-fluid {
     color: var(--primary-blue);
 }
 
+.modal-description{
+    max-width: 720px;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    padding: 0 1rem 1rem 1rem;
+    margin: 1.5rem auto 1rem;
+    text-align: center;
+}
+
 .carousel-desc{
     font-size: 1rem;
     color: #4b4a4a;
@@ -640,15 +649,17 @@ img.img-fluid {
     padding: 0.15rem 0;
     display: inline-block;
     transition: all 0.3s ease;
+    filter: brightness(0) invert(1);
 }
 
 .footer-link:hover {
     color: white !important;
-    transform: translateX(5px);
+    transform: translateX(3px);
 }
 
 .university-logo {
-    width: 11rem;
+    width: 20rem;
+    max-width: 100%;
     height: auto;
     margin-bottom: 1.5rem;
 }
@@ -657,32 +668,43 @@ img.img-fluid {
     border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
-.university-info {
-    font-size: 0.8rem;
-    line-height: 1.4;
-    color: rgba(255, 255, 255, 0.75);
-    margin-left: 2rem;
-}
-.col-md-6 .university-info {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
 .row.justify-content-center {
     align-items: start;
 }
 
-.text-center .university-info {
-    margin-left: 0;
+.classification-body .image-caption {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-style: italic;
+    text-align: center;
+}
+
+.footer .row {
+    margin: 0;
+}
+
+.footer .col-md-6 {
+    padding: 1rem;
+}
+
+.footer .university-info {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
     max-width: 400px;
-    margin: 1rem auto;
+    margin: 0;
 }
 
-.footer-link {
-    filter: brightness(0) invert(1);
-    transition: transform 0.3s ease;
-}
+@media (max-width: 767.98px) {
+    .footer .col-md-6 {
+        text-align: center;
+    }
 
-.footer-link:hover {
-    transform: translateX(3px);
+    .footer .row > .col-md-6 {
+        margin-bottom: 2rem;
+    }
+
+    .footer-heading {
+        margin-top: 1rem;
+    }
 }

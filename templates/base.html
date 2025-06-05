@@ -84,33 +84,16 @@
     </main>
 
     <footer class="footer">
-        <div class="container py-4">
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-3 text-start">
-                    <h5 class="footer-heading">{{ _('Location') }}</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            {{ _('Sucharskiego St. 2') }}<br>
-                            {{ _('35-225 Rzeszow, PL') }}<br>
-                            {{ _('University of Information Technology and Management') }}
-                        </li>
-                        <li class="mt-2">
-                            <a href="https://wsiz.edu.pl" target="_blank" class="footer-link">
-                                {{ _('University Website') }}
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-6 text-center">
-                    <div class="d-flex flex-column align-items-center">
-                        <a href="https://wsiz.edu.pl" target="_blank">
+    <div class="container py-4">
+        <div class="row g-4 align-items-start flex-column flex-md-row">
+            <div class="col-md-6 text-center text-md-start">
+                <a href="https://wsiz.edu.pl" target="_blank">
                             {% set lang = get_locale() %}
                             {% if lang == 'pl' %}
-                            <img src="{{ url_for('static', filename='images/university-logo-pl-white.png') }}"
+                            <img src="{{ url_for('static', filename='images/WSIZ-logo-PL.png') }}"
                                 alt="University Logo" class="university-logo">
                             {% else %}
-                            <img src="{{ url_for('static', filename='images/university-logo-white.png') }}"
+                            <img src="{{ url_for('static', filename='images/WSIZ-logo-ENG.png') }}"
                                 alt="University Logo" class="university-logo">
                             {% endif %}
 
@@ -120,28 +103,43 @@
                             {{ _('with the Department of Artificial Intelligence of') }}<br>
                             {{ _('University of Information Technology and Management.') }}
                         </p>
+            </div>
+
+            <div class="col-md-6 text-center text-md-start">
+                <div class="row">
+                    <div class="col-sm-6 mb-3">
+                        <h5 class="footer-heading">{{ _('Location') }}</h5>
+                        <ul class="list-unstyled">
+                            <li>{{ _('Sucharskiego St. 2') }}</li>
+                            <li>{{ _('35-225 Rzeszow, PL') }}</li>
+                            <li>{{ _('University of Information Technology and Management') }}</li>
+                            <li class="mt-2">
+                                <a href="https://wsiz.edu.pl" target="_blank" class="footer-link">
+                                    {{ _('University Website') }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <h5 class="footer-heading">{{ _('Content') }}</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="{{ url_for('characteristics') }}" class="footer-link">{{ _('Characteristics') }}</a></li>
+                            <li><a href="{{ url_for('diagnostics') }}" class="footer-link">{{ _('Diagnostics') }}</a></li>
+                            <li><a href="{{ url_for('abcd_rule') }}" class="footer-link">{{ _('ABCD Rule') }}</a></li>
+                            <li><a href="{{ url_for('publications') }}" class="footer-link">{{ _('Research Papers') }}</a></li>
+                            <li><a href="{{ url_for('industry') }}" class="footer-link">{{ _('Industry') }}</a></li>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="col-md-3 text-end">
-                    <h5 class="footer-heading">{{ _('Content') }}</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="{{ url_for('characteristics') }}" class="footer-link">{{ _('Characteristics')
-                                }}</a></li>
-                        <li><a href="{{ url_for('diagnostics') }}" class="footer-link">{{ _('Diagnostics') }}</a></li>
-                        <li><a href="{{ url_for('abcd_rule') }}" class="footer-link">{{ _('ABCD Rule') }}</a></li>
-                        <li><a href="{{ url_for('publications') }}" class="footer-link">{{ _('Research Papers') }}</a>
-                        </li>
-                        <li><a href="{{ url_for('industry') }}" class="footer-link">{{ _('Industry') }}</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="border-top pt-3 mt-4 text-center">
-                <small>&copy; 2024 {{ _('MelanomaWebApp') }} - {{ _('Academic Research Project') }}</small>
             </div>
         </div>
-    </footer>
+
+        <div class="border-top pt-3 mt-4 text-center">
+            <small>&copy; 2025 {{ _('MelanomaWebApp') }} - {{ _('Academic Research Project') }}</small>
+        </div>
+    </div>
+</footer>
 
     <button id="scrollTopBtn" title="Go to top">
         <img src="{{ url_for('static', filename='images/arrow-up-icon.png') }}" alt="Scroll to top" />
