@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ _('Industry Partners') }}{% endblock %}
+{% block title %}{{ _('Companies') }}{% endblock %}
 
 {% block content %}
 <div class="hero-section industry-hero">
@@ -28,14 +28,16 @@
 
         <div class="company-card card h-100 w-80">
             <div class="image-container">
-                <img src="{{ url_for('static', filename='images/companies/ai4skin-main.png') }}" alt="AI4Skin Platform"
-                    class="img-fluid">
+                <a href="https://ai4skin.com" title="Visit AI4Skin website" target="_blank">
+                    <img src="{{ url_for('static', filename='images/companies/ai4skin-main.png') }}" alt="AI4Skin Platform"
+                        class="img-fluid">
+                </a>
             </div>
             <div class="card-body">
                 <h3 class="card-title">{{ _('AI skin cancer recognition') }}</h3>
                 <p class="card-text text-muted" style="margin-bottom: 1rem;">
                     {{ _('System of specialized algorithms for the automatic recognition of skin cancer for
-                    epiluminescence microscopy (ELM) images with the potential to be used in doctor’s offices and other
+                    epiluminescence microscopy (ELM) images with the potential to be used in doctor\'s offices and other
                     health care units for screening for early melanoma. Thanks to Artificial Intelligence and Machine
                     Learning (Deep Learning) algorithms, it recognizes melanocytic nevi on the basis of photos taken
                     with a videodermoscope.') }}
@@ -52,8 +54,10 @@
 
         <div class="company-card card h-100">
             <div class="image-container">
-                <img src="{{ url_for('static', filename='images/companies/fotofinder-main.png') }}"
-                    alt="FotoFinder System" class="img-fluid">
+                <a href="https://fotofinder.pl/" title="Visit FotoFinder website" target="_blank">
+                    <img src="{{ url_for('static', filename='images/companies/fotofinder-main.png') }}"
+                        alt="FotoFinder System" class="img-fluid">
+                </a>
             </div>
             <div class="card-body">
                 <h3 class="card-title">{{ _('Imaging Solutions') }}</h3>
@@ -99,5 +103,4 @@
         </div>
     </div>
 </section>
-
 {% endblock %}
