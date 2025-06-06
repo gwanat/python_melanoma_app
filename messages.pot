@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-06-04 18:39+0200\n"
+"POT-Creation-Date: 2025-06-06 18:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -181,7 +181,7 @@ msgstr ""
 msgid "ABCD Rule for Melanoma Detection"
 msgstr ""
 
-#: templates/abcd_rule.html:8 templates/base.html:129
+#: templates/abcd_rule.html:8
 msgid "ABCD Rule"
 msgstr ""
 
@@ -286,10 +286,10 @@ msgstr ""
 #: templates/abcd_rule.html:76
 msgid ""
 "If the lesion has two mutually perpendicular axes of symmetry, the "
-"asymmetry score is 0 – the lesion is symmetric. If there is symmetry "
-"along only one axis, the asymmetry score is 1 – asymmetric with respect "
+"asymmetry score is 0 - the lesion is symmetric. If there is symmetry "
+"along only one axis, the asymmetry score is 1 - asymmetric with respect "
 "to one axis. If no axis divides the lesion into two approximately equal "
-"parts, the asymmetry score is 2 – asymmetric with respect to both axes."
+"parts, the asymmetry score is 2 - asymmetric with respect to both axes."
 msgstr ""
 
 #: templates/abcd_rule.html:81 templates/abcd_rule.html:82
@@ -542,7 +542,7 @@ msgid "Visit the diagnostics page and analyze your lesion."
 msgstr ""
 
 #: templates/abcd_rule.html:267 templates/base.html:31 templates/base.html:42
-#: templates/base.html:128 templates/characteristics.html:173
+#: templates/characteristics.html:173
 msgid "Diagnostics"
 msgstr ""
 
@@ -564,7 +564,7 @@ msgstr ""
 msgid "About Melanoma"
 msgstr ""
 
-#: templates/base.html:57 templates/base.html:127
+#: templates/base.html:57
 msgid "Characteristics"
 msgstr ""
 
@@ -572,8 +572,8 @@ msgstr ""
 msgid "Publications"
 msgstr ""
 
-#: templates/base.html:61 templates/base.html:131
-msgid "Industry"
+#: templates/base.html:61 templates/industry.html:2
+msgid "Companies"
 msgstr ""
 
 #: templates/base.html:68 templates/base.html:69
@@ -617,18 +617,26 @@ msgid "University Website"
 msgstr ""
 
 #: templates/base.html:125
-msgid "Content"
+msgid "Contact"
 msgstr ""
 
-#: templates/base.html:130
-msgid "Research Papers"
+#: templates/base.html:127
+msgid "Phone: 17 866 11 11"
 msgstr ""
 
-#: templates/base.html:139
+#: templates/base.html:128
+msgid "Fax: +48 17 866 12 22"
+msgstr ""
+
+#: templates/base.html:129
+msgid "e-mail: wsiz@wsiz.edu.pl"
+msgstr ""
+
+#: templates/base.html:137
 msgid "MelanomaWebApp"
 msgstr ""
 
-#: templates/base.html:139
+#: templates/base.html:137
 msgid "Academic Research Project"
 msgstr ""
 
@@ -881,104 +889,124 @@ msgstr ""
 msgid "More about the Asymmetry factor"
 msgstr ""
 
-#: templates/diagnostics.html:44 templates/diagnostics.html:73
-#: templates/diagnostics.html:134 templates/diagnostics.html:190
+#: templates/diagnostics.html:43
+msgid ""
+"Divide the lesion in half (twice, perpendicular axes). Score 1 point for "
+"each axis where halves don't match."
+msgstr ""
+
+#: templates/diagnostics.html:45 templates/diagnostics.html:75
+#: templates/diagnostics.html:137 templates/diagnostics.html:194
 msgid "Example of asymmetrical lesion"
 msgstr ""
 
-#: templates/diagnostics.html:52
+#: templates/diagnostics.html:53
 msgid "Border (B)"
 msgstr ""
 
-#: templates/diagnostics.html:57
+#: templates/diagnostics.html:58
 msgid " Measures irregularity of the lesion divided into eight sections."
 msgstr ""
 
-#: templates/diagnostics.html:68
+#: templates/diagnostics.html:69
 msgid "More about the Border factor"
 msgstr ""
 
-#: templates/diagnostics.html:82
+#: templates/diagnostics.html:73
+msgid ""
+"Divide the lesion into 8 sections. Count how many have an abrupt (sharp, "
+"uneven) border."
+msgstr ""
+
+#: templates/diagnostics.html:84
 msgid "Color (C)"
 msgstr ""
 
-#: templates/diagnostics.html:87
+#: templates/diagnostics.html:89
 msgid " Measures presence of multiple colors within the lesion."
 msgstr ""
 
-#: templates/diagnostics.html:93
+#: templates/diagnostics.html:95
 msgid "Light Brown"
 msgstr ""
 
-#: templates/diagnostics.html:98
+#: templates/diagnostics.html:100
 msgid "Dark Brown"
 msgstr ""
 
-#: templates/diagnostics.html:103
+#: templates/diagnostics.html:105
 msgid "Black"
 msgstr ""
 
-#: templates/diagnostics.html:107
+#: templates/diagnostics.html:109
 msgid "Red"
 msgstr ""
 
-#: templates/diagnostics.html:111
+#: templates/diagnostics.html:113
 msgid "White"
 msgstr ""
 
-#: templates/diagnostics.html:115
+#: templates/diagnostics.html:117
 msgid "Blue/Grey"
 msgstr ""
 
-#: templates/diagnostics.html:119
+#: templates/diagnostics.html:121
 msgid "Blue covers over half?"
 msgstr ""
 
-#: templates/diagnostics.html:129
+#: templates/diagnostics.html:131
 msgid "More about the Color factor"
 msgstr ""
 
-#: templates/diagnostics.html:143
+#: templates/diagnostics.html:135
+msgid "Count the number of distinct colors present."
+msgstr ""
+
+#: templates/diagnostics.html:146
 msgid "Diversity of Structures (D)"
 msgstr ""
 
-#: templates/diagnostics.html:149
+#: templates/diagnostics.html:152
 msgid " Measures variety of patterns and structures within the lesion."
 msgstr ""
 
-#: templates/diagnostics.html:155
+#: templates/diagnostics.html:158
 msgid "Pigment Networks"
 msgstr ""
 
-#: templates/diagnostics.html:160
+#: templates/diagnostics.html:163
 msgid "Pigment Dots"
 msgstr ""
 
-#: templates/diagnostics.html:165
+#: templates/diagnostics.html:168
 msgid "Pigment Globules"
 msgstr ""
 
-#: templates/diagnostics.html:170
+#: templates/diagnostics.html:173
 msgid "Branched Streaks"
 msgstr ""
 
-#: templates/diagnostics.html:175
+#: templates/diagnostics.html:178
 msgid "Structureless Areas"
 msgstr ""
 
-#: templates/diagnostics.html:185
+#: templates/diagnostics.html:188
 msgid "More about the Diversity of Structures factor"
 msgstr ""
 
-#: templates/diagnostics.html:199
+#: templates/diagnostics.html:192
+msgid "Count how many different dermoscopic structures are visible."
+msgstr ""
+
+#: templates/diagnostics.html:203
 msgid "Submit"
 msgstr ""
 
-#: templates/diagnostics.html:205
+#: templates/diagnostics.html:209
 msgid "Total Dermatoscopy Score:"
 msgstr ""
 
-#: templates/diagnostics.html:207
+#: templates/diagnostics.html:211
 msgid "New Total Dermatoscopy Score:"
 msgstr ""
 
@@ -994,10 +1022,6 @@ msgstr ""
 msgid "Start Diagnosis"
 msgstr ""
 
-#: templates/industry.html:2
-msgid "Industry Partners"
-msgstr ""
-
 #: templates/industry.html:7
 msgid "Field of Dermatoscopy"
 msgstr ""
@@ -1009,7 +1033,7 @@ msgid ""
 msgstr ""
 
 #: templates/industry.html:15
-msgid "Companies connected with videodermatoscopy "
+msgid "Companies connected with dermatoscopy "
 msgstr ""
 
 #: templates/industry.html:17
@@ -1028,16 +1052,16 @@ msgstr ""
 msgid "Software"
 msgstr ""
 
-#: templates/industry.html:35
+#: templates/industry.html:37
 msgid "AI skin cancer recognition"
 msgstr ""
 
-#: templates/industry.html:37
+#: templates/industry.html:39
 msgid ""
 "System of specialized algorithms for the automatic recognition of skin "
 "cancer for\n"
 "                    epiluminescence microscopy (ELM) images with the "
-"potential to be used in doctor’s offices and other\n"
+"potential to be used in doctor's offices and other\n"
 "                    health care units for screening for early melanoma. "
 "Thanks to Artificial Intelligence and Machine\n"
 "                    Learning (Deep Learning) algorithms, it recognizes "
@@ -1045,15 +1069,15 @@ msgid ""
 "                    with a videodermoscope."
 msgstr ""
 
-#: templates/industry.html:49
+#: templates/industry.html:51
 msgid "Hardware"
 msgstr ""
 
-#: templates/industry.html:59
+#: templates/industry.html:63
 msgid "Imaging Solutions"
 msgstr ""
 
-#: templates/industry.html:61
+#: templates/industry.html:65
 msgid ""
 "FotoFinder specializes in high-end hardware for dermatological imaging,\n"
 "                    particularly in videodermatoscopy and total body "
@@ -1062,11 +1086,11 @@ msgid ""
 "capture highly detailed skin images."
 msgstr ""
 
-#: templates/industry.html:73
+#: templates/industry.html:77
 msgid "Multifunctional Platform Studio"
 msgstr ""
 
-#: templates/industry.html:75
+#: templates/industry.html:79
 msgid ""
 "The multifunctional platform enables the diagnosis of moles, nails, \n"
 "                            and the scalp. It allows for the creation of "
@@ -1079,11 +1103,11 @@ msgid ""
 "beauty and anti-aging therapies."
 msgstr ""
 
-#: templates/industry.html:91
+#: templates/industry.html:95
 msgid "Handyscope DermLite"
 msgstr ""
 
-#: templates/industry.html:93
+#: templates/industry.html:97
 msgid ""
 "The handyscope DermLite is a portable device that works with almost any "
 "smartphone.\n"
@@ -1117,239 +1141,16 @@ msgstr ""
 msgid "List of related publications"
 msgstr ""
 
-#: templates/publications.html:26
-msgid "Hippe Z.S., Piątek Ł."
-msgstr ""
-
-#: templates/publications.html:27
-msgid "A New Internet system of melanocytic lesions. The current status."
-msgstr ""
-
-#: templates/publications.html:28
-msgid ""
-"In: Nowakowski A. (Ed.), INFOBAZY’2014 – Inspiration, Integration, "
-"Implementation."
-msgstr ""
-
-#: templates/publications.html:29
-msgid "Centrum Informatyczne TASK, Gdańsk-Sopot, Poland, September 8–10, 2014."
-msgstr ""
-
 #: templates/publications.html:30 templates/publications.html:41
 #: templates/publications.html:52 templates/publications.html:65
-#: templates/publications.html:78 templates/publications.html:91
-#: templates/publications.html:102 templates/publications.html:114
-#: templates/publications.html:127 templates/publications.html:138
-#: templates/publications.html:149 templates/publications.html:160
+#: templates/publications.html:77 templates/publications.html:90
+#: templates/publications.html:101 templates/publications.html:113
+#: templates/publications.html:126 templates/publications.html:136
+#: templates/publications.html:146 templates/publications.html:156
 msgid "View on ORCID"
 msgstr ""
 
-#: templates/publications.html:37
-msgid "Piątek Ł., Hippe Z.S."
-msgstr ""
-
-#: templates/publications.html:38
-msgid "Synthesis of Selected Melanocytic Skin Lesion Features."
-msgstr ""
-
-#: templates/publications.html:39
-msgid ""
-"Proc. of the 27th Image and Vision Computing New Zealand (IVCNZ’2012), "
-"Dunedin, New Zealand,\n"
-"                    November 26–28, 2012."
-msgstr ""
-
-#: templates/publications.html:48
-msgid "Grzymała-Busse J.W., Hippe Z.S., Piątek Ł."
-msgstr ""
-
-#: templates/publications.html:49
-msgid "Synthesis of Shapes in the Domain of Melanocytic Skin Lesions."
-msgstr ""
-
-#: templates/publications.html:50
-msgid ""
-"Proc. of the International Conference on Applied and Theoretical "
-"Information Systems Research\n"
-"                    (ATISR’2012), Taipei, Taiwan, February 10–12, 2012."
-msgstr ""
-
-#: templates/publications.html:59
-msgid "Piątek Ł., Pancerz K., Owsiany G."
-msgstr ""
-
-#: templates/publications.html:60
-msgid ""
-"Validation of Data Categorization Using Extensions of Information "
-"Systems: Experiments on\n"
-"                        Melanocytic Skin Lesion Data."
-msgstr ""
-
-#: templates/publications.html:62
-msgid ""
-"In: Ganzha M., Maciaszek L., Paprzycki M. (Eds.), Proc. of the Federated "
-"Conference on\n"
-"                    Computer Science and Information Systems "
-"(FedCSIS’2011), Szczecin, Poland, September 18–21, 2011,\n"
-"                    pp. 147–151."
-msgstr ""
-
-#: templates/publications.html:72
-msgid "Piątek Ł., Hippe Z.S., Grzymała-Busse J.W."
-msgstr ""
-
-#: templates/publications.html:73
-msgid ""
-"Research over algorithms of synthesis static images of melanocytic skin "
-"lesions."
-msgstr ""
-
-#: templates/publications.html:75 templates/publications.html:88
-msgid ""
-"In: Nowakowski A. (Ed.), INFOBAZY’2011 – Databases for Science, European "
-"Projects and\n"
-"                    Information Society."
-msgstr ""
-
-#: templates/publications.html:77
-msgid ""
-"Centrum Informatyczne TASK, Gdańsk, Poland, September 5–7, 2011, pp. "
-"162–167."
-msgstr ""
-
-#: templates/publications.html:85
-msgid "Pancerz K., Piątek Ł., Wrzesień M."
-msgstr ""
-
-#: templates/publications.html:86
-msgid ""
-"Validation of algorithms of synthesis medical images, using methods of "
-"constructive\n"
-"                        induction and rough sets."
-msgstr ""
-
-#: templates/publications.html:90
-msgid ""
-"Centrum Informatyczne TASK, Gdańsk, Poland, September 5–7, 2011, pp. "
-"178–183."
-msgstr ""
-
-#: templates/publications.html:98
-msgid "Piątek Ł., Owsiany G."
-msgstr ""
-
-#: templates/publications.html:99
-msgid "Synthesis of Static Medical Images with using Machine Learning Methods."
-msgstr ""
-
-#: templates/publications.html:100
-msgid ""
-"Proc. of the 3rd International Conference on Intelligent Information and "
-"Engineering Systems\n"
-"                    (INFOS’2010), Rzeszów, Krynica-Zdrój, Poland, "
-"September 20–24, 2010."
-msgstr ""
-
-#: templates/publications.html:109
-msgid "Piątek Ł."
-msgstr ""
-
-#: templates/publications.html:110
-msgid ""
-"Research over algorithms of synthesis static biomedical images – an "
-"example of melanocytic\n"
-"                        skin lesions."
-msgstr ""
-
-#: templates/publications.html:112
-msgid ""
-"Ph.D. Thesis, Gdańsk Technical University, Faculty of Electronics, "
-"Telecommunications and\n"
-"                    Informatics, Gdańsk, Poland, 2010."
-msgstr ""
-
-#: templates/publications.html:123
-msgid "W. Paja and M. Wrzesień"
-msgstr ""
-
-#: templates/publications.html:124
-msgid "Melanoma important features selection using random forest approach."
-msgstr ""
-
-#: templates/publications.html:125
-msgid ""
-"Proc. of the 6th International Conference on Human System Interactions "
-"(HSI), Sopot, Poland,\n"
-"                    2013, pp. 415–418."
-msgstr ""
-
-#: templates/publications.html:134 templates/publications.html:156
-msgid "P. Cudek, W. Paja, M. Wrzesień"
-msgstr ""
-
-#: templates/publications.html:135
-msgid "Image Recognition System for Diagnosis Support of Melanoma Skin Lesion."
-msgstr ""
-
-#: templates/publications.html:136
-msgid ""
-"In: Security and Intelligent Information Systems, Springer-Verlag Berlin "
-"Heidelberg 2012, pp. 217-225"
-msgstr ""
-
-#: templates/publications.html:145
-msgid "W. Paja, K. Pancerz, T. Mroczek, J. Gomuła, M. Wrzesień"
-msgstr ""
-
-#: templates/publications.html:146
-msgid ""
-"Melanoma Diagnosis and Classification Web Center System. The Non-Invasive"
-" Diagnosis Support Subsystem."
-msgstr ""
-
-#: templates/publications.html:147
-msgid ""
-"In: P. Perner (Ed.) Advances in Data Mining, Springer-Verlag Berlin "
-"Heidelberg 2011, pp. 96-105."
-msgstr ""
-
-#: templates/publications.html:157
-msgid ""
-"Automatic System for Classification of Melanocytic Skin Lesions Based on "
-"Images Recognition."
-msgstr ""
-
-#: templates/publications.html:158
-msgid ""
-"In: Man-Machine Interactions 2, Advances in Intelligent and Soft "
-"Computing, Springer-Verlag Berlin Heidelberg 2011, pp. 189-196."
-msgstr ""
-
-#: templates/publications.html:169
-msgid "Mroczek T., Piątek Ł."
-msgstr ""
-
-#: templates/publications.html:170
-msgid "Exploring Relationships in Melanocytic Data Sets."
-msgstr ""
-
-#: templates/publications.html:171
-msgid "Procedia Computer Science, 2024"
-msgstr ""
-
-#: templates/publications.html:172 templates/publications.html:182
+#: templates/publications.html:168 templates/publications.html:178
 msgid "View the article"
-msgstr ""
-
-#: templates/publications.html:179
-msgid "Piątek Ł., Mroczek T."
-msgstr ""
-
-#: templates/publications.html:180
-msgid "Analysis and classification of melanocytic skin lesion images."
-msgstr ""
-
-#: templates/publications.html:181
-msgid "Procedia Computer Science, 2022"
 msgstr ""
 
