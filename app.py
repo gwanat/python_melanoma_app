@@ -111,12 +111,41 @@ def diagnostics():
         else:
             new_tds_message = _("Based on the improved version of Total Dermatoscopy Score (TDS), the lesion is malignant.")
 
+
+        color_labels = {
+            "C_LightBrown": _("Light Brown"),
+            "C_DarkBrown": _("Dark Brown"),
+            "C_Black": _("Black"),
+            "C_Red": _("Red"),
+            "C_White": _("White"),
+            "C_Blue": _("Blue/Grey")
+        }
+
+        structure_labels = {
+            "Pigment_Networks": _("Pigment Networks"),
+            "Pigment_Dots": _("Pigment Dots"),
+            "Pigment_Globules": _("Pigment Globules"),
+            "Branched_Streaks": _("Branched Streaks"),
+            "Structureless_Areas": _("Structureless Areas")
+        }
+
+        readable_colors = [color_labels.get(c, c) for c in colors]
+        readable_structures = [structure_labels.get(s, s) for s in structures]
+
+        
+
+
         return render_template(
             "diagnostics.html",
             tds=round(tds, 2),
             tds_message=tds_message,
             new_tds=round(new_tds, 2),
-            new_tds_message=new_tds_message
+            new_tds_message=new_tds_message,
+            readable_colors=readable_colors,
+            readable_structures=readable_structures,
+            asymmetry=asymmetry,
+            border=border,
+            blue_dominant=blue_dominant
         )
 
     return render_template("diagnostics.html")
