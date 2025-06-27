@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-06-06 18:45+0200\n"
+"POT-Creation-Date: 2025-06-27 20:26+0200\n"
 "PO-Revision-Date: 2025-03-18 16:16+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
@@ -76,6 +76,50 @@ msgid ""
 msgstr ""
 "Na podstawie Nowego Całkowitego Wskaźnika Dermatoskopowego (TDS), zmiana "
 "jest złośliwa."
+
+#: app.py:116 templates/diagnostics.html:95
+msgid "Light Brown"
+msgstr "Jasny brąz"
+
+#: app.py:117 templates/diagnostics.html:100
+msgid "Dark Brown"
+msgstr "Ciemny brąz"
+
+#: app.py:118 templates/diagnostics.html:105
+msgid "Black"
+msgstr "Czarny"
+
+#: app.py:119 templates/diagnostics.html:109
+msgid "Red"
+msgstr "Czerwony"
+
+#: app.py:120 templates/diagnostics.html:113
+msgid "White"
+msgstr "Biały"
+
+#: app.py:121 templates/diagnostics.html:117
+msgid "Blue/Grey"
+msgstr "Niebieski/Szary"
+
+#: app.py:125 templates/diagnostics.html:158
+msgid "Pigment Networks"
+msgstr "Sieć barwnikowa"
+
+#: app.py:126 templates/diagnostics.html:163
+msgid "Pigment Dots"
+msgstr "Kropki barwnikowe"
+
+#: app.py:127 templates/diagnostics.html:168
+msgid "Pigment Globules"
+msgstr "Ciałka barwnikowe"
+
+#: app.py:128 templates/diagnostics.html:173
+msgid "Branched Streaks"
+msgstr "Rozgałęzienia pasmowate"
+
+#: app.py:129 templates/diagnostics.html:178
+msgid "Structureless Areas"
+msgstr "Pole bezstrukturalne"
 
 #: lesions_data.py:5
 msgid "Lentigo Maligna Melanoma"
@@ -278,7 +322,7 @@ msgstr ""
 "regułę ABCD do oceny znamionmelanocytowych. Każda litera odpowiada jednej"
 " z kluczowych cech znamienia:"
 
-#: templates/abcd_rule.html:31
+#: templates/abcd_rule.html:31 templates/diagnostics.html:211
 msgid "Asymmetry"
 msgstr "Asymetria"
 
@@ -286,7 +330,7 @@ msgstr "Asymetria"
 msgid "assessment of the degree of asymmetry in shape and structure of the lesion"
 msgstr "ocena stopnia asymetrii kształtu i struktury znamienia"
 
-#: templates/abcd_rule.html:32
+#: templates/abcd_rule.html:32 templates/diagnostics.html:212
 msgid "Border"
 msgstr "Brzeg"
 
@@ -497,7 +541,7 @@ msgstr ""
 "znamienia. Symptom określający kolory występujące w znamieniu przyjmuje "
 "zatem wartość z przedziału od 1 do 6."
 
-#: templates/abcd_rule.html:160
+#: templates/abcd_rule.html:160 templates/diagnostics.html:213
 msgid "Colors"
 msgstr "Kolory"
 
@@ -1095,8 +1139,8 @@ msgid ""
 "Divide the lesion in half (twice, perpendicular axes). Score 1 point for "
 "each axis where halves don't match."
 msgstr ""
-"Podziel zmianę na pół (dwa razy, osie prostopadle do siebie). Przydziel 1 punkt za "
-"każdą oś, w której połowy nie pasują do siebie”.
+"Podziel zmianę na pół (dwukrotnie, osie prostopadle do siebie). Przydziel 1"
+" punkt za każdą oś, w której połowy nie pasują do siebie”"
 
 #: templates/diagnostics.html:45 templates/diagnostics.html:75
 #: templates/diagnostics.html:137 templates/diagnostics.html:194
@@ -1120,8 +1164,8 @@ msgid ""
 "Divide the lesion into 8 sections. Count how many have an abrupt (sharp, "
 "uneven) border."
 msgstr ""
-"Podziel zmianę na 8 części. Policz, ile z nich ma nagłą (ostrą, "
-"nierówną) granicę."
+"Podziel zmianę na 8 części. Policz, ile z nich ma gwałtowną (ostrą, nierówną)"
+" granicę."
 
 #: templates/diagnostics.html:84
 msgid "Color (C)"
@@ -1130,30 +1174,6 @@ msgstr "Kolor (C)"
 #: templates/diagnostics.html:89
 msgid " Measures presence of multiple colors within the lesion."
 msgstr " Uwzględnia obecność różnych kolorów w obrębie zmiany."
-
-#: templates/diagnostics.html:95
-msgid "Light Brown"
-msgstr "Jasny brąz"
-
-#: templates/diagnostics.html:100
-msgid "Dark Brown"
-msgstr "Ciemny brąz"
-
-#: templates/diagnostics.html:105
-msgid "Black"
-msgstr "Czarny"
-
-#: templates/diagnostics.html:109
-msgid "Red"
-msgstr "Czerwony"
-
-#: templates/diagnostics.html:113
-msgid "White"
-msgstr "Biały"
-
-#: templates/diagnostics.html:117
-msgid "Blue/Grey"
-msgstr "Niebieski/Szary"
 
 #: templates/diagnostics.html:121
 msgid "Blue covers over half?"
@@ -1175,26 +1195,6 @@ msgstr "Różnorodność struktury (D)"
 msgid " Measures variety of patterns and structures within the lesion."
 msgstr " Uwzględnia różnorodność wzorców i struktur w obrębie zmiany."
 
-#: templates/diagnostics.html:158
-msgid "Pigment Networks"
-msgstr "Sieć barwnikowa"
-
-#: templates/diagnostics.html:163
-msgid "Pigment Dots"
-msgstr "Kropki barwnikowe"
-
-#: templates/diagnostics.html:168
-msgid "Pigment Globules"
-msgstr "Ciałka barwnikowe"
-
-#: templates/diagnostics.html:173
-msgid "Branched Streaks"
-msgstr "Rozgałęzienia pasmowate"
-
-#: templates/diagnostics.html:178
-msgid "Structureless Areas"
-msgstr "Pole bezstrukturalne"
-
 #: templates/diagnostics.html:188
 msgid "More about the Diversity of Structures factor"
 msgstr "Więcej o czynniku Różnorodności struktury"
@@ -1208,10 +1208,30 @@ msgid "Submit"
 msgstr "Zatwierdź"
 
 #: templates/diagnostics.html:209
+msgid "Input Summary"
+msgstr "Podsumowanie wprowadzonych danych"
+
+#: templates/diagnostics.html:214
+msgid "Blue dominant"
+msgstr "Niebieski dominujący"
+
+#: templates/diagnostics.html:214
+msgid "Yes"
+msgstr "Tak"
+
+#: templates/diagnostics.html:214
+msgid "No"
+msgstr "Nie"
+
+#: templates/diagnostics.html:215
+msgid "Structures"
+msgstr "Struktury"
+
+#: templates/diagnostics.html:217
 msgid "Total Dermatoscopy Score:"
 msgstr "Całkowity Wskaźnik Dermatoskopowy:"
 
-#: templates/diagnostics.html:211
+#: templates/diagnostics.html:219
 msgid "New Total Dermatoscopy Score:"
 msgstr "Nowy Całkowity Wskaźnik Dermatoskopowy:"
 

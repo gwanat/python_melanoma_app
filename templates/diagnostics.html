@@ -206,6 +206,14 @@
 
         {% if tds and new_tds %}
         <div class="result-box mt-4">
+            <h5>{{ _('Input Summary') }}</h5>
+            <ul class="list-unstyled">
+                <li><strong>{{ _('Asymmetry') }}:</strong> {{ asymmetry }}</li>
+                <li><strong>{{ _('Border') }}:</strong> {{ border }}</li>
+                <li><strong>{{ _('Colors') }}:</strong> {{ readable_colors | join(', ') }}</li>
+                <li><strong>{{ _('Blue dominant') }}:</strong> {{ _('Yes') if blue_dominant else _('No') }}</li>
+                <li><strong>{{ _('Structures') }}:</strong> {{ readable_structures | join(', ') }}</li>
+            </ul>
             <h4>{{ _('Total Dermatoscopy Score:') }} {{ tds }}</h4>
             <p>{{ tds_message }}</p>
             <h4>{{ _('New Total Dermatoscopy Score:') }} {{ new_tds }}</h4>
