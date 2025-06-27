@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-06-06 18:45+0200\n"
+"POT-Creation-Date: 2025-06-27 20:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,6 +57,50 @@ msgstr ""
 msgid ""
 "Based on the improved version of Total Dermatoscopy Score (TDS), the "
 "lesion is malignant."
+msgstr ""
+
+#: app.py:116 templates/diagnostics.html:95
+msgid "Light Brown"
+msgstr ""
+
+#: app.py:117 templates/diagnostics.html:100
+msgid "Dark Brown"
+msgstr ""
+
+#: app.py:118 templates/diagnostics.html:105
+msgid "Black"
+msgstr ""
+
+#: app.py:119 templates/diagnostics.html:109
+msgid "Red"
+msgstr ""
+
+#: app.py:120 templates/diagnostics.html:113
+msgid "White"
+msgstr ""
+
+#: app.py:121 templates/diagnostics.html:117
+msgid "Blue/Grey"
+msgstr ""
+
+#: app.py:125 templates/diagnostics.html:158
+msgid "Pigment Networks"
+msgstr ""
+
+#: app.py:126 templates/diagnostics.html:163
+msgid "Pigment Dots"
+msgstr ""
+
+#: app.py:127 templates/diagnostics.html:168
+msgid "Pigment Globules"
+msgstr ""
+
+#: app.py:128 templates/diagnostics.html:173
+msgid "Branched Streaks"
+msgstr ""
+
+#: app.py:129 templates/diagnostics.html:178
+msgid "Structureless Areas"
 msgstr ""
 
 #: lesions_data.py:5
@@ -213,7 +257,7 @@ msgid ""
 " key features of the lesion:"
 msgstr ""
 
-#: templates/abcd_rule.html:31
+#: templates/abcd_rule.html:31 templates/diagnostics.html:211
 msgid "Asymmetry"
 msgstr ""
 
@@ -221,7 +265,7 @@ msgstr ""
 msgid "assessment of the degree of asymmetry in shape and structure of the lesion"
 msgstr ""
 
-#: templates/abcd_rule.html:32
+#: templates/abcd_rule.html:32 templates/diagnostics.html:212
 msgid "Border"
 msgstr ""
 
@@ -389,7 +433,7 @@ msgid ""
 " typically correlates with increased clinical suspicion."
 msgstr ""
 
-#: templates/abcd_rule.html:160
+#: templates/abcd_rule.html:160 templates/diagnostics.html:213
 msgid "Colors"
 msgstr ""
 
@@ -926,30 +970,6 @@ msgstr ""
 msgid " Measures presence of multiple colors within the lesion."
 msgstr ""
 
-#: templates/diagnostics.html:95
-msgid "Light Brown"
-msgstr ""
-
-#: templates/diagnostics.html:100
-msgid "Dark Brown"
-msgstr ""
-
-#: templates/diagnostics.html:105
-msgid "Black"
-msgstr ""
-
-#: templates/diagnostics.html:109
-msgid "Red"
-msgstr ""
-
-#: templates/diagnostics.html:113
-msgid "White"
-msgstr ""
-
-#: templates/diagnostics.html:117
-msgid "Blue/Grey"
-msgstr ""
-
 #: templates/diagnostics.html:121
 msgid "Blue covers over half?"
 msgstr ""
@@ -970,26 +990,6 @@ msgstr ""
 msgid " Measures variety of patterns and structures within the lesion."
 msgstr ""
 
-#: templates/diagnostics.html:158
-msgid "Pigment Networks"
-msgstr ""
-
-#: templates/diagnostics.html:163
-msgid "Pigment Dots"
-msgstr ""
-
-#: templates/diagnostics.html:168
-msgid "Pigment Globules"
-msgstr ""
-
-#: templates/diagnostics.html:173
-msgid "Branched Streaks"
-msgstr ""
-
-#: templates/diagnostics.html:178
-msgid "Structureless Areas"
-msgstr ""
-
 #: templates/diagnostics.html:188
 msgid "More about the Diversity of Structures factor"
 msgstr ""
@@ -1003,10 +1003,30 @@ msgid "Submit"
 msgstr ""
 
 #: templates/diagnostics.html:209
+msgid "Input Summary"
+msgstr ""
+
+#: templates/diagnostics.html:214
+msgid "Blue dominant"
+msgstr ""
+
+#: templates/diagnostics.html:214
+msgid "Yes"
+msgstr ""
+
+#: templates/diagnostics.html:214
+msgid "No"
+msgstr ""
+
+#: templates/diagnostics.html:215
+msgid "Structures"
+msgstr ""
+
+#: templates/diagnostics.html:217
 msgid "Total Dermatoscopy Score:"
 msgstr ""
 
-#: templates/diagnostics.html:211
+#: templates/diagnostics.html:219
 msgid "New Total Dermatoscopy Score:"
 msgstr ""
 

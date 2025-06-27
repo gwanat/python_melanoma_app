@@ -132,9 +132,7 @@ def diagnostics():
         readable_colors = [color_labels.get(c, c) for c in colors]
         readable_structures = [structure_labels.get(s, s) for s in structures]
 
-        
-
-
+    
         return render_template(
             "diagnostics.html",
             tds=round(tds, 2),

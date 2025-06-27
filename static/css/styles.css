@@ -71,7 +71,6 @@ main {
     clip-path: inset(0); 
 }
 
-
 .hero-content {
     position: absolute;
     top: 50%;
@@ -100,6 +99,50 @@ main {
     background: url('../images/index-hero.png') center/cover;
 }
 
+.characteristics-hero {
+    height: 40vh;
+    background: url('../images/characteristics-hero.png') center 30% /cover no-repeat;
+}
+
+.characteristics-hero .lead {
+    padding-left: 10px;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.publications-hero {
+    height: 40vh;
+    background: url("../images/publications-hero.png") center 35% /cover no-repeat;
+}
+
+.publications-hero .lead {
+    padding-left: 10px;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.abcd-hero {
+    height: 40vh;
+    background: url('../images/abcd-hero.png') center 55%/ cover no-repeat;
+}
+
+.abcd-hero .lead {
+    padding-left: 10px;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.industry-hero {
+    height: 40vh;
+    background: url('../images/industry-hero.png') center 25%/cover no-repeat;
+}
+
+.industry-hero .lead {
+    padding-left: 10px;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
 .form-container {
     max-width: 1100px;
     background: white;
@@ -115,6 +158,12 @@ main {
     gap: 15px;
 }
 
+.form-control:focus, 
+.form-select:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 0.25rem rgba(45, 62, 80, 0.15);
+}
+
 .section {
     flex: 1;
     min-width: 200px;
@@ -123,12 +172,6 @@ main {
     padding: 15px;
     border-radius: 8px;
     transition: transform 0.2s ease;
-}
-
-.form-control:focus, 
-.form-select:focus {
-    border-color: var(--primary-blue);
-    box-shadow: 0 0 0 0.25rem rgba(45, 62, 80, 0.15);
 }
 
 .result-box {
@@ -156,12 +199,6 @@ main {
 .btn-secondary:hover {
     background-color: var(--hover-black);
     border-color: var(--hover-black);
-}
-
-footer {
-    background-color: #e6ebf0;
-    padding: 10px 0;
-    font-size: 12px;
 }
 
 .dropdown-toggle::after {
@@ -275,17 +312,6 @@ footer {
     margin-right: 5px;
 }
 
-.characteristics-hero {
-    height: 40vh;
-    background: url('../images/characteristics-hero.png') center 30% /cover no-repeat;
-}
-
-.characteristics-hero .lead {
-    padding-left: 10px;
-    font-size: 1.2rem;
-    max-width: 600px;
-}
-
 .square-thumb-wrapper {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -373,17 +399,6 @@ footer {
 .pub-meta a:hover {
     text-decoration: underline;
 }
-
-.publications-hero {
-    height: 40vh;
-    background: url("../images/publications-hero.png") center 35% /cover no-repeat;
-}
-
-.publications-hero .lead {
-    padding-left: 10px;
-    font-size: 1.2rem;
-    max-width: 600px;
-}
   
 html {
     scroll-behavior: smooth;
@@ -429,17 +444,6 @@ img.img-fluid {
 .row img {
     max-width: 100%;
     border-radius: 8px;
-}
-
-.abcd-hero {
-    height: 40vh;
-    background: url('../images/abcd-hero.png') center 55%/ cover no-repeat;
-}
-
-.abcd-hero .lead {
-    padding-left: 10px;
-    font-size: 1.2rem;
-    max-width: 600px;
 }
 
 .classification-section {
@@ -550,17 +554,6 @@ img.img-fluid {
     padding: 0.5rem 1rem;
 }
 
-.industry-hero {
-    height: 40vh;
-    background: url('../images/industry-hero.png') center 25%/cover no-repeat;
-}
-
-.industry-hero .lead {
-    padding-left: 10px;
-    font-size: 1.2rem;
-    max-width: 600px;
-}
-
 .risk-factor-list {
     list-style: none;
     padding-left: 1.5rem;
@@ -630,6 +623,8 @@ img.img-fluid {
     background: var(--primary-blue);
     color: rgba(255, 255, 255, 0.85);
     margin-top: auto;
+    padding: 10px 0;
+    font-size: 12px;
 }
 
 .footer-heading {
@@ -654,28 +649,6 @@ img.img-fluid {
 .footer-link:hover {
     color: white !important;
     transform: translateX(3px);
-}
-
-.university-logo {
-    width: 20rem;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1.5rem;
-}
-
-.border-top {
-    border-color: rgba(255, 255, 255, 0.1) !important;
-}
-
-.row.justify-content-center {
-    align-items: start;
-}
-
-.classification-body .image-caption {
-    font-size: 0.9rem;
-    color: #6c757d;
-    font-style: italic;
-    text-align: center;
 }
 
 .footer .row {
@@ -706,4 +679,26 @@ img.img-fluid {
     .footer-heading {
         margin-top: 1rem;
     }
+}
+
+.university-logo {
+    width: 20rem;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.border-top {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.row.justify-content-center {
+    align-items: start;
+}
+
+.classification-body .image-caption {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-style: italic;
+    text-align: center;
 }
